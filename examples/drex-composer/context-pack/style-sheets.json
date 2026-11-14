@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "note": "Style sheets describe techniques only. They never name or reproduce the notes, themes or progressions of an existing piece.",
+  "sheets": [
+    {
+      "id": "bittersweet_orchestral",
+      "name": "Bittersweet orchestral",
+      "summary": "Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords, developing without literal repeats to one earned arrival, more often still and bright than loud, and a late dark turn.",
+      "traits": [
+        "slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats",
+        "minor tonal centre (for example C-sharp minor) with planned key changes",
+        "opens on a warm two-chord oscillation of major-seventh and ninth chords",
+        "piano states the idea alone; strings take it over and widen it",
+        "strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts",
+        "quiet, thin start; one layer added at a time",
+        "peaks and lulls planned in advance, each peak higher than the last",
+        "constant development: every restatement varied, almost no exact repetition",
+        "pedal tones held under shifting harmony",
+        "phrase endings left unresolved or half-resolved to pull the line onward",
+        "a pause or sudden thinning just before the arrival",
+        "the arrival late in the piece is earned by steady momentum, then released: usually a gentle, serene opening-out (the pulse stops, chords are held, the theme sings high and slow); a full-orchestra wall only when the prompt asks for something vast or violent",
+        "late dark turn with late-Romantic, Russian-style chromatic chords",
+        "short afterglow that dissolves instead of closing firmly"
+      ],
+      "defaults": {
+        "tempoRange": [68, 75],
+        "meters": ["12/8"],
+        "modes": ["minor", "harmonic_minor"],
+        "harmonicLanguage": [
+          "major-seventh and major-ninth colour chords",
+          "two-chord oscillation with shared tones",
+          "tonic and dominant pedal points",
+          "borrowed chords from the parallel mode",
+          "key changes by step or third",
+          "late chromatic chords: augmented sixth, diminished seventh, lowered second and sixth degrees",
+          "suspensions and sevenths left hanging"
+        ],
+        "soundWorld": "Soft-attack piano and a large, warm string section in a spacious hall; woodwind and horn as quiet colour, harp and timpani for swells, cymbal and bass drum only for a rare wall-of-sound climax.",
+        "typicalInstruments": ["piano", "violins", "violins2", "violas", "celli", "basses", "solo_violin", "horn", "flute", "oboe", "clarinet", "harp", "timpani", "bass_drum", "cymbal"]
+      },
+      "avoid": [
+        "copying or paraphrasing the notes of any existing piece",
+        "repeating a phrase exactly more than twice",
+        "a full tonic close before the final section",
+        "loud dynamics or full scoring in the first third",
+        "a steady drum-kit or electronic beat",
+        "fast chord changes in quiet passages",
+        "a bright ending that resolves everything",
+        "every instrument doubling all the time",
+        "a climax that is only louder: more noise without a change of colour, register or motion"
+      ]
+    },
+    {
+      "id": "beat_driven",
+      "name": "Beat-driven",
+      "summary": "Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.",
+      "traits": [
+        "steady 4/4 kick pulse, no tempo change",
+        "sine sub bass on chord roots, locked to the kick",
+        "syncopated, off-beat hi-hats",
+        "short motif cells of two to four notes, looped",
+        "variation by adding, muting and filtering layers, not by new melody",
+        "filter-sweep builds over four or eight bars",
+        "drop: kick and bass return together after a break",
+        "sidechain pump: pad and bass duck on every kick",
+        "eight-bar blocks grouped into sixteen-bar sections",
+        "breakdown that strips back to pad and motif",
+        "noise risers and falls at section joins",
+        "looped two- to four-chord harmony",
+        "a chorus that adds what the verse held back: another instrument on the hook, keys or strings filling the chords, a step up in level"
+      ],
+      "defaults": {
+        "tempoRange": [100, 128],
+        "meters": ["4/4"],
+        "modes": ["minor", "dorian"],
+        "harmonicLanguage": [
+          "two- to four-chord loops",
+          "minor-seventh and suspended chords",
+          "pedal bass under changing pads",
+          "modal harmony with few functional cadences"
+        ],
+        "soundWorld": "Dry, punchy production: 808 kick or drum kit, sine sub, tight hats, pluck synth and wide pad, filtered noise for transitions. Electric piano, a synth lead on the hook, supersaw chords, a moving synth bass, bell sparkles and synth-brass stabs are the colours of the style, used above all to make a chorus bigger than a verse. No orchestral instruments.",
+        "typicalInstruments": ["kick808", "sub", "drumkit", "pluck", "pad", "noise", "piano", "keys", "lead", "supersaw", "synth_bass", "bell", "brass"]
+      },
+      "avoid": [
+        "rubato, pauses or tempo changes inside a section",
+        "long through-composed melodies",
+        "dense orchestral doubling",
+        "anything sounding below the sub bass",
+        "frequent key changes",
+        "bass notes that do not land with the kick pattern"
+      ]
+    },
+    {
+      "id": "playful",
+      "name": "Playful",
+      "summary": "Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.",
+      "traits": [
+        "bright modes: major, Lydian, Mixolydian",
+        "pizzicato strings as the rhythmic bed",
+        "staccato articulation, short notes with air between them",
+        "woodwinds carry the tune: flute, oboe and clarinet in dialogue",
+        "bouncing rhythms: dotted figures, off-beat accents, upbeat starts",
+        "sudden stops and one-beat silences",
+        "quick register jumps and octave displacement",
+        "short question-and-answer phrases of two or four bars",
+        "call and response between instruments",
+        "bell-like touches from glockenspiel, celesta and harp",
+        "grace notes and quick scale runs",
+        "surprise dynamics: sudden soft, sudden accent",
+        "clear cadences, tossed off lightly"
+      ],
+      "defaults": {
+        "tempoRange": [108, 144],
+        "meters": ["2/4", "4/4", "6/8"],
+        "modes": ["major", "lydian", "mixolydian"],
+        "harmonicLanguage": [
+          "primary triads with quick changes",
+          "secondary dominants as a passing wink",
+          "chromatic passing and neighbour notes",
+          "sudden shifts up a step or a third",
+          "raised fourth degree for Lydian brightness"
+        ],
+        "soundWorld": "Small, dry chamber-orchestra sound, close and nimble: plucked strings, chattering woodwinds and bell-like percussion, with nothing sustained for long.",
+        "typicalInstruments": ["flute", "oboe", "clarinet", "violins", "violins2", "violas", "celli", "basses", "harp", "glockenspiel", "celesta", "vibraphone", "piano"]
+      },
+      "avoid": [
+        "long sustained pads or pedal points",
+        "heavy low-register doubling",
+        "slow chord changes",
+        "brooding minor passages or unresolved endings",
+        "full tutti for more than a bar or two",
+        "legato lines longer than one phrase",
+        "sub bass and heavy kick"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "call": "theme_judge",
+  "cases": [
+    {
+      "id": "tjudge-01",
+      "tests": "pick the one shaped draft among static and scale drafts",
+      "state": "PROMPT  \"an evening song by the fire\"\nPIECE   style: Bittersweet orchestral; 12/8, 70 BPM, F major, close dry, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     F major; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 5(2) 5(.67) 5(.33) 6(2) 5(.67) 5(2.33)\n        draft_2: 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2)\n        draft_3: 1(1.33) 2(.67) 3(1.33) 4(.67) 5(1.33) 1'(.67) 2'(2)\n        draft_4: 3(1.33) 2(.67) 1(1.33) 5(.67) 4(1.33) 3(.67) 2(2)\n        draft_5: 5(1.33) 4(.67) 5(1.33) 4(.67) 5(1.33) 4(.67) 5(2)\n        draft_6: 3(1.33) 5(.67) 4(1.33) 5(.67) 4(1.33) 5(.67) 4(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "5(2) 5(.67) 5(.33) 6(2) 5(.67) 5(2.33) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_2": "1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2) | range: 11 semitones; largest leap: second; distinct pitches: 7; contour heard: rising",
+          "draft_3": "1(1.33) 2(.67) 3(1.33) 4(.67) 5(1.33) 1'(.67) 2'(2) | range: 14 semitones; largest leap: fourth; distinct pitches: 7; contour heard: rising",
+          "draft_4": "3(1.33) 2(.67) 1(1.33) 5(.67) 4(1.33) 3(.67) 2(2) | range: 7 semitones; largest leap: fifth, recovered by step; distinct pitches: 5; contour heard: arch",
+          "draft_5": "5(1.33) 4(.67) 5(1.33) 4(.67) 5(1.33) 4(.67) 5(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_6": "3(1.33) 5(.67) 4(1.33) 5(.67) 4(1.33) 5(.67) 4(2) | range: 3 semitones; largest leap: third, recovered by step; distinct pitches: 3; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_4"
+      ],
+      "why": "Draft 4 has a clear gesture: a dip, one leap to a single high note, and a stepwise fall after it; the rest sit still, run a scale, climb without returning or circle one note."
+    },
+    {
+      "id": "tjudge-02",
+      "tests": "a four-note cell needs a gesture: a leap answered by steps",
+      "state": "PROMPT  \"a neon sign flickering in time with the kick\"\nPIECE   style: Beat-driven; 4/4, 122 BPM, A minor, electronic hybrid, 2:30; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nKEY     A minor; 4/4; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 1(1.5) 1(1.5) 1(1) 1(4)\n        draft_2: 1(1.5) 2(1.5) 3(1) 4(4)\n        draft_3: 5(1.5) 5(1.5) 5(1) 4(4)\n        draft_4: 3(1.5) 2(1.5) 1(1) 7,(4)\n        draft_5: 1(1.5) 5(1.5) 4(1) 3(4)\n        draft_6: 3(1.5) 3(1.5) 2(1) 3(4)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1.5) 1(1.5) 1(1) 1(4) | range: 0 semitones; largest leap: none; distinct pitches: 1; contour heard: flat",
+          "draft_2": "1(1.5) 2(1.5) 3(1) 4(4) | range: 5 semitones; largest leap: second; distinct pitches: 4; contour heard: rising",
+          "draft_3": "5(1.5) 5(1.5) 5(1) 4(4) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: falling",
+          "draft_4": "3(1.5) 2(1.5) 1(1) 7,(4) | range: 5 semitones; largest leap: second; distinct pitches: 4; contour heard: falling",
+          "draft_5": "1(1.5) 5(1.5) 4(1) 3(4) | range: 7 semitones; largest leap: fifth, recovered by step; distinct pitches: 4; contour heard: arch",
+          "draft_6": "3(1.5) 3(1.5) 2(1) 3(4) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: valley",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_5"
+      ],
+      "why": "Draft 5 leaps a fifth and walks back down to the third: a shape that survives looping and transposition. The others are a single pitch, bare scale steps or a wobble."
+    },
+    {
+      "id": "tjudge-03",
+      "tests": "reject a set in which every draft sits on two or three notes",
+      "state": "PROMPT  \"rain on a tin roof at 3am, missing someone\"\nPIECE   style: Bittersweet orchestral; 12/8, 70 BPM, D minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D minor; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 5(2) 5(.67) 5(.33) 5(2) 6(.67) 5(2.33)\n        draft_2: 3(1) 3(1) 2(1) 3(1) 3(1) 2(1) 3(2)\n        draft_3: 1(2) 1(.67) 2(.33) 1(2) 1(.67) 1(2.33)\n        draft_4: 5(1.33) 5(.67) 4(1.33) 5(.67) 5(1.33) 4(.67) 5(2)\n        draft_5: 3(1) 2(1) 3(1) 2(1) 3(1) 2(1) 3(2)\n        draft_6: 1(1.33) 2(.67) 1(1.33) 2(.67) 1(1.33) 2(.67) 1(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "5(2) 5(.67) 5(.33) 5(2) 6(.67) 5(2.33) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_2": "3(1) 3(1) 2(1) 3(1) 3(1) 2(1) 3(2) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_3": "1(2) 1(.67) 2(.33) 1(2) 1(.67) 1(2.33) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_4": "5(1.33) 5(.67) 4(1.33) 5(.67) 5(1.33) 4(.67) 5(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_5": "3(1) 2(1) 3(1) 2(1) 3(1) 2(1) 3(2) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_6": "1(1.33) 2(.67) 1(1.33) 2(.67) 1(1.33) 2(.67) 1(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "none"
+      ],
+      "why": "Every draft only rocks between two neighbouring notes: no contour, no leap, no high point, nothing to develop."
+    },
+    {
+      "id": "tjudge-04",
+      "tests": "reject a set of bare scale runs",
+      "state": "PROMPT  \"ducklings learning to swim, splashing and tumbling\"\nPIECE   style: Playful; 4/4, 120 BPM, C major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     C major; 4/4; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(1) 1'(1)\n        draft_2: 5(1) 4(1) 3(1) 2(1) 1(4)\n        draft_3: 3(.5) 4(.5) 5(1) 6(.5) 7(.5) 1'(1) 2'(4)\n        draft_4: 1'(1.5) 7(.5) 6(1.5) 5(.5) 4(4)\n        draft_5: 1(1) 2(1) 3(2) 4(1) 5(3)\n        draft_6: 5(.5) 6(.5) 7(1) 1'(.5) 2'(.5) 3'(1) 4'(4)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(1) 1'(1) | range: 12 semitones; largest leap: second; distinct pitches: 8; contour heard: rising",
+          "draft_2": "5(1) 4(1) 3(1) 2(1) 1(4) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: falling",
+          "draft_3": "3(.5) 4(.5) 5(1) 6(.5) 7(.5) 1'(1) 2'(4) | range: 10 semitones; largest leap: second; distinct pitches: 7; contour heard: rising",
+          "draft_4": "1'(1.5) 7(.5) 6(1.5) 5(.5) 4(4) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: falling",
+          "draft_5": "1(1) 2(1) 3(2) 4(1) 5(3) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: rising",
+          "draft_6": "5(.5) 6(.5) 7(1) 1'(.5) 2'(.5) 3'(1) 4'(4) | range: 10 semitones; largest leap: second; distinct pitches: 7; contour heard: rising",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "none"
+      ],
+      "why": "All six are plain scale segments moving in one direction; a theme needs a leap or a turn that makes it recognisable."
+    },
+    {
+      "id": "tjudge-05",
+      "tests": "a contrast theme must differ in outline and rhythm from theme A",
+      "state": "PROMPT  \"a kitten chasing a butterfly, silly and bright\"\nPIECE   style: Playful; 4/4, 132 BPM, G major, close dry, 2:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     G major; 4/4; one theme fills 8 beats (two bars)\nTHEME A 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4)   contour: valley   (the main theme; the new theme must contrast with it)\nDRAFTS  draft_1: 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 2'(4)\n        draft_2: 4(.5) 3(.5) 2(1) 4(.5) 5(.5) 6(1) 7(4)\n        draft_3: 1'(1.5) 7(.5) 6(1.5) 5(.5) 3(4)\n        draft_4: 3(.5) 2(.5) 1(1) 3(.5) 4(.5) 5(1) 1'(4)\n        draft_5: 1(.5) 1(.5) 1(1) 1(.5) 1(.5) 1(1) 1(4)\n        draft_6: 5(.5) 4(.5) 3(1) 4(.5) 5(.5) 6(1) 5(4)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best contrast theme for the departures of this piece: clearly different from theme A, yet at home in the key and mood of the prompt? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 2'(4) | range: 10 semitones; largest leap: third; distinct pitches: 6; contour heard: valley; kept from theme A: contour 100%, intervals 83%, rhythm 100%",
+          "draft_2": "4(.5) 3(.5) 2(1) 4(.5) 5(.5) 6(1) 7(4) | range: 9 semitones; largest leap: third; distinct pitches: 6; contour heard: valley; kept from theme A: contour 100%, intervals 100%, rhythm 100%",
+          "draft_3": "1'(1.5) 7(.5) 6(1.5) 5(.5) 3(4) | range: 8 semitones; largest leap: third; distinct pitches: 5; contour heard: falling; kept from theme A: contour 33%, intervals 33%, rhythm 43%",
+          "draft_4": "3(.5) 2(.5) 1(1) 3(.5) 4(.5) 5(1) 1'(4) | range: 12 semitones; largest leap: fourth; distinct pitches: 6; contour heard: valley; kept from theme A: contour 100%, intervals 83%, rhythm 100%",
+          "draft_5": "1(.5) 1(.5) 1(1) 1(.5) 1(.5) 1(1) 1(4) | range: 0 semitones; largest leap: none; distinct pitches: 1; contour heard: flat; kept from theme A: contour 0%, intervals 0%, rhythm 100%",
+          "draft_6": "5(.5) 4(.5) 3(1) 4(.5) 5(.5) 6(1) 5(4) | range: 5 semitones; largest leap: second; distinct pitches: 4; contour heard: arch; kept from theme A: contour 83%, intervals 83%, rhythm 100%",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_3"
+      ],
+      "why": "Draft 3 falls where theme A rises and swaps its quick-quick-long rhythm for a dotted one, yet stays in the key; the others are theme A moved or barely altered, or a single repeated note."
+    },
+    {
+      "id": "tjudge-06",
+      "tests": "reject contrast drafts that are all variants of theme A",
+      "state": "PROMPT  \"a letter read by candlelight, years too late\"\nPIECE   style: Bittersweet orchestral; 12/8, 66 BPM, F major, large hall, 3:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     F major; 12/8; one theme fills 8 beats (two bars)\nTHEME A 1(1.33) 2(.67) 3(1.33) 5(.67) 4(1.33) 3(.67) 2(2)   contour: arch   (the main theme; the new theme must contrast with it)\nDRAFTS  draft_1: 1(1.33) 2(.67) 3(1.33) 5(.67) 4(1.33) 3(.67) 1(2)\n        draft_2: 2(1.33) 3(.67) 4(1.33) 6(.67) 5(1.33) 4(.67) 3(2)\n        draft_3: 1(1.33) 2(.67) 3(1.33) 6(.67) 5(1.33) 4(.67) 3(2)\n        draft_4: 1(1.33) 2(.67) 3(1.33) 5(.67) 4(1.33) 2(.67) 1(2)\n        draft_5: 5,(1.33) 6,(.67) 7,(1.33) 2(.67) 1(1.33) 7,(.67) 5,(2)\n        draft_6: 1(1.33) 2(.67) 3(1.33) 5(.67) 5(1.33) 4(.67) 3(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best contrast theme for the departures of this piece: clearly different from theme A, yet at home in the key and mood of the prompt? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1.33) 2(.67) 3(1.33) 5(.67) 4(1.33) 3(.67) 1(2) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: arch; kept from theme A: contour 100%, intervals 83%, rhythm 100%",
+          "draft_2": "2(1.33) 3(.67) 4(1.33) 6(.67) 5(1.33) 4(.67) 3(2) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: arch; kept from theme A: contour 100%, intervals 100%, rhythm 100%",
+          "draft_3": "1(1.33) 2(.67) 3(1.33) 6(.67) 5(1.33) 4(.67) 3(2) | range: 9 semitones; largest leap: fourth, recovered by step; distinct pitches: 6; contour heard: arch; kept from theme A: contour 100%, intervals 83%, rhythm 100%",
+          "draft_4": "1(1.33) 2(.67) 3(1.33) 5(.67) 4(1.33) 2(.67) 1(2) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: arch; kept from theme A: contour 100%, intervals 83%, rhythm 100%",
+          "draft_5": "5,(1.33) 6,(.67) 7,(1.33) 2(.67) 1(1.33) 7,(.67) 5,(2) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: arch; kept from theme A: contour 100%, intervals 83%, rhythm 100%",
+          "draft_6": "1(1.33) 2(.67) 3(1.33) 5(.67) 5(1.33) 4(.67) 3(2) | range: 7 semitones; largest leap: third; distinct pitches: 5; contour heard: arch; kept from theme A: contour 83%, intervals 83%, rhythm 100%",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "none"
+      ],
+      "why": "Each draft keeps theme A's rhythm and nearly all of its outline, so none can act as a contrasting episode."
+    },
+    {
+      "id": "tjudge-07",
+      "tests": "two well-formed drafts are both acceptable; the other four are not",
+      "state": "PROMPT  \"something ancient waking under the ice\"\nPIECE   style: Bittersweet orchestral; 12/8, 60 BPM, E minor, submerged, 3:00; harmony: chromatic late-Romantic harmony; dark turns and rich colour\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     E minor; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 1(2) 2(.67) 3(.33) 5(2) 4(.67) 3(2.33)\n        draft_2: 5(1) 5(1) 5(1) 5(1) 6(1) 5(1) 5(2)\n        draft_3: 5(1.33) 4(.67) 3(1.33) 1(.67) 2(1.33) 3(.67) 5(2)\n        draft_4: 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2)\n        draft_5: 3(1.33) 4(.67) 3(1.33) 4(.67) 3(1.33) 4(.67) 3(2)\n        draft_6: 1(1.33) 3(.67) 5(1.33) 1'(.67) 3'(1.33) 5'(.67) 7'(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(2) 2(.67) 3(.33) 5(2) 4(.67) 3(2.33) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: arch",
+          "draft_2": "5(1) 5(1) 5(1) 5(1) 6(1) 5(1) 5(2) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_3": "5(1.33) 4(.67) 3(1.33) 1(.67) 2(1.33) 3(.67) 5(2) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: valley",
+          "draft_4": "1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2) | range: 10 semitones; largest leap: second; distinct pitches: 7; contour heard: rising",
+          "draft_5": "3(1.33) 4(.67) 3(1.33) 4(.67) 3(1.33) 4(.67) 3(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_6": "1(1.33) 3(.67) 5(1.33) 1'(.67) 3'(1.33) 5'(.67) 7'(2) | range: 22 semitones; largest leap: fourth; distinct pitches: 7; contour heard: rising",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_1",
+        "draft_3"
+      ],
+      "why": "Draft 1 is a compact arch and draft 3 a valley, each with one small leap answered by step; the rest are static, a scale, a two-note wobble or a two-octave arpeggio no one could sing."
+    },
+    {
+      "id": "tjudge-08",
+      "tests": "in harmonic minor a line that steps from 6 to 7 is flawed",
+      "state": "PROMPT  \"the last candle in a ruined chapel\"\nPIECE   style: Bittersweet orchestral; 12/8, 62 BPM, A harmonic minor, large hall, 3:00; harmony: chromatic late-Romantic harmony; dark turns and rich colour\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     A harmonic minor; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 5(2) 5(.67) 6(.33) 5(2) 5(.67) 5(2.33)\n        draft_2: 5(2) 6(.67) 7(.33) 1'(2) 7(.67) 5(2.33)\n        draft_3: 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2)\n        draft_4: 3(1.33) 3(.67) 2(1.33) 3(.67) 3(1.33) 2(.67) 3(2)\n        draft_5: 3(2) 2(.67) 1(.33) 5(2) 4(.67) 3(2.33)\n        draft_6: 5(1.33) 6(.67) 5(1.33) 6(.67) 5(1.33) 6(.67) 5(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "5(2) 5(.67) 6(.33) 5(2) 5(.67) 5(2.33) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_2": "5(2) 6(.67) 7(.33) 1'(2) 7(.67) 5(2.33) | range: 5 semitones; largest leap: third; distinct pitches: 4; contour heard: arch",
+          "draft_3": "1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2) | range: 11 semitones; largest leap: second; distinct pitches: 7; contour heard: rising",
+          "draft_4": "3(1.33) 3(.67) 2(1.33) 3(.67) 3(1.33) 2(.67) 3(2) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_5": "3(2) 2(.67) 1(.33) 5(2) 4(.67) 3(2.33) | range: 7 semitones; largest leap: fifth, recovered by step; distinct pitches: 5; contour heard: arch",
+          "draft_6": "5(1.33) 6(.67) 5(1.33) 6(.67) 5(1.33) 6(.67) 5(2) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_5"
+      ],
+      "why": "Draft 5 dips to the keynote, leaps to the fifth and settles by step. Draft 2 looks shapely but steps F to G-sharp, the augmented second between degrees 6 and 7 that a singing line in harmonic minor avoids."
+    },
+    {
+      "id": "tjudge-09",
+      "tests": "one clear highest note heard once beats a line that keeps returning to its top",
+      "state": "PROMPT  \"first snow seen from a train window\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, D major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D major; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 1(1) 2(1) 3(1) 2(1) 1(1) 2(1) 1(2)\n        draft_2: 5(1) 6(1) 7(1) 6(1) 7(1) 6(1) 7(2)\n        draft_3: 1'(1) 7(1) 6(1) 5(1) 4(1) 3(1) 2(2)\n        draft_4: 3(1) 3(1) 3(1) 4(1) 3(1) 3(1) 3(2)\n        draft_5: 1(1) 2(1) 3(1) 5(1) 6(1) 5(1) 3(2)\n        draft_6: 1(1) 3(1) 2(1) 3(1) 2(1) 3(1) 2(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1) 2(1) 3(1) 2(1) 1(1) 2(1) 1(2) | range: 4 semitones; largest leap: second; distinct pitches: 3; contour heard: wave",
+          "draft_2": "5(1) 6(1) 7(1) 6(1) 7(1) 6(1) 7(2) | range: 4 semitones; largest leap: second; distinct pitches: 3; contour heard: wave",
+          "draft_3": "1'(1) 7(1) 6(1) 5(1) 4(1) 3(1) 2(2) | range: 10 semitones; largest leap: second; distinct pitches: 7; contour heard: falling",
+          "draft_4": "3(1) 3(1) 3(1) 4(1) 3(1) 3(1) 3(2) | range: 1 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_5": "1(1) 2(1) 3(1) 5(1) 6(1) 5(1) 3(2) | range: 9 semitones; largest leap: third; distinct pitches: 5; contour heard: arch",
+          "draft_6": "1(1) 3(1) 2(1) 3(1) 2(1) 3(1) 2(2) | range: 4 semitones; largest leap: third, recovered by step; distinct pitches: 3; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_5"
+      ],
+      "why": "Draft 5 rises to a single peak in its second half and falls away; draft 2 strikes its top note three times and stops on it, and the others are static or a bare scale."
+    },
+    {
+      "id": "tjudge-10",
+      "tests": "the theme must fit the prompt: settling, not climbing",
+      "state": "PROMPT  \"eyelids growing heavy: sinking into sleep\"\nPIECE   style: Bittersweet orchestral; 12/8, 60 BPM, A♭ major, close dry, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     A♭ major; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 1(1) 2(1) 3(1) 5(1) 6(1) 7(1) 1'(2)\n        draft_2: 3(2) 3(.67) 3(.33) 3(2) 2(.67) 3(2.33)\n        draft_3: 3(1) 5(1) 4(1) 6(1) 5(1) 7(1) 6(1) 1'(1)\n        draft_4: 5(2) 6(.67) 5(.33) 3(2) 2(.67) 1(2.33)\n        draft_5: 5,(1) 6,(1) 7,(1) 1(1) 2(1) 3(1) 4(1) 5(1)\n        draft_6: 1(1.33) 2(.67) 1(1.33) 2(.67) 1(1.33) 2(.67) 1(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1) 2(1) 3(1) 5(1) 6(1) 7(1) 1'(2) | range: 12 semitones; largest leap: third; distinct pitches: 7; contour heard: rising",
+          "draft_2": "3(2) 3(.67) 3(.33) 3(2) 2(.67) 3(2.33) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: valley",
+          "draft_3": "3(1) 5(1) 4(1) 6(1) 5(1) 7(1) 6(1) 1'(1) | range: 8 semitones; largest leap: third, recovered by step; distinct pitches: 6; contour heard: wave",
+          "draft_4": "5(2) 6(.67) 5(.33) 3(2) 2(.67) 1(2.33) | range: 9 semitones; largest leap: third; distinct pitches: 5; contour heard: arch",
+          "draft_5": "5,(1) 6,(1) 7,(1) 1(1) 2(1) 3(1) 4(1) 5(1) | range: 12 semitones; largest leap: second; distinct pitches: 8; contour heard: rising",
+          "draft_6": "1(1.33) 2(.67) 1(1.33) 2(.67) 1(1.33) 2(.67) 1(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_4"
+      ],
+      "why": "Draft 4 lifts once and then sinks to the keynote in long notes, which is the image; drafts 1, 3 and 5 climb the whole way, the opposite of settling, and 2 and 6 do not move."
+    },
+    {
+      "id": "tjudge-11",
+      "tests": "pick the shaped waltz tune over static and scale drafts",
+      "state": "PROMPT  \"two penguins attempting a waltz\"\nPIECE   style: Playful; 3/4, 138 BPM, B♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     B♭ major; 3/4; one theme fills 6 beats (two bars)\nDRAFTS  draft_1: 1(1) 1(1) 1(1) 2(1) 1(2)\n        draft_2: 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2)\n        draft_3: 1(1) 2(1) 3(1) 4(1) 5(2)\n        draft_4: 3(1.5) 3(.5) 3(1.5) 3(.5) 3(2)\n        draft_5: 5(1) 6(1) 7(1) 1'(1) 2'(2)\n        draft_6: 1(1.5) 2(.5) 1(1.5) 2(.5) 1(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1) 1(1) 1(1) 2(1) 1(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_2": "5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: valley",
+          "draft_3": "1(1) 2(1) 3(1) 4(1) 5(2) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: rising",
+          "draft_4": "3(1.5) 3(.5) 3(1.5) 3(.5) 3(2) | range: 0 semitones; largest leap: none; distinct pitches: 1; contour heard: flat",
+          "draft_5": "5(1) 6(1) 7(1) 1'(1) 2'(2) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: rising",
+          "draft_6": "1(1.5) 2(.5) 1(1.5) 2(.5) 1(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_2"
+      ],
+      "why": "Draft 2 has a dotted lilt, a small leap to the keynote and a turn back up that leaves a question; the others are one note, two notes or a scale."
+    },
+    {
+      "id": "tjudge-12",
+      "tests": "a wide leap must be answered by motion the other way",
+      "state": "PROMPT  \"a frog hopping from stone to stone across a pond\"\nPIECE   style: Playful; 4/4, 112 BPM, E♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     E♭ major; 4/4; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 1(1.5) 6(.5) 7(1.5) 1'(.5) 2'(4)\n        draft_2: 5(1) 5(1) 5(1) 5(1) 5(4)\n        draft_3: 1(1) 2(1) 3(1) 4(1) 5(4)\n        draft_4: 3(1.5) 2(.5) 3(1.5) 2(.5) 3(4)\n        draft_5: 1(1.5) 5(.5) 4(1.5) 3(.5) 2(1.5) 1(2.5)\n        draft_6: 5(1.5) 4(.5) 3(1.5) 2(.5) 1(4)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1.5) 6(.5) 7(1.5) 1'(.5) 2'(4) | range: 14 semitones; largest leap: sixth; distinct pitches: 5; contour heard: rising",
+          "draft_2": "5(1) 5(1) 5(1) 5(1) 5(4) | range: 0 semitones; largest leap: none; distinct pitches: 1; contour heard: flat",
+          "draft_3": "1(1) 2(1) 3(1) 4(1) 5(4) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: rising",
+          "draft_4": "3(1.5) 2(.5) 3(1.5) 2(.5) 3(4) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_5": "1(1.5) 5(.5) 4(1.5) 3(.5) 2(1.5) 1(2.5) | range: 7 semitones; largest leap: fifth, recovered by step; distinct pitches: 5; contour heard: arch",
+          "draft_6": "5(1.5) 4(.5) 3(1.5) 2(.5) 1(4) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: falling",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_5"
+      ],
+      "why": "Draft 5 leaps a fifth and then turns back, stepping down to the keynote. Draft 1 leaps a sixth and keeps climbing to a ninth above its start with no recovery; the rest are static or scales."
+    },
+    {
+      "id": "tjudge-13",
+      "tests": "reject a set of wandering drafts with no shape",
+      "state": "PROMPT  \"lost in the fog, then the harbour lights appear\"\nPIECE   style: Bittersweet orchestral; 12/8, 64 BPM, G minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     G minor; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 3(1) 5(1) 4(1) 5(1) 3(1) 5(1) 4(1) 2(1)\n        draft_2: 1(1) 2(1) 1(1) 3(1) 2(1) 3(1) 1(1) 2(1)\n        draft_3: 5(1) 4(1) 6(1) 5(1) 4(1) 6(1) 5(1) 7(1)\n        draft_4: 3(1) 2(1) 4(1) 3(1) 2(1) 4(1) 3(1) 2(1)\n        draft_5: 1(1) 3(1) 2(1) 1(1) 3(1) 2(1) 1(1) 7,(1)\n        draft_6: 5(1) 6(1) 5(1) 7(1) 5(1) 6(1) 5(1) 7(1)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "3(1) 5(1) 4(1) 5(1) 3(1) 5(1) 4(1) 2(1) | range: 5 semitones; largest leap: third, recovered by step; distinct pitches: 4; contour heard: wave",
+          "draft_2": "1(1) 2(1) 1(1) 3(1) 2(1) 3(1) 1(1) 2(1) | range: 3 semitones; largest leap: third, recovered by step; distinct pitches: 3; contour heard: wave",
+          "draft_3": "5(1) 4(1) 6(1) 5(1) 4(1) 6(1) 5(1) 7(1) | range: 5 semitones; largest leap: third, recovered by step; distinct pitches: 4; contour heard: wave",
+          "draft_4": "3(1) 2(1) 4(1) 3(1) 2(1) 4(1) 3(1) 2(1) | range: 3 semitones; largest leap: third, recovered by step; distinct pitches: 3; contour heard: wave",
+          "draft_5": "1(1) 3(1) 2(1) 1(1) 3(1) 2(1) 1(1) 7,(1) | range: 5 semitones; largest leap: third, recovered by step; distinct pitches: 4; contour heard: wave",
+          "draft_6": "5(1) 6(1) 5(1) 7(1) 5(1) 6(1) 5(1) 7(1) | range: 3 semitones; largest leap: third, recovered by step; distinct pitches: 3; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "none"
+      ],
+      "why": "Every draft zig-zags in equal notes, turning back every note or two, with no line leading to a high point and no arrival at the end; none has a gesture to remember."
+    },
+    {
+      "id": "tjudge-14",
+      "tests": "the most different draft is not the best contrast if it is not a theme",
+      "state": "PROMPT  \"boss fight in a neon arcade\"\nPIECE   style: Beat-driven; 4/4, 125 BPM, A minor, electronic hybrid, 2:00; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nKEY     A minor; 4/4; one theme fills 8 beats (two bars)\nTHEME A 1(1.5) 5(1.5) 4(1) 3(4)   contour: arch   (the main theme; the new theme must contrast with it)\nDRAFTS  draft_1: 1(1.5) 5(1.5) 4(1) 2(4)\n        draft_2: 1(.5) 1(.5) 1(.5) 1(.5) 1(.5) 1(.5) 1(5)\n        draft_3: 2(1.5) 6(1.5) 5(1) 4(4)\n        draft_4: 3(1) 1(1) 2(1) 3(1) 5(2) 5(2)\n        draft_5: 1(1.5) 4(1.5) 3(1) 2(4)\n        draft_6: 3(1.5) 7(1.5) 6(1) 5(4)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best contrast theme for the departures of this piece: clearly different from theme A, yet at home in the key and mood of the prompt? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(1.5) 5(1.5) 4(1) 2(4) | range: 7 semitones; largest leap: fifth, recovered by step; distinct pitches: 4; contour heard: arch; kept from theme A: contour 100%, intervals 67%, rhythm 100%",
+          "draft_2": "1(.5) 1(.5) 1(.5) 1(.5) 1(.5) 1(.5) 1(5) | range: 0 semitones; largest leap: none; distinct pitches: 1; contour heard: flat; kept from theme A: contour 0%, intervals 0%, rhythm 33%",
+          "draft_3": "2(1.5) 6(1.5) 5(1) 4(4) | range: 6 semitones; largest leap: fifth, recovered by step; distinct pitches: 4; contour heard: arch; kept from theme A: contour 100%, intervals 100%, rhythm 100%",
+          "draft_4": "3(1) 1(1) 2(1) 3(1) 5(2) 5(2) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 4; contour heard: valley; kept from theme A: contour 33%, intervals 0%, rhythm 33%",
+          "draft_5": "1(1.5) 4(1.5) 3(1) 2(4) | range: 5 semitones; largest leap: fourth, recovered by step; distinct pitches: 4; contour heard: arch; kept from theme A: contour 100%, intervals 67%, rhythm 100%",
+          "draft_6": "3(1.5) 7(1.5) 6(1) 5(4) | range: 7 semitones; largest leap: fifth, recovered by step; distinct pitches: 4; contour heard: arch; kept from theme A: contour 100%, intervals 100%, rhythm 100%",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_4"
+      ],
+      "why": "Draft 4 is a real second idea: it dips to the keynote and climbs back up to the fifth in even notes, where theme A leaps up and falls in a syncopated rhythm. Draft 2 keeps even less of theme A but is one repeated pitch, and the rest are theme A transposed or lightly bent."
+    },
+    {
+      "id": "tjudge-15",
+      "tests": "a tritone drop onto a hanging leading note spoils an otherwise good arch",
+      "state": "PROMPT  \"ducklings learning to swim, splashing and tumbling\"\nPIECE   style: Playful; 4/4, 120 BPM, C major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     C major; 4/4; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 5(1) 5(1) 5(1) 5(1) 6(1) 5(1) 5(2)\n        draft_2: 3(1) 4(1) 5(1) 6(1) 5(1) 4(1) 7,(2)\n        draft_3: 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2)\n        draft_4: 3(.5) 2(.5) 3(1) 2(.5) 3(.5) 2(1) 3(4)\n        draft_5: 5(1) 4(1) 3(1) 2(1) 1(4)\n        draft_6: 1(.5) 2(.5) 3(1) 5(.5) 4(.5) 3(1) 1(4)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "5(1) 5(1) 5(1) 5(1) 6(1) 5(1) 5(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_2": "3(1) 4(1) 5(1) 6(1) 5(1) 4(1) 7,(2) | range: 10 semitones; largest leap: fifth; distinct pitches: 5; contour heard: arch",
+          "draft_3": "1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2) | range: 11 semitones; largest leap: second; distinct pitches: 7; contour heard: rising",
+          "draft_4": "3(.5) 2(.5) 3(1) 2(.5) 3(.5) 2(1) 3(4) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_5": "5(1) 4(1) 3(1) 2(1) 1(4) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: falling",
+          "draft_6": "1(.5) 2(.5) 3(1) 5(.5) 4(.5) 3(1) 1(4) | range: 7 semitones; largest leap: third, recovered by step; distinct pitches: 5; contour heard: arch",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_6"
+      ],
+      "why": "Draft 6 rises, leaps a third to its one peak, steps back and closes on the keynote. Draft 2 has a similar arch but ends by dropping a tritone from degree 4 to the leading note below and stops there, unresolved."
+    },
+    {
+      "id": "tjudge-16",
+      "tests": "reject a set whose drafts are static, scalar or aimless by turns",
+      "state": "PROMPT  \"lost in the fog, then the harbour lights appear\"\nPIECE   style: Bittersweet orchestral; 12/8, 64 BPM, C minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     C minor; 12/8; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 5(2) 5(.67) 5(.33) 5(2) 5(.67) 5(2.33)\n        draft_2: 1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2)\n        draft_3: 3(1) 5(1) 4(1) 5(1) 3(1) 5(1) 4(1) 2(1)\n        draft_4: 1(1.33) 2(.67) 1(1.33) 2(.67) 1(1.33) 2(.67) 1(2)\n        draft_5: 5(1.33) 4(.67) 3(1.33) 2(.67) 1(1.33) 7,(2.67)\n        draft_6: 1(1) 3(1) 2(1) 3(1) 1(1) 3(1) 2(1) 3(1)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "5(2) 5(.67) 5(.33) 5(2) 5(.67) 5(2.33) | range: 0 semitones; largest leap: none; distinct pitches: 1; contour heard: flat",
+          "draft_2": "1(1) 2(1) 3(1) 4(1) 5(1) 6(1) 7(2) | range: 10 semitones; largest leap: second; distinct pitches: 7; contour heard: rising",
+          "draft_3": "3(1) 5(1) 4(1) 5(1) 3(1) 5(1) 4(1) 2(1) | range: 5 semitones; largest leap: third, recovered by step; distinct pitches: 4; contour heard: wave",
+          "draft_4": "1(1.33) 2(.67) 1(1.33) 2(.67) 1(1.33) 2(.67) 1(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_5": "5(1.33) 4(.67) 3(1.33) 2(.67) 1(1.33) 7,(2.67) | range: 9 semitones; largest leap: second; distinct pitches: 6; contour heard: falling",
+          "draft_6": "1(1) 3(1) 2(1) 3(1) 1(1) 3(1) 2(1) 3(1) | range: 3 semitones; largest leap: third, recovered by step; distinct pitches: 3; contour heard: wave",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "none"
+      ],
+      "why": "Two drafts do not move, two are bare scales and two zig-zag without a peak; none offers a shape worth building a piece on."
+    },
+    {
+      "id": "tjudge-17",
+      "tests": "name the weakness: scale fragments are too plain",
+      "state": "PROMPT  \"a cheerful call across the valley, waiting for its echo\"\nPIECE   style: Playful; 6/8, 112 BPM, G major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     G major; 6/8; one theme fills 4 beats (two bars)\nDRAFTS  draft_1: 1(.67) 2(.33) 3(.67) 4(.33) 5(2)\n        draft_2: 5(.67) 4(.33) 3(.67) 2(.33) 1(2)\n        draft_3: 3(.67) 4(.33) 5(.67) 6(.33) 7(.67) 1'(1.33)\n        draft_4: 1'(.67) 7(.33) 6(.67) 5(.33) 4(.67) 3(1.33)\n        draft_5: 5(1) 6(1) 7(1) 1'(1)\n        draft_6: 3(1) 2(1) 1(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "If no draft is good enough, what is the main weakness to fix in the next round?",
+        "criteria": {
+          "shapeless": "The drafts wander without a clear shape or gesture.",
+          "too_plain": "The drafts are scale fragments with nothing memorable.",
+          "too_jumpy": "The drafts are awkward to sing; too wide or erratic.",
+          "wrong_mood": "The drafts do not fit the prompt or style sheet."
+        }
+      },
+      "accept": [
+        "too_plain"
+      ],
+      "why": "Every draft is a straight piece of scale: singable and in the right mood, but with no leap or turn to remember."
+    },
+    {
+      "id": "tjudge-18",
+      "tests": "name the weakness: contrast drafts too close to theme A",
+      "state": "PROMPT  \"two penguins attempting a waltz\"\nPIECE   style: Playful; 3/4, 138 BPM, B♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     B♭ major; 3/4; one theme fills 6 beats (two bars)\nTHEME A 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2)   contour: valley   (the main theme; the new theme must contrast with it)\nDRAFTS  draft_1: 5(1.5) 4(.5) 3(1.5) 1(.5) 3(2)\n        draft_2: 6(1.5) 5(.5) 4(1.5) 2(.5) 3(2)\n        draft_3: 5(1.5) 4(.5) 3(1.5) 2(.5) 1(2)\n        draft_4: 3(1.5) 2(.5) 1(1.5) 6,(.5) 7,(2)\n        draft_5: 5(1.5) 4(.5) 3(1.5) 1(.5) 1(2)\n        draft_6: 1'(1.5) 7(.5) 6(1.5) 4(.5) 5(2)",
+      "question": {
+        "type": "choice",
+        "instructions": "If no draft is good enough, what is the main weakness to fix in the next round?",
+        "criteria": {
+          "shapeless": "The drafts wander without a clear shape or gesture.",
+          "too_plain": "The drafts are scale fragments with nothing memorable.",
+          "too_jumpy": "The drafts are awkward to sing; too wide or erratic.",
+          "wrong_mood": "The drafts do not fit the prompt or style sheet.",
+          "too_similar": "The drafts are too close to theme A to work as a contrast."
+        }
+      },
+      "accept": [
+        "too_similar"
+      ],
+      "why": "The drafts are shapely and in style; their fault is that each is theme A transposed or with a note or two changed, so none contrasts."
+    },
+    {
+      "id": "tjudge-19",
+      "tests": "name the weakness: zig-zag drafts are shapeless",
+      "state": "PROMPT  \"a hot-air balloon drifting up over the rooftops, weightless wonder\"\nPIECE   style: Playful; 4/4, 112 BPM, E♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     E♭ major; 4/4; one theme fills 8 beats (two bars)\nDRAFTS  draft_1: 3(1) 4(1) 3(1) 5(1) 4(1) 3(1) 4(1) 2(1)\n        draft_2: 5(.5) 4(.5) 6(1) 5(.5) 4(.5) 6(1) 5(.5) 7(3.5)\n        draft_3: 1(1) 2(1) 1(1) 2(1) 3(1) 2(1) 3(1) 2(1)\n        draft_4: 5(1) 3(1) 4(1) 5(1) 3(1) 4(1) 5(1) 2(1)\n        draft_5: 3(1) 2(1) 3(1) 4(1) 2(1) 3(1) 1(1) 2(1)\n        draft_6: 1(1) 3(1) 2(1) 3(1) 1(1) 2(1) 3(1) 2(1)",
+      "question": {
+        "type": "choice",
+        "instructions": "If no draft is good enough, what is the main weakness to fix in the next round?",
+        "criteria": {
+          "shapeless": "The drafts wander without a clear shape or gesture.",
+          "too_plain": "The drafts are scale fragments with nothing memorable.",
+          "too_jumpy": "The drafts are awkward to sing; too wide or erratic.",
+          "wrong_mood": "The drafts do not fit the prompt or style sheet."
+        }
+      },
+      "accept": [
+        "shapeless"
+      ],
+      "why": "These are not scales and not wide leaps: they turn back every note or two and never reach a peak or a close, which is wandering."
+    },
+    {
+      "id": "tjudge-20",
+      "tests": "pick the one draft with a contour in a quick 6/8",
+      "state": "PROMPT  \"puddle-jumping in new yellow boots\"\nPIECE   style: Playful; 6/8, 116 BPM, A major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     A major; 6/8; one theme fills 4 beats (two bars)\nDRAFTS  draft_1: 1(.67) 1(.33) 1(.67) 1(.33) 1(2)\n        draft_2: 1(.67) 2(.33) 3(.67) 4(.33) 5(2)\n        draft_3: 5(.67) 5(.33) 6(.67) 5(.33) 5(2)\n        draft_4: 1(.67) 2(.33) 3(.67) 5(.33) 3(.67) 1(1.33)\n        draft_5: 3(.67) 2(.33) 3(.67) 2(.33) 3(2)\n        draft_6: 5(1) 4(1) 3(1) 2(1)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which draft is the best main theme for this piece: memorable, singable, fitting the prompt and style sheet, with room to be developed? Choose \"none\" if none is good enough.",
+        "criteria": {
+          "draft_1": "1(.67) 1(.33) 1(.67) 1(.33) 1(2) | range: 0 semitones; largest leap: none; distinct pitches: 1; contour heard: flat",
+          "draft_2": "1(.67) 2(.33) 3(.67) 4(.33) 5(2) | range: 7 semitones; largest leap: second; distinct pitches: 5; contour heard: rising",
+          "draft_3": "5(.67) 5(.33) 6(.67) 5(.33) 5(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: arch",
+          "draft_4": "1(.67) 2(.33) 3(.67) 5(.33) 3(.67) 1(1.33) | range: 7 semitones; largest leap: third; distinct pitches: 4; contour heard: arch",
+          "draft_5": "3(.67) 2(.33) 3(.67) 2(.33) 3(2) | range: 2 semitones; largest leap: second; distinct pitches: 2; contour heard: wave",
+          "draft_6": "5(1) 4(1) 3(1) 2(1) | range: 5 semitones; largest leap: second; distinct pitches: 4; contour heard: falling",
+          "none": "None of these is good enough; draft again."
+        }
+      },
+      "accept": [
+        "draft_4"
+      ],
+      "why": "Draft 4 climbs by step, springs to the fifth and bounces back down the tonic chord to the keynote: a jump and a landing. The others are one note, a wobble or a scale."
+    }
+  ]
+}

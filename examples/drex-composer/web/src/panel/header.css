@@ -1,0 +1,133 @@
+.top {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 3.2rem;
+}
+
+.top__brand {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--ink-2);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.top__brand span { font-weight: 400; color: var(--ink-3); }
+
+.top__piece {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.top__title {
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top__summary {
+  font-size: 0.9rem;
+  color: var(--ink-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top__right {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.34rem 0.65rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.badge strong {
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.badge--model { border-color: var(--accent-line); background: var(--accent-soft); }
+.badge--model strong { color: var(--accent); }
+
+.badge--standin { border-color: var(--reject-line); background: var(--reject-soft); color: var(--ink); }
+.badge--standin strong { color: var(--reject); }
+
+.conn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0 0.3rem;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+/* The one status dot on the page: it reports real socket state. */
+.conn i {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--ink-3);
+}
+
+.conn--open i { background: var(--accent); }
+.conn--mock i, .conn--replay i { background: var(--ink-2); }
+.conn--connecting i, .conn--reconnecting i { background: var(--reject); animation: conn-wait 1.1s var(--ease-in-out) infinite alternate; }
+
+@keyframes conn-wait {
+  to { opacity: 0.25; }
+}
+
+/* ── One shape for everything on the right: same height, type and padding ── */
+.top__right { gap: 0.5rem; }
+
+.top__right .btn,
+.top__right .badge {
+  height: 2.2rem;
+  padding: 0 0.9rem;
+  align-items: center;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  font-size: 0.86rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.top__right .btn { background: transparent; }
+.top__right .btn:hover { background: var(--panel-raised); border-color: var(--ink-3); }
+.top__right .btn--primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 600; }
+.top__right .btn--primary:hover { background: #9be7d2; border-color: #9be7d2; }
+
+/* The model name is a label, not a button: same box, accent text, no fill. */
+.top__right .badge strong { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.1em; }
+.top__right .badge--model { background: transparent; border-color: var(--accent-line); margin-right: 0.4rem; }
+
+.top__right .btn kbd { padding: 0.12rem 0.3rem; border-color: var(--rule-strong); font-size: 0.68rem; opacity: 1; color: var(--ink-3); }
+
+/* ── Title, with the prompt tucked behind a small toggle ── */
+.top__piece { flex-direction: row; align-items: baseline; gap: 0.9rem; }
+.top__title { flex: 0 1 auto; }
+.top__reveal { flex: none; padding: 0; border: 0; background: none; font-size: 0.8rem; color: var(--ink-3); cursor: pointer; text-decoration: underline; text-underline-offset: 0.25em; white-space: nowrap; }
+.top__reveal:hover { color: var(--ink); }
+.top__summary { flex: 1 1 0; min-width: 0; font-size: 0.95rem; color: var(--ink-2); }

@@ -1,0 +1,95 @@
+.lineage__body {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0 var(--pad) 0.65rem;
+  min-height: 0;
+}
+
+.lineage__chain {
+  display: grid;
+  align-content: start;
+  gap: 0.05rem;
+  max-height: 7.1rem;
+}
+
+.lin {
+  display: grid;
+  grid-template-columns: 5.2rem auto minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.5rem;
+  min-height: 1.65rem;
+  padding: 0.05rem 0.5rem;
+  border-left: 2px solid transparent;
+  color: var(--ink-2);
+  transition: color 400ms var(--ease-out), background 400ms var(--ease-out), border-color 400ms var(--ease-out);
+  animation: rise-in 420ms var(--ease-out) both;
+}
+
+.lin__n { font-size: 0.82rem; white-space: nowrap; }
+.lin__n b { font-size: 1rem; font-weight: 600; color: var(--ink); }
+.lin__eq { color: var(--ink-3); }
+
+.lin__text {
+  font-size: 1.18rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lin__state {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.lin.is-sounding {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.lin.is-sounding .lin__state { color: var(--accent); }
+.lin.is-ahead { color: var(--ink-3); }
+.lin.is-ahead .lin__n b { color: var(--ink-2); }
+
+/* The themes everything above points back to. */
+.lineage__themes {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 1.4rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.theme {
+  display: grid;
+  grid-template-columns: auto 6rem minmax(0, 1fr);
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
+}
+
+.theme__id { font-size: 1.7rem; font-weight: 700; line-height: 1; }
+.theme__roll { height: 2rem; color: var(--ink); }
+.theme__meta { display: grid; gap: 0.1rem; min-width: 0; }
+
+.theme__kind {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.theme__notation {
+  font-size: 0.76rem;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

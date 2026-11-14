@@ -1,0 +1,17 @@
+{
+  "name": "drex-sample-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Download, convert and index the Drex Composer sample base",
+  "type": "module",
+  "scripts": {
+    "download": "node download.mjs",
+    "build": "node build.mjs",
+    "ir": "node build-ir.mjs",
+    "check": "node check.mjs",
+    "all": "node download.mjs && node build.mjs && node build-ir.mjs && node check.mjs"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0"
+  }
+}

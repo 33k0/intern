@@ -1,0 +1,628 @@
+{
+  "version": 1,
+  "note": "Rules for the beat-driven style sheet (pop, hip-hop, trap, funk, house). Hand-written from general knowledge of these styles, not taken from a book and not produced by NDI: the four parsed books stop in 1900. Each rule is sent only when the piece uses the beat-driven sheet.",
+  "rules": [
+    {
+      "id": "modern.groove.tempo-by-family",
+      "topic": "groove",
+      "text": "Match the tempo to the groove: lo-fi 70 to 90 BPM, boom-bap 82 to 96, funk 95 to 115, house 118 to 128, trap 130 to 150 felt in half time.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "setup"
+      ]
+    },
+    {
+      "id": "modern.groove.four-four",
+      "topic": "groove",
+      "text": "Beat-driven music lives in 4/4; choose another meter only when the prompt asks for something lopsided.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "setup"
+      ]
+    },
+    {
+      "id": "modern.harmony.modes-by-family",
+      "topic": "harmony",
+      "text": "Minor and Dorian suit most hip-hop, trap and house; Dorian and Mixolydian suit funk; pop works in major or minor. Phrygian darkens trap.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "setup"
+      ]
+    },
+    {
+      "id": "modern.harmony.short-loops",
+      "topic": "harmony",
+      "text": "Keep the harmony to a loop of two to four chords: sevenths and ninths for funk and soul-leaning grooves, bare minor triads or suspended chords for trap.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "setup",
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.arrangement.palette-jobs",
+      "topic": "arrangement",
+      "text": "A beat needs a kick, a snare, hats and a bass before anything else: drum kit and sub bass (or an 808 kick) come first, then one or two melodic colours, each with a clear job.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "setup",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.arrangement.blocks",
+      "topic": "arrangement",
+      "text": "Build in blocks of four or eight bars: intro, verse-like section, hook, breakdown, final hook. A recurring hook suits a beat better than one long arc.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "setup",
+        "plan"
+      ]
+    },
+    {
+      "id": "modern.arrangement.energy-by-layers",
+      "topic": "arrangement",
+      "text": "Energy comes from adding and removing layers, not from getting louder: plan a breakdown that strips back to pad and motif before the biggest section.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "plan",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.arrangement.the-drop",
+      "topic": "arrangement",
+      "text": "The drop is the climax: the beat thins or stops for a bar, then kick and bass return together at full weight.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "plan",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.hook.bring-it-back",
+      "topic": "hook",
+      "text": "Bring the hook back often: in loop music the listener wants the same idea again, in a fuller or a barer setting.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "plan",
+        "phrase_direction",
+        "phrase_judge"
+      ]
+    },
+    {
+      "id": "modern.arrangement.partial-start",
+      "topic": "arrangement",
+      "text": "Start with a partial texture (motif and pad, or drums alone) and let the full beat arrive after four or eight bars.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "plan",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.hook.short",
+      "topic": "hook",
+      "text": "A hook is short: three to five notes, a strong rhythm, mostly steps and repeated notes, ending where it can loop straight back to its start.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "theme_draft",
+        "theme_judge"
+      ]
+    },
+    {
+      "id": "modern.hook.rhythm-first",
+      "topic": "hook",
+      "text": "Rhythm makes a hook memorable more than pitch does: prefer a syncopated or short-short-long cell, and leave space after it.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "theme_draft",
+        "theme_judge"
+      ]
+    },
+    {
+      "id": "modern.hook.repeated-notes",
+      "topic": "hook",
+      "text": "Repeated notes are a strength in a hook, not a weakness: a chant on one or two pitches can carry a whole beat.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "theme_draft",
+        "theme_judge"
+      ]
+    },
+    {
+      "id": "modern.hook.loop-it",
+      "topic": "hook",
+      "text": "Loop the motif: leaving it intact for several phrases is right. When it changes, change one thing: an octave, the last note, a displaced start.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "phrase_direction",
+        "phrase_judge"
+      ]
+    },
+    {
+      "id": "modern.hook.call-and-response",
+      "topic": "hook",
+      "text": "Keep a loop alive with call and response between two sounds: the motif asks, another instrument answers in the gap.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "phrase_direction",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.harmony.slow-changes",
+      "topic": "harmony",
+      "text": "Change chords once a bar or once every two bars; two chords alternating are enough for a whole section.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.harmony.keep-it-turning",
+      "topic": "harmony",
+      "text": "End phrases unresolved so the loop turns over; save the resolved ending for the last phrase.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.hook.fragment-then-whole",
+      "topic": "hook",
+      "text": "Fragment the motif during a build, then state it whole at the drop.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.harmony.still-pads",
+      "topic": "harmony",
+      "text": "Keep pad voicings still: hold the common tones and move the others by step, so the chord change is felt in the bass.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "modern.bass.roots",
+      "topic": "bass",
+      "text": "Let the bass take the root: inversions weaken a groove's low end. A pedal bass under changing chords builds tension before a drop.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "voice_leading",
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.bass.kick-and-bass",
+      "topic": "bass",
+      "text": "Kick and bass are one instrument: the bass hits with the kick in trap and boom-bap, pumps in eighths under a four-on-the-floor kick, and plays a syncopated figure in funk.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.groove.backbeat",
+      "topic": "groove",
+      "text": "Snare on beats two and four is the backbone of pop, funk, house and boom-bap; trap moves it to beat three for a half-time feel.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.groove.hats",
+      "topic": "groove",
+      "text": "Hi-hats set the energy: eighths for a relaxed section, sixteenths to push, rolls only as punctuation at the end of a bar.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.groove.build-the-drums",
+      "topic": "groove",
+      "text": "Raise drum intensity through a section rather than starting at the top; drop the drums out for a bar or a whole phrase to make their return hit.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.bass.clear-low-end",
+      "topic": "bass",
+      "text": "Keep the low register for the kick and one bass sound: no low strings, low piano or pedal notes under a sub bass.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.hook.bright-sound",
+      "topic": "hook",
+      "text": "Put the hook on a short bright sound (pluck, piano, vibraphone) in the middle register, above the pad and well clear of the bass.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.production.filter",
+      "topic": "production",
+      "text": "Use the low-pass filter as the arrangement: closed for intros and breakdowns, opening through a build, fully open at the drop.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.production.sidechain",
+      "topic": "production",
+      "text": "Sidechain pump belongs with a four-on-the-floor or pop kick under a sustained pad or bass; leave it off in sparse boom-bap.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.production.dry-and-punchy",
+      "topic": "production",
+      "text": "Keep reverb short and the mix dry and punchy; save long reverb and delay for the breakdown and for single notes left hanging.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.production.saturation",
+      "topic": "production",
+      "text": "A little saturation adds weight to drums and 808 bass; add more as the energy rises.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.arrangement.take-away-before-drop",
+      "topic": "arrangement",
+      "text": "Before a drop, take something away: mute the kick for the last bar, close the filter, or stop everything for a beat.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration",
+        "plan"
+      ]
+    },
+    {
+      "id": "modern.arrangement.one-sound-per-job",
+      "topic": "arrangement",
+      "text": "Do not thicken a beat with doublings: one sound per job. Add or remove whole layers instead.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.groove.trap",
+      "topic": "groove",
+      "text": "Trap: 808 bass notes are long and few, hats run in sixteenths with rolls, and the melody is sparse, dark and repetitive.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration",
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.groove.funk",
+      "topic": "groove",
+      "text": "Funk: every part is percussion. Keep notes short, leave gaps, and let the parts interlock so that no two hit all the same sixteenths.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration",
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.groove.house",
+      "topic": "groove",
+      "text": "House: once the kick is in it never stops, except in the breakdown; open hats off the beat and a pumping bass carry the drive.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.groove.boom-bap",
+      "topic": "groove",
+      "text": "Boom-bap: drums loud and swung, bass simple and round, one looped motif on a warm colour such as piano or vibraphone.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration",
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.hook.judge-by-groove",
+      "topic": "hook",
+      "text": "Judge a loop by its groove and its hook: prefer the draft whose rhythm is strongest and whose notes are fewest.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "theme_judge",
+        "phrase_judge"
+      ]
+    },
+    {
+      "id": "modern.hook.sameness-is-fine",
+      "topic": "hook",
+      "text": "In loop music sameness is not a fault: reject a phrase for drifting from the hook, never for repeating it.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "phrase_judge"
+      ]
+    },
+    {
+      "id": "modern.arrangement.ending",
+      "topic": "arrangement",
+      "text": "End a beat by taking layers away until only the motif or the pad is left, or stop dead on a downbeat; a slow ritardando does not belong.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "ending",
+        "plan"
+      ]
+    },
+    {
+      "id": "modern.production.hold",
+      "topic": "production",
+      "text": "While holding, keep the pad sounding and move the filter: a beat can sit on one chord for a long time.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "hold"
+      ]
+    },
+    {
+      "id": "modern.arrangement.chorus-is-the-peak",
+      "topic": "arrangement",
+      "text": "The chorus is the fullest section: every layer in, the hook on top, the widest and brightest mix. Keep verses leaner so the chorus has somewhere to go.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "plan",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.arrangement.last-chorus-biggest",
+      "topic": "arrangement",
+      "text": "Each chorus should top the one before: add a layer, a doubling or an octave. The last chorus is the biggest moment of the song.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "plan",
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.arrangement.strip-before-chorus",
+      "topic": "arrangement",
+      "text": "Set up a chorus or a drop by taking something away just before it: drop the drums or bass for the last bar, so their return is felt.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.arrangement.bridge-contrast",
+      "topic": "arrangement",
+      "text": "A bridge or breakdown gives the ear something else: thin the beat, change the chords or the melody, so the last chorus lands fresh.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "plan",
+        "phrase_direction"
+      ]
+    },
+    {
+      "id": "modern.arrangement.verse-lean",
+      "topic": "arrangement",
+      "text": "In a verse keep the texture lean: drums, bass and one more layer, with the hook held back or only hinted at.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "orchestration"
+      ]
+    },
+    {
+      "id": "modern.hook.same-every-time",
+      "topic": "hook",
+      "text": "A chorus is the same music each time it returns; by the second one the listener should be able to sing along.",
+      "source": null,
+      "own": true,
+      "styles": [
+        "beat_driven"
+      ],
+      "calls": [
+        "phrase_direction",
+        "phrase_judge"
+      ]
+    }
+  ]
+}

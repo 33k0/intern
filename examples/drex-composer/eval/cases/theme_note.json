@@ -1,0 +1,362 @@
+{
+  "call": "theme_note",
+  "cases": [
+    {
+      "id": "note-01",
+      "tests": "a rising contour steps upward",
+      "state": "PROMPT  \"first snow seen from a train window\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, D major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D major; 12/8; one theme fills 8 beats (two bars)\nSHAPE   6 notes; contour rising; rhythm even beats (1 1 1 1 1 3 beats); ends on degree 5; the one leap is note 3\nSO FAR  1(1)   (degree(beats); this is note 2)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 2. 4 notes left after this; the last must be degree 5, 3 steps from here.",
+          "step_down": "Step down to degree 7 (lower octave). 4 notes left after this; the last must be degree 5, 2 steps from here.",
+          "repeat": "Repeat the note, staying to degree 1. 4 notes left after this; the last must be degree 5, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "The shape is a climb to the fifth, so the second note moves up by step; going down or standing still contradicts the contour."
+    },
+    {
+      "id": "note-02",
+      "tests": "a falling contour steps down, and the fourth degree resolves down",
+      "state": "PROMPT  \"rain on a tin roof at 3am, missing someone\"\nPIECE   style: Bittersweet orchestral; 12/8, 70 BPM, D minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D minor; 12/8; one theme fills 8 beats (two bars)\nSHAPE   7 notes; contour falling; rhythm lilt (1.33 0.67 1.33 0.67 1.33 0.67 2 beats); ends on degree 1; the one leap is note 6\nSO FAR  5(1.33) 4(.67)   (degree(beats); this is note 3)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 5. 4 notes left after this; the last must be degree 1, 3 steps from here.",
+          "step_down": "Step down to degree 3. 4 notes left after this; the last must be degree 1, 2 steps from here.",
+          "repeat": "Repeat the note, staying to degree 4. 4 notes left after this; the last must be degree 1, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "The line is descending and stands on the fourth degree, an active tone that resolves downward to the third."
+    },
+    {
+      "id": "note-03",
+      "tests": "after a leap of a fourth, turn back by step",
+      "state": "PROMPT  \"a kitten chasing a butterfly, silly and bright\"\nPIECE   style: Playful; 4/4, 132 BPM, G major, close dry, 2:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     G major; 4/4; one theme fills 8 beats (two bars)\nSHAPE   7 notes; contour arch; rhythm short-short-long (0.5 0.5 1 0.5 0.5 1 4 beats); ends on degree 5; the one leap is note 4\nSO FAR  3(.5) 4(.5) 5(1) 1'(.5)   (degree(beats); this is note 5)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 2 (upper octave). 2 notes left after this; the last must be degree 5, 3 steps from here.",
+          "step_down": "Step down to degree 7. 2 notes left after this; the last must be degree 5, 2 steps from here.",
+          "repeat": "Repeat the note, staying to degree 1 (upper octave). 2 notes left after this; the last must be degree 5, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "A leap wider than a third is answered by motion the other way, and the arch has just reached its peak and must now fall toward the fifth."
+    },
+    {
+      "id": "note-04",
+      "tests": "after a leap down a fourth, recover upward by step",
+      "state": "PROMPT  \"two penguins attempting a waltz\"\nPIECE   style: Playful; 3/4, 138 BPM, B♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     B♭ major; 3/4; one theme fills 6 beats (two bars)\nSHAPE   5 notes; contour valley; rhythm long-short (1.5 0.5 1.5 0.5 2 beats); ends on degree 1; the one leap is note 2\nSO FAR  1(1.5) 5,(.5)   (degree(beats); this is note 3)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 6 (lower octave). 2 notes left after this; the last must be degree 1, 2 steps from here.",
+          "step_down": "Step down to degree 4 (lower octave). 2 notes left after this; the last must be degree 1, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 5 (lower octave). 2 notes left after this; the last must be degree 1, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "The wide leap down is the bottom of the valley; stepping up recovers it and walks 6, 7, 1 back to the keynote in the notes that are left."
+    },
+    {
+      "id": "note-05",
+      "tests": "with one note left, step toward the final degree",
+      "state": "PROMPT  \"night drive through the city, bass thumping, heads nodding\"\nPIECE   style: Beat-driven; 4/4, 110 BPM, D Dorian, electronic hybrid, 2:30; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nKEY     D Dorian; 4/4; one theme fills 8 beats (two bars)\nSHAPE   6 notes; contour falling; rhythm syncopated (1.5 1.5 1 1.5 1.5 1 beats); ends on degree 1; the one leap is note 2\nSO FAR  5(1.5) 3(1.5) 4(1) 3(1.5)   (degree(beats); this is note 5)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 4. 1 note left after this; the last must be degree 1, 3 steps from here.",
+          "step_down": "Step down to degree 2. 1 note left after this; the last must be degree 1, 1 step from here.",
+          "repeat": "Repeat the note, staying to degree 3. 1 note left after this; the last must be degree 1, 2 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "Only the final keynote remains after this note, so the line should arrive one step above it; the other choices force a skip into the last note."
+    },
+    {
+      "id": "note-06",
+      "tests": "the first half of an arch rises",
+      "state": "PROMPT  \"something ancient waking under the ice\"\nPIECE   style: Bittersweet orchestral; 12/8, 60 BPM, E minor, submerged, 3:00; harmony: chromatic late-Romantic harmony; dark turns and rich colour\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     E minor; 12/8; one theme fills 8 beats (two bars)\nSHAPE   6 notes; contour arch; rhythm held, then lilt (2 0.67 0.33 2 0.67 2.33 beats); ends on degree 3; the one leap is note 3\nSO FAR  1(2)   (degree(beats); this is note 2)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 2. 4 notes left after this; the last must be degree 3, 1 step from here.",
+          "step_down": "Step down to degree 7 (lower octave). 4 notes left after this; the last must be degree 3, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 1. 4 notes left after this; the last must be degree 3, 2 steps from here."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "An arch climbs to a peak near the middle before it falls, so the opening moves upward from the keynote."
+    },
+    {
+      "id": "note-07",
+      "tests": "the first half of a valley descends",
+      "state": "PROMPT  \"a letter read by candlelight, years too late\"\nPIECE   style: Bittersweet orchestral; 12/8, 66 BPM, F major, large hall, 3:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     F major; 12/8; one theme fills 8 beats (two bars)\nSHAPE   7 notes; contour valley; rhythm lilt (1.33 0.67 1.33 0.67 1.33 0.67 2 beats); ends on degree 3; the one leap is note 6\nSO FAR  3(1.33)   (degree(beats); this is note 2)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 4. 5 notes left after this; the last must be degree 3, 1 step from here.",
+          "step_down": "Step down to degree 2. 5 notes left after this; the last must be degree 3, 1 step from here.",
+          "repeat": "Repeat the note, staying to degree 3. 5 notes left after this; the last must be degree 3, 0 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "A valley dips first and recovers later; the theme has plenty of notes left to come back up to the third."
+    },
+    {
+      "id": "note-08",
+      "tests": "do not sound the same tone three times running",
+      "state": "PROMPT  \"boss fight in a neon arcade\"\nPIECE   style: Beat-driven; 4/4, 125 BPM, A minor, electronic hybrid, 2:00; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nKEY     A minor; 4/4; one theme fills 8 beats (two bars)\nSHAPE   6 notes; contour falling; rhythm short-short-long (1 1 2 1 1 2 beats); ends on degree 1; the one leap is note 5\nSO FAR  5(1) 5(1)   (degree(beats); this is note 3)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 6. 3 notes left after this; the last must be degree 1, 2 steps from here.",
+          "step_down": "Step down to degree 4. 3 notes left after this; the last must be degree 1, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 5. 3 notes left after this; the last must be degree 1, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "The fifth has already been repeated; a third repeat stalls the line, and the falling contour says which way to move."
+    },
+    {
+      "id": "note-09",
+      "tests": "the leading note resolves up to the keynote",
+      "state": "PROMPT  \"puddle-jumping in new yellow boots\"\nPIECE   style: Playful; 6/8, 116 BPM, A major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     A major; 6/8; one theme fills 4 beats (two bars)\nSHAPE   6 notes; contour valley; rhythm lilt (0.67 0.33 0.67 0.33 0.67 1.33 beats); ends on degree 3; the one leap is note 2\nSO FAR  3(.67) 1(.33) 7,(.67)   (degree(beats); this is note 4)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 1. 2 notes left after this; the last must be degree 3, 2 steps from here.",
+          "step_down": "Step down to degree 6 (lower octave). 2 notes left after this; the last must be degree 3, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 7 (lower octave). 2 notes left after this; the last must be degree 3, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "The seventh degree pulls upward to the keynote more strongly than any other tone, and the valley has to climb back: 1, 2, 3 reaches the final third exactly in the notes left."
+    },
+    {
+      "id": "note-10",
+      "tests": "the leap in the first half of an arch goes up",
+      "state": "PROMPT  \"first snow seen from a train window\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, D major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D major; 12/8; one theme fills 8 beats (two bars)\nSHAPE   6 notes; contour arch; rhythm even beats (1 1 1 1 1 3 beats); ends on degree 3; the one leap is note 3\nSO FAR  1(1) 2(1)   (degree(beats); this is note 3)",
+      "question": {
+        "type": "choice",
+        "instructions": "This is the theme's one leap. Which way should it go?",
+        "criteria": {
+          "leap_up": "Leap up a fourth to a chord tone, to degree 5. 3 notes left after this; the last must be degree 3, 2 steps from here.",
+          "leap_down": "Leap down a fifth to a chord tone, to degree 5 (lower octave). 3 notes left after this; the last must be degree 3, 2 steps from here."
+        }
+      },
+      "accept": [
+        "leap_up"
+      ],
+      "why": "An arch rises to its high point before it falls; leaping down a fifth would drop the line below where it began before it has climbed at all."
+    },
+    {
+      "id": "note-11",
+      "tests": "the leap in the first half of a valley goes down",
+      "state": "PROMPT  \"lost in the fog, then the harbour lights appear\"\nPIECE   style: Bittersweet orchestral; 12/8, 64 BPM, C minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     C minor; 12/8; one theme fills 8 beats (two bars)\nSHAPE   6 notes; contour valley; rhythm broad, then quick (1.33 0.67 1.33 0.67 1.33 2.67 beats); ends on degree 5; the one leap is note 2\nSO FAR  5(1.33)   (degree(beats); this is note 2)",
+      "question": {
+        "type": "choice",
+        "instructions": "This is the theme's one leap. Which way should it go?",
+        "criteria": {
+          "leap_up": "Leap up a fourth to a chord tone, to degree 1 (upper octave). 4 notes left after this; the last must be degree 5, 3 steps from here.",
+          "leap_down": "Leap down a third to a chord tone, to degree 3. 4 notes left after this; the last must be degree 5, 2 steps from here."
+        }
+      },
+      "accept": [
+        "leap_down"
+      ],
+      "why": "A valley dips before it recovers, and the small leap down to the third leaves a stepwise climb back to the fifth."
+    },
+    {
+      "id": "note-12",
+      "tests": "a late leap in an arch falls; it does not make a new peak",
+      "state": "PROMPT  \"ducklings learning to swim, splashing and tumbling\"\nPIECE   style: Playful; 4/4, 120 BPM, C major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     C major; 4/4; one theme fills 8 beats (two bars)\nSHAPE   7 notes; contour arch; rhythm short-short-long (0.5 0.5 1 0.5 0.5 1 4 beats); ends on degree 3; the one leap is note 6\nSO FAR  3(.5) 4(.5) 5(1) 6(.5) 5(.5)   (degree(beats); this is note 6)",
+      "question": {
+        "type": "choice",
+        "instructions": "This is the theme's one leap. Which way should it go?",
+        "criteria": {
+          "leap_up": "Leap up a fourth to a chord tone, to degree 1 (upper octave). 1 note left after this; the last must be degree 3, 2 steps from here.",
+          "leap_down": "Leap down a third to a chord tone, to degree 3. 1 note left after this; the last must be degree 3, 0 steps from here."
+        }
+      },
+      "accept": [
+        "leap_down"
+      ],
+      "why": "The peak (6) has been heard and the line is falling: the leap down lands on the final third, while leaping up would put a new, higher peak at the very end."
+    },
+    {
+      "id": "note-13",
+      "tests": "do not climb back to a peak already heard",
+      "state": "PROMPT  \"ducklings learning to swim, splashing and tumbling\"\nPIECE   style: Playful; 4/4, 120 BPM, C major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     C major; 4/4; one theme fills 8 beats (two bars)\nSHAPE   8 notes; contour arch; rhythm even (1 1 1 1 1 1 1 1 beats); ends on degree 1; the one leap is note 2\nSO FAR  1(1) 3(1) 4(1) 5(1) 4(1)   (degree(beats); this is note 6)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 5. 2 notes left after this; the last must be degree 1, 3 steps from here.",
+          "step_down": "Step down to degree 3. 2 notes left after this; the last must be degree 1, 2 steps from here.",
+          "repeat": "Repeat the note, staying to degree 4. 2 notes left after this; the last must be degree 1, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "The highest note should sound once; the line is in its falling half and needs its last notes to reach the keynote."
+    },
+    {
+      "id": "note-14",
+      "tests": "a wave contour turns back after two rising steps",
+      "state": "PROMPT  \"a kitten chasing a butterfly, silly and bright\"\nPIECE   style: Playful; 4/4, 132 BPM, G major, close dry, 2:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     G major; 4/4; one theme fills 8 beats (two bars)\nSHAPE   7 notes; contour wave; rhythm short-short-long (0.5 0.5 1 0.5 0.5 1 4 beats); ends on degree 1; the one leap is note 6\nSO FAR  1(.5) 2(.5) 3(1)   (degree(beats); this is note 4)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 4. 3 notes left after this; the last must be degree 1, 3 steps from here.",
+          "step_down": "Step down to degree 2. 3 notes left after this; the last must be degree 1, 1 step from here.",
+          "repeat": "Repeat the note, staying to degree 3. 3 notes left after this; the last must be degree 1, 2 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "A wave changes direction more than once; three notes straight up is a scale, so this is the place to turn, and down also heads for the final keynote."
+    },
+    {
+      "id": "note-15",
+      "tests": "in harmonic minor the sixth does not step up to the seventh",
+      "state": "PROMPT  \"the last candle in a ruined chapel\"\nPIECE   style: Bittersweet orchestral; 12/8, 62 BPM, A harmonic minor, large hall, 3:00; harmony: chromatic late-Romantic harmony; dark turns and rich colour\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     A harmonic minor; 12/8; one theme fills 8 beats (two bars)\nSHAPE   8 notes; contour arch; rhythm even beats (1 1 1 1 1 1 1 1 beats); ends on degree 1; the one leap is note 7\nSO FAR  5(1) 6(1)   (degree(beats); this is note 3)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 7. 5 notes left after this; the last must be degree 1, 1 step from here.",
+          "step_down": "Step down to degree 5. 5 notes left after this; the last must be degree 1, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 6. 5 notes left after this; the last must be degree 1, 2 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "Degrees 6 and 7 of harmonic minor lie an augmented second apart and should not follow each other; the sixth is an active tone that resolves down to the fifth."
+    },
+    {
+      "id": "note-16",
+      "tests": "a rising line carries the leading note up to the keynote",
+      "state": "PROMPT  \"a hot-air balloon lifting off over the rooftops at dawn\"\nPIECE   style: Playful; 4/4, 112 BPM, E♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     E♭ major; 4/4; one theme fills 8 beats (two bars)\nSHAPE   7 notes; contour rising; rhythm long-short (1.5 0.5 1.5 0.5 1.5 0.5 2 beats); ends on degree 3; the one leap is note 2\nSO FAR  3(1.5) 5(.5) 6(1.5) 7(.5)   (degree(beats); this is note 5)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 1 (upper octave). 2 notes left after this; the last must be degree 3, 2 steps from here.",
+          "step_down": "Step down to degree 6. 2 notes left after this; the last must be degree 3, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 7. 2 notes left after this; the last must be degree 3, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "The line is climbing and stands on the seventh degree, which resolves upward into the keynote; from there two more steps reach the final third, and no other choice gets there by step."
+    },
+    {
+      "id": "note-17",
+      "tests": "a falling four-note cell starts by stepping down",
+      "state": "PROMPT  \"boss fight in a neon arcade\"\nPIECE   style: Beat-driven; 4/4, 125 BPM, A minor, electronic hybrid, 2:00; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nKEY     A minor; 4/4; one theme fills 8 beats (two bars)\nSHAPE   4 notes; contour falling; rhythm syncopated (1.5 1.5 1 4 beats); ends on degree 1; the one leap is note 3\nSO FAR  5(1.5)   (degree(beats); this is note 2)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 6. 2 notes left after this; the last must be degree 1, 2 steps from here.",
+          "step_down": "Step down to degree 4. 2 notes left after this; the last must be degree 1, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 5. 2 notes left after this; the last must be degree 1, 3 steps from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "The cell is a descent from the fifth to the keynote, so its first move is down."
+    },
+    {
+      "id": "note-18",
+      "tests": "a valley keeps dipping while the end is still reachable by step",
+      "state": "PROMPT  \"two penguins attempting a waltz\"\nPIECE   style: Playful; 3/4, 138 BPM, B♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     B♭ major; 3/4; one theme fills 6 beats (two bars)\nSHAPE   5 notes; contour valley; rhythm long-short (1.5 0.5 1.5 0.5 2 beats); ends on degree 5; the one leap is note 4\nSO FAR  5(1.5) 4(.5)   (degree(beats); this is note 3)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 5. 2 notes left after this; the last must be degree 5, 0 steps from here.",
+          "step_down": "Step down to degree 3. 2 notes left after this; the last must be degree 5, 2 steps from here.",
+          "repeat": "Repeat the note, staying to degree 4. 2 notes left after this; the last must be degree 5, 1 step from here."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "One more step down makes a real dip (5 4 3), and the leap that comes next can spring from the third straight back to the final fifth; turning now gives no valley at all."
+    },
+    {
+      "id": "note-19",
+      "tests": "recover a leap of a fourth even inside a falling contour",
+      "state": "PROMPT  \"a letter read by candlelight, years too late\"\nPIECE   style: Bittersweet orchestral; 12/8, 66 BPM, F major, large hall, 3:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     F major; 12/8; one theme fills 8 beats (two bars)\nSHAPE   5 notes; contour falling; rhythm held, then lilt (2 0.67 0.33 2 3 beats); ends on degree 3; the one leap is note 3\nSO FAR  5(2) 4(.67) 1(.33)   (degree(beats); this is note 4)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 2. 1 note left after this; the last must be degree 3, 1 step from here.",
+          "step_down": "Step down to degree 7 (lower octave). 1 note left after this; the last must be degree 3, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 1. 1 note left after this; the last must be degree 3, 2 steps from here."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "After a leap wider than a third the line turns back by step, and the second degree lies one step under the final third; staying or sinking further leaves a skip into the last note. The theme still ends below where it began."
+    },
+    {
+      "id": "note-20",
+      "tests": "a wave turns upward again after its fall",
+      "state": "PROMPT  \"puddle-jumping in new yellow boots\"\nPIECE   style: Playful; 6/8, 116 BPM, A major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     A major; 6/8; one theme fills 4 beats (two bars)\nSHAPE   8 notes; contour wave; rhythm flowing (0.33 0.33 0.33 0.33 0.33 0.33 0.33 1.67 beats); ends on degree 3; the one leap is note 7\nSO FAR  1(.33) 2(.33) 3(.33) 2(.33) 1(.33)   (degree(beats); this is note 6)",
+      "question": {
+        "type": "choice",
+        "instructions": "How should the melody move to its next note?",
+        "criteria": {
+          "step_up": "Step up to degree 2. 2 notes left after this; the last must be degree 3, 1 step from here.",
+          "step_down": "Step down to degree 7 (lower octave). 2 notes left after this; the last must be degree 3, 3 steps from here.",
+          "repeat": "Repeat the note, staying to degree 1. 2 notes left after this; the last must be degree 3, 2 steps from here."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "The line has gone up and come down; a wave needs another turn, and the final third lies above."
+    }
+  ]
+}

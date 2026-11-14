@@ -1,0 +1,538 @@
+{
+  "upload": {
+    "workspace_id": "ef060eab-90fc-4689-95a5-4be8d2247698",
+    "file_id": "01a1dc0a-9159-70d2-9335-fe3aa3c41334",
+    "path": "drex-composer/goetschius-melody/exercisesinmelod00goet.pdf",
+    "deduplicated": false
+  },
+  "parseJobId": "1a01bf76-e2d1-42c4-bbaf-d36bafe20d40",
+  "classify": {
+    "ch-03.p16": {
+      "job_id": "308d154e-4e56-417e-a735-37a4b65e466e",
+      "topics": [
+        {
+          "topic": "melody",
+          "confidence": 0.6529069494180746,
+          "rank": 1
+        }
+      ]
+    },
+    "ch-01.p9": {
+      "job_id": "080a5beb-d5f0-45f6-ab0b-47cea6f9e9f1",
+      "topics": [
+        {
+          "topic": "melody",
+          "confidence": 0.9388266098962438,
+          "rank": 1
+        }
+      ]
+    },
+    "ch-02.p14": {
+      "job_id": "98d86514-413e-4f29-a2da-41e914e9445c",
+      "topics": [
+        {
+          "topic": "melody",
+          "confidence": 0.9408354168212476,
+          "rank": 1
+        }
+      ]
+    }
+  },
+  "extract": {
+    "ch-02.p14": {
+      "job_id": "64693996-38ef-413d-bd3a-079967e448b6",
+      "rules": [
+        {
+          "text": "Approach active scale steps from the opposite direction along the scale to force them to move against their natural resolution tendency.",
+          "calls": [
+            "theme_draft",
+            "voice_leading"
+          ],
+          "topic": "melody",
+          "section": "10",
+          "citation": {
+            "page": 10,
+            "pdf_page": 14,
+            "source_text": "10. It is always possible to evade the Resolution, i.e., to counteract the natural tendency, of the three Active scale-steps, and force them to progress in the opposite direction, by approaching them, along the line of the scale, in the cor"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Approach active scale steps from the direction of their natural resolution to reinforce their tendency, requiring immediate resolution.",
+          "calls": [
+            "theme_draft",
+            "voice_leading"
+          ],
+          "topic": "melody",
+          "section": "11",
+          "citation": {
+            "page": 10,
+            "pdf_page": 14,
+            "source_text": "11. If approached in the direction of their Resolution, along the scale, however, the natural inclination is reinforced, and must be fulfilled,—at present."
+          },
+          "status": "found"
+        },
+        {
+          "text": "When moving upward through the scale, turn back at any point except the seventh scale step.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "11",
+          "citation": {
+            "page": 11,
+            "pdf_page": 15,
+            "source_text": "In other words, the melody, in pursuing the line of the scale upward, may turn back (if desired) at any point excepting the 7th scale-step; in pursuing the line of the scale downward, it can turn at any point excepting the 6th or 4th step."
+          },
+          "status": "found"
+        },
+        {
+          "text": "When moving downward through the scale, turn back at any point except the sixth or fourth scale steps.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "11",
+          "citation": {
+            "page": 11,
+            "pdf_page": 15,
+            "source_text": "In other words, the melody, in pursuing the line of the scale upward, may turn back (if desired) at any point excepting the 7th scale-step; in pursuing the line of the scale downward, it can turn at any point excepting the 6th or 4th step."
+          },
+          "status": "found"
+        },
+        {
+          "text": "If a third is leapt against the natural tendency of an active tone, immediately turn back to the preceding tone by leap or step.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "12",
+          "citation": {
+            "page": 11,
+            "pdf_page": 15,
+            "source_text": "An obligation is involved only when the leap of a third is made contrary to the natural tendency of the Active tone; in which case the melody must immediately turn back,—either by a leap, to the preceding tone, or by step-wise progression."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Counteract rhythmic monotony by varying tone succession and avoiding movement within a narrow range of three or four tones.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "12",
+          "citation": {
+            "page": 11,
+            "pdf_page": 15,
+            "source_text": "The danger of monotony, arising from the uniformity of rhythm, must be counteracted by variety of tone-succession; avoid moving about in the narrow compass of the same 3 or 4 tones, and, as a rule, avoid returning too frequently to the same"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Avoid returning too frequently to the same tone, especially on corresponding beats of consecutive measures.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "12",
+          "citation": {
+            "page": 11,
+            "pdf_page": 15,
+            "source_text": "The danger of monotony, arising from the uniformity of rhythm, must be counteracted by variety of tone-succession; avoid moving about in the narrow compass of the same 3 or 4 tones, and, as a rule, avoid returning too frequently to the same"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Follow the line of any good chord upward or downward to create vigorous disjunct movement that contrasts with stepwise progressions.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "13",
+          "citation": {
+            "page": 12,
+            "pdf_page": 16,
+            "source_text": "13. A melody may follow the line of any good CHORD\n\nupward or downward, with almost unlimited freedom.\n\nThis yields the more vigorous species of movement called disjunct, or by skip (or leap); and affords the necessary contrast with the ste"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Switch between the scale-line and the chord-line at any point in a melody, subject to self-evident restrictions.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "14",
+          "citation": {
+            "page": 12,
+            "pdf_page": 16,
+            "source_text": "14. The “Scale-line” may be abandoned for the “Chord-line,” or the chord-line for the scale-line, at any point in a melody,—subject to a few self-evident restrictions."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Study the construction, relation, and succession of chords thoroughly to acquire freedom in recognizing and employing principal chord-lines correctly.",
+          "calls": [
+            "voice_leading"
+          ],
+          "topic": "harmony",
+          "section": "15",
+          "citation": {
+            "page": 12,
+            "pdf_page": 16,
+            "source_text": "15. The influence of HARMONY (i.e., the construction, relation and succession of chords) upon melody-formation is so great and constant, that this is probably the most vital of the two Primary Rules. Unless already familiar with the element"
+          },
+          "status": "found"
+        }
+      ]
+    },
+    "ch-01.p9": {
+      "job_id": "9f5665f4-f60c-42e3-a996-7580afe6e781",
+      "rules": [
+        {
+          "text": "Ensure each chain of three or four successive tones is coherent.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "1",
+          "citation": {
+            "page": 5,
+            "pdf_page": 9,
+            "source_text": "Coherency, throughout each chain of three or four successive tones;"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Design the complete melodic sentence to achieve unity in effect.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "1",
+          "citation": {
+            "page": 5,
+            "pdf_page": 9,
+            "source_text": "Unity, in the design and effect of the complete melodic sentence;"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Use interesting movements with sufficient variety to banish monotony.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "1",
+          "citation": {
+            "page": 5,
+            "pdf_page": 9,
+            "source_text": "Interesting movements, exhibiting sufficient variety to banish every trace of monotony."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Follow the major scale line upward or downward with almost unlimited freedom for smooth diatonic progression.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "3",
+          "citation": {
+            "page": 5,
+            "pdf_page": 9,
+            "source_text": "A melody may follow the line of the\n\n# MAJOR SCALE,\n\nupward or downward, with almost unlimited freedom."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Use step-wise progressions when they confirm the natural melodic inclination of active scale-steps.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "4",
+          "citation": {
+            "page": 6,
+            "pdf_page": 10,
+            "source_text": "4. Step-wise progressions are regular, and consequently invariably permissible, when they confirm the natural or inherent melodic inclination of the so-called Active scale-steps (par. 6)."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Treat the first, third, and fifth scale-steps as inactive and inert, moving only under outward impulse.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "5",
+          "citation": {
+            "page": 6,
+            "pdf_page": 10,
+            "source_text": "The 1st, 3rd and 5th scale-steps (those which constitute the Tonic Triad, or harmonic core of the key, see par. 18) are Inactive. They occupy the centre of harmonic repose, and are therefore inert, not moving except in obedience to some out"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Treat the seventh, sixth, fourth, and second scale-steps as active, urging movement toward rest.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "5",
+          "citation": {
+            "page": 6,
+            "pdf_page": 10,
+            "source_text": "The others,—the 7th, 6th, 4th and 2nd scale-steps, are Active, because they lie outside of this circle of harmonic repose, and are urged by their inherent impulse to regain the condition of rest."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Resolve the seventh scale-step upward with the most urgent tendency.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "6",
+          "citation": {
+            "page": 6,
+            "pdf_page": 10,
+            "source_text": "(a) The tendency is most urgent in the 7th scale-step, and its direction is upward."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Resolve the sixth scale-step downward with somewhat less urgency than the seventh.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "6",
+          "citation": {
+            "page": 6,
+            "pdf_page": 10,
+            "source_text": "(b) The tendency is somewhat less urgent in the 6th step, and its direction is downward."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Resolve the fourth scale-step downward with less urgency than the sixth.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "6",
+          "citation": {
+            "page": 6,
+            "pdf_page": 10,
+            "source_text": "(c) Still less urgent in the 4th step,—tendency also downward."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Ignore the second scale-step's specific direction because it is evenly balanced between the first and third steps.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "6",
+          "citation": {
+            "page": 6,
+            "pdf_page": 10,
+            "source_text": "(d) The inclination of the 2nd scale-step is evenly balanced between the 1st and 3rd steps, from which it is (practically) equally distant. For that reason it need not be considered in this connection."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Begin a regular four-measure phrase with an inactive tone from the tonic triad on the first accented beat or in the pickup.",
+          "calls": [
+            "setup",
+            "theme_draft"
+          ],
+          "topic": "phrase_structure",
+          "section": "8",
+          "citation": {
+            "page": 7,
+            "pdf_page": 11,
+            "source_text": "(a) When regular, it begins with one of the (inactive) tones which constitute the Tonic Triad. These may be placed upon the first (accented) beat of the first measure; or one, perhaps more, beats before the first full measure."
+          },
+          "status": "found"
+        }
+      ]
+    },
+    "ch-03.p16": {
+      "job_id": "52e25bed-dee9-47b3-b058-48c79e0d4371",
+      "rules": [
+        {
+          "text": "Follow the line of any good chord upward or downward to create vigorous disjunct movement that contrasts with stepwise progressions.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "13",
+          "citation": {
+            "page": 12,
+            "pdf_page": 16,
+            "source_text": "13. A melody may follow the line of any good CHORD\n\nupward or downward, with almost unlimited freedom.\n\nThis yields the more vigorous species of movement called disjunct, or by skip (or leap); and affords the necessary contrast with the ste"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Switch between the scale-line and the chord-line at any point in a melody, subject to self-evident restrictions.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "14",
+          "citation": {
+            "page": 12,
+            "pdf_page": 16,
+            "source_text": "14. The “Scale-line” may be abandoned for the “Chord-line,” or the chord-line for the scale-line, at any point in a melody,—subject to a few self-evident restrictions."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Study the elementary conditions of harmony thoroughly to acquire absolute freedom in recognizing and employing principal chord-lines correctly.",
+          "calls": [
+            "setup"
+          ],
+          "topic": "harmony",
+          "section": "15",
+          "citation": {
+            "page": 12,
+            "pdf_page": 16,
+            "source_text": "15. The influence of HARMONY (i.e., the construction, relation and succession of chords) upon melody-formation is so great and constant, that this is probably the most vital of the two Primary Rules. Unless already familiar with the element"
+          },
+          "status": "found"
+        },
+        {
+          "text": "Construct chords by adding one higher third after another to the fundamental tone to determine the chord's name, quality, and relation to other chords.",
+          "calls": [
+            "voice_leading"
+          ],
+          "topic": "harmony",
+          "section": "16",
+          "citation": {
+            "page": 12,
+            "pdf_page": 16,
+            "source_text": "16. The tones which constitute a chord are found by adding one higher 3rd after another, to the fundamental tone which is to be the root, and the index of the chord (of its name, quality, and relation to other chords)."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Follow tonic class chords with any other chord in the same key.",
+          "calls": [
+            "voice_leading"
+          ],
+          "topic": "harmony",
+          "section": "21",
+          "citation": {
+            "page": 15,
+            "pdf_page": 19,
+            "source_text": "(a) The chords of the Tonic class may progress into (i. e., may be followed by) any other chord of the same key."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Follow dominant class chords with tonic class chords, preferring the tonic over the submediant.",
+          "calls": [
+            "voice_leading"
+          ],
+          "topic": "harmony",
+          "section": "21",
+          "citation": {
+            "page": 15,
+            "pdf_page": 19,
+            "source_text": "(b) The chords of the Dominant class can only progress easily into those of the Tonic class, preferably into the I, more rarely into the VI."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Avoid following dominant class chords with second-dominant class chords in melody invention.",
+          "calls": [
+            "voice_leading"
+          ],
+          "topic": "harmony",
+          "section": "21",
+          "citation": {
+            "page": 15,
+            "pdf_page": 19,
+            "source_text": "The progression of a Dominant chord into one of the Second-Dominant class is uncommon, and need not be considered in melody-invention."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Follow second-dominant class chords with dominant class chords, or less readily with tonic class chords.",
+          "calls": [
+            "voice_leading"
+          ],
+          "topic": "harmony",
+          "section": "21",
+          "citation": {
+            "page": 15,
+            "pdf_page": 19,
+            "source_text": "(c) The chords of the Second-Dominant class pass most readily into those of the Dominant class; but they may also be followed by those of the Tonic."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Observe inherent melodic tendencies to facilitate correct application of chord succession rules.",
+          "calls": [
+            "voice_leading"
+          ],
+          "topic": "harmony",
+          "section": "22",
+          "citation": {
+            "page": 15,
+            "pdf_page": 19,
+            "source_text": "22. N.B.—These rules of chord-succession are so fully confirmed by the rules of inherent melodic tendency (explained in paragraphs 4–6), that careful observance of the latter facilitates, largely, the correct application of the former."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Identify the chord quality and name represented by melodic skips to control their movements.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "23",
+          "citation": {
+            "page": 15,
+            "pdf_page": 19,
+            "source_text": "23. Nevertheless, it is necessary to be fully conscious of the quality and name of the chord-lines represented by skips in the melody, and to control their movements accordingly."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Ensure each single melodic skip represents a good chord.",
+          "calls": [
+            "theme_draft"
+          ],
+          "topic": "melody",
+          "section": "24",
+          "citation": {
+            "page": 15,
+            "pdf_page": 19,
+            "source_text": "24. Each single skip must obviously represent, at present, some good chord."
+          },
+          "status": "found"
+        },
+        {
+          "text": "Leap from any scale degree, active or inactive, in either direction, provided the leap follows a good chord line.",
+          "calls": [
+            "theme_draft",
+            "voice_leading"
+          ],
+          "topic": "melody",
+          "section": "25",
+          "citation": {
+            "page": 16,
+            "pdf_page": 20,
+            "source_text": "25. With this single limitation, a leap may be made from any tone, Active or: Inactive, upward or downward."
+          },
+          "status": "found"
+        }
+      ]
+    }
+  }
+}

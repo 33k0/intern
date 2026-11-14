@@ -1,0 +1,1095 @@
+{
+  "book": "goetschius-melody",
+  "title": "Exercises in Melody-Writing",
+  "producedBy": "local-fallback",
+  "source": "context-pack/books/goetschius-melody/text.txt",
+  "pageNumbers": "start_page/end_page are printed page numbers; pdf_* are 1-based pages of the scan PDF (null when the book has no scan)",
+  "chapters": [
+    {
+      "id": "ch-01",
+      "number": "I",
+      "title": "Major. The Scale-line, Regular",
+      "start_page": 5,
+      "end_page": 10,
+      "pdf_start_page": 9,
+      "pdf_end_page": 14,
+      "start_line": 87,
+      "end_line": 241,
+      "chars": 6238,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          8
+        ]
+      ],
+      "first_paragraph": 1,
+      "last_paragraph": 9,
+      "topics": [
+        {
+          "topic": "melody",
+          "confidence": 0.9388266098962438
+        }
+      ]
+    },
+    {
+      "id": "ch-02",
+      "number": "II",
+      "title": "The Scale-line, Exceptional",
+      "start_page": 10,
+      "end_page": 12,
+      "pdf_start_page": 14,
+      "pdf_end_page": 16,
+      "start_line": 243,
+      "end_line": 301,
+      "chars": 2181,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          13,
+          11
+        ]
+      ],
+      "first_paragraph": 10,
+      "last_paragraph": 13,
+      "topics": [
+        {
+          "topic": "melody",
+          "confidence": 0.9408354168212476
+        }
+      ]
+    },
+    {
+      "id": "ch-03",
+      "number": "III",
+      "title": "The Chord-line",
+      "start_page": 12,
+      "end_page": 19,
+      "pdf_start_page": 16,
+      "pdf_end_page": 23,
+      "start_line": 303,
+      "end_line": 507,
+      "chars": 9008,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          19,
+          13
+        ],
+        [
+          21,
+          15
+        ],
+        [
+          22,
+          15
+        ],
+        [
+          23,
+          15
+        ],
+        [
+          24,
+          15
+        ],
+        [
+          26,
+          17
+        ],
+        [
+          28,
+          18
+        ],
+        [
+          29,
+          18
+        ],
+        [
+          30,
+          18
+        ]
+      ],
+      "first_paragraph": 14,
+      "last_paragraph": 30,
+      "topics": [
+        {
+          "topic": "melody",
+          "confidence": 0.6529069494180746
+        }
+      ]
+    },
+    {
+      "id": "ch-04",
+      "number": "IV",
+      "title": "The Chord-line, Continued",
+      "start_page": 19,
+      "end_page": 28,
+      "pdf_start_page": 23,
+      "pdf_end_page": 32,
+      "start_line": 509,
+      "end_line": 841,
+      "chars": 7611,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          31,
+          19
+        ],
+        [
+          32,
+          19
+        ],
+        [
+          33,
+          20
+        ],
+        [
+          34,
+          20
+        ],
+        [
+          35,
+          20
+        ],
+        [
+          36,
+          21
+        ],
+        [
+          37,
+          21
+        ],
+        [
+          38,
+          22
+        ],
+        [
+          39,
+          24
+        ]
+      ],
+      "first_paragraph": 31,
+      "last_paragraph": 39,
+      "topics": []
+    },
+    {
+      "id": "ch-05",
+      "number": "V",
+      "title": "Minor",
+      "start_page": 28,
+      "end_page": 31,
+      "pdf_start_page": 32,
+      "pdf_end_page": 35,
+      "start_line": 843,
+      "end_line": 947,
+      "chars": 3452,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          40,
+          28
+        ],
+        [
+          41,
+          29
+        ],
+        [
+          42,
+          29
+        ],
+        [
+          43,
+          29
+        ],
+        [
+          44,
+          29
+        ],
+        [
+          45,
+          30
+        ]
+      ],
+      "first_paragraph": 40,
+      "last_paragraph": 45,
+      "topics": []
+    },
+    {
+      "id": "ch-06",
+      "number": "VI",
+      "title": "Diversity of Rhythm, Regular",
+      "start_page": 31,
+      "end_page": 34,
+      "pdf_start_page": 35,
+      "pdf_end_page": 38,
+      "start_line": 949,
+      "end_line": 1065,
+      "chars": 3797,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          46,
+          31
+        ],
+        [
+          47,
+          32
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          49,
+          33
+        ]
+      ],
+      "first_paragraph": 46,
+      "last_paragraph": 49,
+      "topics": []
+    },
+    {
+      "id": "ch-07",
+      "number": "VII",
+      "title": "The Period-form",
+      "start_page": 34,
+      "end_page": 36,
+      "pdf_start_page": 38,
+      "pdf_end_page": 40,
+      "start_line": 1067,
+      "end_line": 1139,
+      "chars": 2663,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          50,
+          34
+        ],
+        [
+          51,
+          34
+        ],
+        [
+          52,
+          35
+        ],
+        [
+          53,
+          35
+        ]
+      ],
+      "first_paragraph": 50,
+      "last_paragraph": 53,
+      "topics": []
+    },
+    {
+      "id": "ch-08",
+      "number": "VIII",
+      "title": "Irregular Rhythm",
+      "start_page": 36,
+      "end_page": 40,
+      "pdf_start_page": 40,
+      "pdf_end_page": 44,
+      "start_line": 1141,
+      "end_line": 1279,
+      "chars": 3336,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          54,
+          36
+        ],
+        [
+          55,
+          38
+        ]
+      ],
+      "first_paragraph": 54,
+      "last_paragraph": 55,
+      "topics": []
+    },
+    {
+      "id": "ch-09",
+      "number": "IX",
+      "title": "Exceptional Semicadences",
+      "start_page": 40,
+      "end_page": 41,
+      "pdf_start_page": 44,
+      "pdf_end_page": 45,
+      "start_line": 1281,
+      "end_line": 1311,
+      "chars": 1130,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          57,
+          40
+        ],
+        [
+          58,
+          40
+        ]
+      ],
+      "first_paragraph": 57,
+      "last_paragraph": 58,
+      "topics": []
+    },
+    {
+      "id": "ch-10",
+      "number": "X",
+      "title": "Syntax of Melody",
+      "start_page": 41,
+      "end_page": 44,
+      "pdf_start_page": 45,
+      "pdf_end_page": 48,
+      "start_line": 1313,
+      "end_line": 1425,
+      "chars": 3418,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          59,
+          41
+        ],
+        [
+          60,
+          41
+        ],
+        [
+          62,
+          42
+        ],
+        [
+          63,
+          43
+        ],
+        [
+          64,
+          43
+        ],
+        [
+          65,
+          44
+        ]
+      ],
+      "first_paragraph": 59,
+      "last_paragraph": 65,
+      "topics": []
+    },
+    {
+      "id": "ch-11",
+      "number": "XI",
+      "title": "Melodic Syntax, Continued",
+      "start_page": 44,
+      "end_page": 49,
+      "pdf_start_page": 48,
+      "pdf_end_page": 53,
+      "start_line": 1427,
+      "end_line": 1671,
+      "chars": 4422,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          66,
+          44
+        ],
+        [
+          67,
+          45
+        ],
+        [
+          68,
+          46
+        ],
+        [
+          69,
+          46
+        ],
+        [
+          70,
+          47
+        ]
+      ],
+      "first_paragraph": 66,
+      "last_paragraph": 70,
+      "topics": []
+    },
+    {
+      "id": "ch-12",
+      "number": "XII",
+      "title": "Melodic Syntax, Continued",
+      "start_page": 49,
+      "end_page": 51,
+      "pdf_start_page": 53,
+      "pdf_end_page": 55,
+      "start_line": 1673,
+      "end_line": 1739,
+      "chars": 2399,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          71,
+          49
+        ],
+        [
+          73,
+          50
+        ]
+      ],
+      "first_paragraph": 71,
+      "last_paragraph": 73,
+      "topics": []
+    },
+    {
+      "id": "ch-13",
+      "number": "XIII",
+      "title": "Altered Scale-steps, Major",
+      "start_page": 51,
+      "end_page": 55,
+      "pdf_start_page": 55,
+      "pdf_end_page": 59,
+      "start_line": 1741,
+      "end_line": 1899,
+      "chars": 4572,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          75,
+          52
+        ],
+        [
+          76,
+          53
+        ],
+        [
+          77,
+          54
+        ]
+      ],
+      "first_paragraph": 75,
+      "last_paragraph": 77,
+      "topics": []
+    },
+    {
+      "id": "ch-14",
+      "number": "XIV",
+      "title": "Altered Scale-steps, Minor",
+      "start_page": 55,
+      "end_page": 58,
+      "pdf_start_page": 59,
+      "pdf_end_page": 62,
+      "start_line": 1901,
+      "end_line": 1995,
+      "chars": 2310,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          78,
+          55
+        ],
+        [
+          79,
+          56
+        ],
+        [
+          80,
+          56
+        ]
+      ],
+      "first_paragraph": 78,
+      "last_paragraph": 80,
+      "topics": []
+    },
+    {
+      "id": "ch-15",
+      "number": "XV",
+      "title": "Modulation, or Changes of Key",
+      "start_page": 58,
+      "end_page": 62,
+      "pdf_start_page": 62,
+      "pdf_end_page": 66,
+      "start_line": 1997,
+      "end_line": 2145,
+      "chars": 5503,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          81,
+          58
+        ],
+        [
+          82,
+          58
+        ],
+        [
+          83,
+          58
+        ],
+        [
+          84,
+          59
+        ],
+        [
+          85,
+          59
+        ],
+        [
+          86,
+          60
+        ],
+        [
+          87,
+          60
+        ],
+        [
+          88,
+          61
+        ]
+      ],
+      "first_paragraph": 81,
+      "last_paragraph": 88,
+      "topics": []
+    },
+    {
+      "id": "ch-16",
+      "number": "XVI",
+      "title": "Modulation, Continued",
+      "start_page": 62,
+      "end_page": 63,
+      "pdf_start_page": 66,
+      "pdf_end_page": 67,
+      "start_line": 2147,
+      "end_line": 2185,
+      "chars": 1104,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          89,
+          62
+        ]
+      ],
+      "first_paragraph": 89,
+      "last_paragraph": 89,
+      "topics": []
+    },
+    {
+      "id": "ch-17",
+      "number": "XVII",
+      "title": "Modulation, Continued",
+      "start_page": 63,
+      "end_page": 65,
+      "pdf_start_page": 67,
+      "pdf_end_page": 69,
+      "start_line": 2187,
+      "end_line": 2235,
+      "chars": 1426,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          90,
+          63
+        ]
+      ],
+      "first_paragraph": 90,
+      "last_paragraph": 90,
+      "topics": []
+    },
+    {
+      "id": "ch-18",
+      "number": "XVIII",
+      "title": "Modulation, Chromatic",
+      "start_page": 65,
+      "end_page": 66,
+      "pdf_start_page": 69,
+      "pdf_end_page": 70,
+      "start_line": 2237,
+      "end_line": 2269,
+      "chars": 598,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          91,
+          65
+        ]
+      ],
+      "first_paragraph": 91,
+      "last_paragraph": 91,
+      "topics": []
+    },
+    {
+      "id": "ch-19",
+      "number": "XIX",
+      "title": "Overlapping Scale-lines",
+      "start_page": 66,
+      "end_page": 68,
+      "pdf_start_page": 70,
+      "pdf_end_page": 72,
+      "start_line": 2271,
+      "end_line": 2323,
+      "chars": 2428,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          92,
+          66
+        ],
+        [
+          93,
+          66
+        ],
+        [
+          94,
+          68
+        ]
+      ],
+      "first_paragraph": 92,
+      "last_paragraph": 94,
+      "topics": []
+    },
+    {
+      "id": "ch-20",
+      "number": "XX",
+      "title": "Modulation in Sequences, and at Cadences",
+      "start_page": 68,
+      "end_page": 70,
+      "pdf_start_page": 72,
+      "pdf_end_page": 74,
+      "start_line": 2325,
+      "end_line": 2377,
+      "chars": 1257,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          95,
+          68
+        ]
+      ],
+      "first_paragraph": 95,
+      "last_paragraph": 95,
+      "topics": []
+    },
+    {
+      "id": "ch-21",
+      "number": "XXI",
+      "title": "Chromatic Melody",
+      "start_page": 70,
+      "end_page": 72,
+      "pdf_start_page": 74,
+      "pdf_end_page": 76,
+      "start_line": 2379,
+      "end_line": 2419,
+      "chars": 1133,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          96,
+          70
+        ]
+      ],
+      "first_paragraph": 96,
+      "last_paragraph": 96,
+      "topics": []
+    },
+    {
+      "id": "ch-22",
+      "number": "XXII",
+      "title": "The Double-period",
+      "start_page": 72,
+      "end_page": 75,
+      "pdf_start_page": 76,
+      "pdf_end_page": 79,
+      "start_line": 2421,
+      "end_line": 2481,
+      "chars": 2667,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          97,
+          72
+        ],
+        [
+          98,
+          72
+        ],
+        [
+          99,
+          72
+        ]
+      ],
+      "first_paragraph": 97,
+      "last_paragraph": 99,
+      "topics": []
+    },
+    {
+      "id": "ch-23",
+      "number": "XXIII",
+      "title": "Essential and Unessential Tones",
+      "start_page": 75,
+      "end_page": 79,
+      "pdf_start_page": 79,
+      "pdf_end_page": 83,
+      "start_line": 2483,
+      "end_line": 2599,
+      "chars": 4471,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          102,
+          76
+        ]
+      ],
+      "first_paragraph": 102,
+      "last_paragraph": 102,
+      "topics": []
+    },
+    {
+      "id": "ch-24",
+      "number": "XXIV",
+      "title": "The Anticipation",
+      "start_page": 79,
+      "end_page": 81,
+      "pdf_start_page": 83,
+      "pdf_end_page": 85,
+      "start_line": 2601,
+      "end_line": 2681,
+      "chars": 1491,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          103,
+          79
+        ]
+      ],
+      "first_paragraph": 103,
+      "last_paragraph": 103,
+      "topics": []
+    },
+    {
+      "id": "ch-25",
+      "number": "XXV",
+      "title": "The Passing-note (single)",
+      "start_page": 81,
+      "end_page": 83,
+      "pdf_start_page": 85,
+      "pdf_end_page": 87,
+      "start_line": 2683,
+      "end_line": 2753,
+      "chars": 1806,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          104,
+          81
+        ]
+      ],
+      "first_paragraph": 104,
+      "last_paragraph": 104,
+      "topics": []
+    },
+    {
+      "id": "ch-26",
+      "number": "XXVI",
+      "title": "Passing-notes, Continued",
+      "start_page": 83,
+      "end_page": 87,
+      "pdf_start_page": 87,
+      "pdf_end_page": 91,
+      "start_line": 2755,
+      "end_line": 2877,
+      "chars": 2962,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          106,
+          83
+        ],
+        [
+          107,
+          84
+        ],
+        [
+          108,
+          85
+        ],
+        [
+          109,
+          86
+        ]
+      ],
+      "first_paragraph": 106,
+      "last_paragraph": 109,
+      "topics": []
+    },
+    {
+      "id": "ch-27",
+      "number": "XXVII",
+      "title": "Neighboring-notes",
+      "start_page": 87,
+      "end_page": 92,
+      "pdf_start_page": 91,
+      "pdf_end_page": 96,
+      "start_line": 2879,
+      "end_line": 3031,
+      "chars": 4811,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          111,
+          88
+        ],
+        [
+          112,
+          88
+        ]
+      ],
+      "first_paragraph": 111,
+      "last_paragraph": 112,
+      "topics": []
+    },
+    {
+      "id": "ch-28",
+      "number": "XXVIII",
+      "title": "Neighboring-notes, Continued",
+      "start_page": 92,
+      "end_page": 96,
+      "pdf_start_page": 96,
+      "pdf_end_page": 100,
+      "start_line": 3033,
+      "end_line": 3159,
+      "chars": 1899,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          114,
+          92
+        ]
+      ],
+      "first_paragraph": 114,
+      "last_paragraph": 114,
+      "topics": []
+    },
+    {
+      "id": "ch-29",
+      "number": "XXIX",
+      "title": "Neighboring-note as Appoggiatura",
+      "start_page": 96,
+      "end_page": 100,
+      "pdf_start_page": 100,
+      "pdf_end_page": 104,
+      "start_line": 3161,
+      "end_line": 3291,
+      "chars": 3399,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          115,
+          96
+        ]
+      ],
+      "first_paragraph": 115,
+      "last_paragraph": 115,
+      "topics": []
+    },
+    {
+      "id": "ch-30",
+      "number": "XXX",
+      "title": "Double-appoggiatura",
+      "start_page": 100,
+      "end_page": 105,
+      "pdf_start_page": 104,
+      "pdf_end_page": 109,
+      "start_line": 3293,
+      "end_line": 3441,
+      "chars": 2769,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          116,
+          100
+        ],
+        [
+          117,
+          102
+        ],
+        [
+          118,
+          104
+        ]
+      ],
+      "first_paragraph": 116,
+      "last_paragraph": 118,
+      "topics": []
+    },
+    {
+      "id": "ch-31",
+      "number": "XXXI",
+      "title": "Appoggiaturas, Continued",
+      "start_page": 105,
+      "end_page": 109,
+      "pdf_start_page": 109,
+      "pdf_end_page": 113,
+      "start_line": 3443,
+      "end_line": 3557,
+      "chars": 3012,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          119,
+          105
+        ],
+        [
+          120,
+          106
+        ]
+      ],
+      "first_paragraph": 119,
+      "last_paragraph": 120,
+      "topics": []
+    },
+    {
+      "id": "ch-32",
+      "number": "XXXII",
+      "title": "Evolution of Melodic Germs",
+      "start_page": 109,
+      "end_page": 115,
+      "pdf_start_page": 113,
+      "pdf_end_page": 119,
+      "start_line": 3559,
+      "end_line": 3729,
+      "chars": 4149,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          121,
+          109
+        ],
+        [
+          122,
+          109
+        ],
+        [
+          123,
+          114
+        ]
+      ],
+      "first_paragraph": 121,
+      "last_paragraph": 123,
+      "topics": []
+    },
+    {
+      "id": "ch-33",
+      "number": "XXXIII",
+      "title": "Melodic Evolution, Continued",
+      "start_page": 115,
+      "end_page": 120,
+      "pdf_start_page": 119,
+      "pdf_end_page": 124,
+      "start_line": 3731,
+      "end_line": 3929,
+      "chars": 2199,
+      "heading_found": true,
+      "paragraph_pages": [],
+      "first_paragraph": null,
+      "last_paragraph": null,
+      "topics": []
+    },
+    {
+      "id": "ch-34",
+      "number": "XXXIV",
+      "title": "Melodic Expression. Conclusion",
+      "start_page": 121,
+      "end_page": 124,
+      "pdf_start_page": 125,
+      "pdf_end_page": 128,
+      "start_line": 3933,
+      "end_line": 4041,
+      "chars": 7558,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          125,
+          121
+        ],
+        [
+          126,
+          121
+        ],
+        [
+          127,
+          121
+        ],
+        [
+          128,
+          122
+        ],
+        [
+          129,
+          122
+        ],
+        [
+          130,
+          123
+        ]
+      ],
+      "first_paragraph": 125,
+      "last_paragraph": 130,
+      "topics": []
+    }
+  ]
+}

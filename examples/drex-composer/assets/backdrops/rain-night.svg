@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#05070f"/><stop offset="0.55" stop-color="#0d1a33"/><stop offset="1" stop-color="#05070f"/></linearGradient>
+    <radialGradient id="g1" cx="0.72" cy="0.3" r="0.6"><stop offset="0" stop-color="#27456e" stop-opacity="0.85"/><stop offset="1" stop-color="#27456e" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="0.2" cy="0.78" r="0.5"><stop offset="0" stop-color="#c58f5a" stop-opacity="0.5"/><stop offset="1" stop-color="#c58f5a" stop-opacity="0"/></radialGradient>
+    <filter id="flow" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011 0.0242" numOctaves="3" seed="8" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="260" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="11"/><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0 0.5  0 0 0 0.09 0"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#base)"/>
+  <g filter="url(#flow)">
+    <rect width="1920" height="1080" fill="url(#g1)"/>
+    <rect width="1920" height="1080" fill="url(#g2)"/>
+    <ellipse cx="1180" cy="620" rx="520" ry="150" fill="#27456e" opacity="0.28"/>
+    <ellipse cx="520" cy="300" rx="380" ry="110" fill="#c58f5a" opacity="0.16"/>
+  </g>
+  <rect width="1920" height="1080" filter="url(#grain)"/>
+</svg>

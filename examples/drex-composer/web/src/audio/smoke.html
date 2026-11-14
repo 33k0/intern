@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio engine smoke test</title>
+    <style>
+      body { font: 14px/1.4 system-ui, sans-serif; margin: 24px; background: #14161a; color: #e6e6e6; }
+      h1 { font-size: 18px; margin: 0 0 4px; }
+      p { margin: 0 0 16px; color: #9aa0a8; }
+      button { font: inherit; padding: 8px 12px; margin: 0 6px 8px 0; background: #2a2f38; color: inherit; border: 1px solid #444b57; border-radius: 6px; cursor: pointer; }
+      button:hover { background: #343a45; }
+      #status { margin: 8px 0 12px; font-variant-numeric: tabular-nums; }
+      #meters { display: grid; grid-template-columns: 90px 1fr 48px; gap: 4px 10px; max-width: 520px; margin-bottom: 14px; font-variant-numeric: tabular-nums; }
+      .bar { background: #23272e; height: 12px; border-radius: 3px; overflow: hidden; align-self: center; }
+      .bar > i { display: block; height: 100%; width: 0; background: #7fb6ff; }
+      pre { background: #0e1013; padding: 12px; border-radius: 6px; max-height: 320px; overflow: auto; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <h1>Audio engine smoke test</h1>
+    <p>Dev-only page for <code>web/src/audio</code>. Needs <code>/assets</code> to be served. Add <code>?silent=1</code> to render without sending sound to the speakers.</p>
+    <div>
+      <button id="load">1. Unlock + load demo palette</button>
+      <button id="demo">2. Play demo (two phrases → hold → update → final phrase)</button>
+      <button id="synths">Synths + fallbacks + drums</button>
+      <button id="synced">Video-locked demo (fake clock)</button>
+      <button id="pause">Clock: pause / play</button>
+      <button id="seek">Clock: seek to 4 s</button>
+      <button id="stop">Stop</button>
+    </div>
+    <div id="status">idle</div>
+    <div id="meters"></div>
+    <pre id="log"></pre>
+    <script type="module" src="./smoke.ts"></script>
+  </body>
+</html>

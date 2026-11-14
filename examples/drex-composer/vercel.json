@@ -1,0 +1,38 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/compose.js": {
+      "maxDuration": 300,
+      "memory": 1024,
+      "includeFiles": "{context-pack/*.json,context-pack/books/sources.json,assets/samples/manifest.json,assets/backdrops/**}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/replays",
+      "destination": "/replays/index.json"
+    },
+    {
+      "source": "/api/replay/:name",
+      "destination": "/replays/:name.json"
+    },
+    {
+      "source": "/api/theory",
+      "has": [
+        {
+          "type": "query",
+          "key": "style",
+          "value": "(?<style>[a-z_]+)"
+        }
+      ],
+      "destination": "/theory/:style.json"
+    },
+    {
+      "source": "/api/theory",
+      "destination": "/theory/default.json"
+    }
+  ]
+}

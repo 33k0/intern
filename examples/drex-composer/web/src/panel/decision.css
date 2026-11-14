@@ -1,0 +1,378 @@
+/*
+  The column is about 33rem tall at the design size: panel head 2.5, the call (measured, see
+  useBudget in DecisionPanel.tsx) about 21, and a four-row call log about 9.6.
+*/
+
+.decision__slot {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.decision__unpin { cursor: pointer; }
+
+.call {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.call__head {
+  flex: none;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.7rem;
+  padding: 0.1rem var(--pad) 0.6rem;
+}
+
+.call__title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: fade-in 260ms var(--ease-out) both;
+}
+
+.call__meta { font-size: 0.8rem; color: var(--ink-2); white-space: nowrap; }
+.call__standin { margin-right: 0.6rem; font-family: var(--font-ui); }
+
+.call__body {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  padding: 0.1rem var(--pad) 0.7rem;
+}
+
+.call__none { color: var(--ink-2); }
+
+/* ── A question at full size ── */
+
+.q { display: grid; gap: 0.45rem; flex: none; }
+
+.q__label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.7rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.q__mode {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.q__answer { margin-left: auto; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.q__answer b { font-weight: 500; }
+
+.q__rest { font-size: 0.84rem; color: var(--ink-3); }
+
+/* Choice: one bar per option, sorted by probability, drawn to an honest 0..100% scale. */
+
+.bars { display: grid; gap: 0.28rem; }
+
+.bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) 3.2rem;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 1.5rem;
+  animation: rise-in 380ms var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 40ms);
+}
+
+.bar__label {
+  font-size: 1rem;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar__label::before {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.55rem;
+  border: 1px solid var(--rule-strong);
+  vertical-align: 0.02rem;
+}
+
+.bar.is-picked .bar__label { color: var(--ink); font-weight: 600; }
+.bar.is-picked .bar__label::before { background: var(--accent); border-color: var(--accent); }
+
+.bar__picks { margin-left: 0.5rem; font-size: 0.82rem; font-weight: 500; color: var(--accent); }
+
+.bar__track {
+  position: relative;
+  height: 0.72rem;
+  border-left: 1px solid var(--rule-strong);
+}
+
+.bar__fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: left center;
+  border-radius: 0 2px 2px 0;
+  background: rgba(243, 238, 227, 0.4);
+  /* Overshoots a touch, then settles on the value. */
+  animation: bar-settle 820ms cubic-bezier(0.3, 1.45, 0.5, 1) both;
+  animation-delay: calc(90ms + var(--i, 0) * 40ms);
+}
+
+.bar.is-picked .bar__fill { background: var(--accent); }
+
+.bar__p { font-size: 1rem; text-align: right; color: var(--ink-2); }
+.bar.is-picked .bar__p { color: var(--ink); font-weight: 600; }
+
+@keyframes bar-settle {
+  from { transform: scaleX(0); }
+}
+
+/* Yes / no: one bar split at Drex's probability, with the halfway mark shown. */
+
+.yn {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.yn__side { font-size: 1rem; color: var(--ink-3); white-space: nowrap; }
+.yn__side b { font-weight: 500; }
+.yn.is-yes .yn__side--yes, .yn.is-no .yn__side--no { color: var(--ink); font-weight: 600; }
+
+.yn__bar { position: relative; height: 0.72rem; }
+
+.yn__bar::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -0.25rem;
+  bottom: -0.25rem;
+  width: 1px;
+  background: var(--ink-2);
+}
+
+.yn__yes, .yn__no {
+  position: absolute;
+  inset: 0;
+  background: rgba(243, 238, 227, 0.26);
+  animation: bar-settle 820ms cubic-bezier(0.3, 1.45, 0.5, 1) both;
+}
+
+.yn__yes { transform-origin: left center; border-radius: 2px 0 0 2px; }
+.yn__no { transform-origin: right center; border-radius: 0 2px 2px 0; }
+.yn.is-yes .yn__yes, .yn.is-no .yn__no { background: var(--accent); }
+
+/* Score: a seven-step histogram, tallest bar full height. */
+
+.hist {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 0.35rem;
+}
+
+.hist__col { display: grid; gap: 0.22rem; }
+
+.hist__bar {
+  display: block;
+  height: 2.9rem;
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.hist__fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: center bottom;
+  border-radius: 2px 2px 0 0;
+  background: rgba(243, 238, 227, 0.36);
+  animation: hist-settle 760ms cubic-bezier(0.3, 1.45, 0.5, 1) both;
+  animation-delay: calc(var(--i, 0) * 35ms);
+}
+
+.hist__col.is-picked .hist__fill { background: var(--accent); }
+
+.hist__label {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  text-align: center;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hist__col.is-picked .hist__label { color: var(--ink); font-weight: 700; }
+
+@keyframes hist-settle {
+  from { transform: scaleY(0); }
+}
+
+/* ── The rest of a long call, one line each ── */
+
+.call__rest { display: grid; gap: 0.4rem; flex: none; }
+
+.qc-list { display: grid; gap: 0.1rem; }
+
+.qc {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) 3.2rem;
+  align-items: baseline;
+  gap: 0.7rem;
+  padding: 0.2rem 0 0.3rem;
+  font-size: 0.92rem;
+  animation: fade-in 300ms var(--ease-out) both;
+}
+
+.qc__label { color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.qc__answer { font-weight: 600; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.qc__extra { margin-left: 0.45rem; font-weight: 400; color: var(--ink-3); }
+.qc__p { text-align: right; color: var(--ink-2); }
+
+.qc__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+}
+
+.qc__bar span {
+  display: block;
+  height: 100%;
+  transform-origin: left center;
+  background: var(--accent-line);
+  animation: bar-settle 700ms var(--ease-out) both;
+}
+
+.call__more {
+  justify-self: start;
+  padding: 0.2rem 0;
+  border: 0;
+  background: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+/* ── Call log ── */
+
+.ticker {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--rule);
+}
+
+.ticker__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem var(--pad) 0.3rem;
+}
+
+.ticker__head .panel__meta { font-size: 0.76rem; color: var(--ink-3); }
+
+.ticker__list {
+  height: 7.2rem;
+  padding: 0 0.4rem 0.4rem;
+}
+
+.tick {
+  display: grid;
+  grid-template-columns: 2.7rem 7.6rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 1.7rem;
+  padding: 0.14rem 0.6rem;
+  border: 0;
+  border-left: 2px solid transparent;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: none;
+  text-align: left;
+  font-size: 0.86rem;
+  color: var(--ink-2);
+  cursor: pointer;
+  animation: tick-in 320ms var(--ease-out) both;
+}
+
+.tick:hover { background: var(--panel-raised); }
+.tick.is-shown { border-left-color: var(--accent); background: var(--panel-raised); color: var(--ink); }
+.tick[aria-pressed='true'] { background: var(--accent-soft); }
+
+.tick__at { color: var(--ink-3); }
+
+.tick__type {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tick.is-judge .tick__type { color: var(--accent); }
+.tick__title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tick__ms { color: var(--ink-3); white-space: nowrap; }
+
+@keyframes tick-in {
+  from { opacity: 0; transform: translateY(-0.5rem); }
+}
+
+/* ── Hierarchy: the question is the focal point; everything else steps back ── */
+.call__head { padding-bottom: 0.75rem; }
+.call__title { font-size: 1.45rem; font-weight: 600; color: var(--ink); }
+.q__label { font-size: 0.95rem; font-weight: 400; color: var(--ink-2); }
+.q__mode, .tick__type { font-size: 0.8rem; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--ink-3); }
+.bar__label { font-size: 0.95rem; color: var(--ink-3); }
+.bar.is-picked .bar__label { color: var(--ink); }
+.bar__p { color: var(--ink-3); }
+.bar.is-picked .bar__p { color: var(--ink); }
+.ticker__head .panel__title { color: var(--ink-3); }
+.tick { font-size: 0.86rem; color: var(--ink-3); }
+
+/* ── Compact: the question takes only the room it needs; the log fills the rest ── */
+.decision__slot, .call, .call__body { flex: none; }
+.call__head { display: block; padding-bottom: 0.2rem; }
+.call__title { font-size: 1.15rem; }
+.q__label { font-size: 0.86rem; color: var(--ink-3); }
+.call__body { padding-bottom: 0.9rem; }
+.ticker { flex: 1 1 0; min-height: 0; }
+.ticker__list { flex: 1 1 0; height: auto; min-height: 0; }
+.tick { grid-template-columns: 2.7rem minmax(0, 1fr); }
+.tick__type { display: none; }
+
+/* The full history can be hundreds of rows: skip layout for the ones off screen. */
+.ticker__list li { content-visibility: auto; contain-intrinsic-size: auto 1.7rem; }
+
+/* ── The question gets the room; history is a short strip at the bottom ── */
+.decision__slot { flex: 1 1 0; min-height: 0; justify-content: center; }
+.call__body { padding-bottom: 0.4rem; }
+.bars { gap: 0.5rem; }
+.ticker { flex: none; }
+.ticker__list { flex: none; height: 6.4rem; }
+.tick { min-height: 1.5rem; font-size: 0.8rem; }

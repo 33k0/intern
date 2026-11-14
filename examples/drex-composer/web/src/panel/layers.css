@@ -1,0 +1,300 @@
+.layers { transition: border-color 500ms var(--ease-out); }
+.layers.is-holding { border-color: var(--reject-line); }
+
+.layers .panel__meta b { font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+
+.now, .hold, .prep, .finished {
+  flex: none;
+  min-height: 6.2rem;
+  padding: 0.1rem var(--pad) 0.75rem;
+}
+
+/* ── The phrase that is sounding ── */
+
+.now { display: grid; align-content: start; gap: 0.5rem; animation: fade-in 500ms var(--ease-out) both; }
+
+.now__line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.now__role {
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.1;
+  padding-bottom: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.now__dyn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.now__facts {
+  display: flex;
+  align-items: baseline;
+  gap: 1.1rem;
+  font-size: 1rem;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.now__facts > :first-child { font-weight: 600; }
+.now__chords { white-space: pre; color: var(--ink-2); }
+.now__facts > :last-child { margin-left: auto; color: var(--ink-2); }
+
+.now__progress {
+  display: block;
+  height: 2px;
+  margin-top: 0.3rem;
+  background: var(--rule);
+}
+
+.now__progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
+}
+
+/* ── Hold ── */
+
+.hold {
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+  background: var(--reject-soft);
+  border-top: 1px solid var(--reject-line);
+  border-bottom: 1px solid var(--reject-line);
+  padding-top: 0.7rem;
+  animation: fade-in 350ms var(--ease-out) both;
+}
+
+.hold__line {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--reject);
+}
+
+.hold__mark {
+  flex: none;
+  width: 2.9rem;
+  height: 1.85rem;
+  animation: hold-breathe 2.6s var(--ease-in-out) infinite alternate;
+}
+
+.hold__word {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.hold__sub {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.hold__time { margin-left: auto; font-size: 1.35rem; color: var(--ink); }
+
+.hold__why { font-size: 0.95rem; line-height: 1.35; color: var(--ink); }
+.hold__why b { font-weight: 600; }
+
+.hold__evolution { display: grid; gap: 0.1rem; }
+
+.hold__evolution li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hold__evolution .is-past {
+  font-size: 0.86rem;
+  color: var(--ink-2);
+  text-decoration: line-through;
+  text-decoration-color: var(--ink-3);
+}
+
+.hold__evolution .is-current {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: var(--ink);
+  animation: rise-in 500ms var(--ease-out) both;
+}
+
+.hold__evolution .is-current .mono { font-size: 0.86rem; color: var(--ink-2); white-space: nowrap; }
+.hold__evolution .is-waiting { font-size: 1rem; color: var(--ink-2); }
+
+@keyframes hold-breathe {
+  from { opacity: 1; }
+  to { opacity: 0.45; }
+}
+
+/* ── Before playback, after the end ── */
+
+.prep, .finished {
+  display: grid;
+  align-content: start;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--ink-2);
+}
+
+.prep strong, .finished strong {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--ink);
+  padding-bottom: 0.1rem;
+}
+
+.prep__load {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.prep__bar { display: block; height: 0.34rem; border-left: 1px solid var(--rule-strong); }
+
+.prep__bar span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: left center;
+  transition: transform 300ms var(--ease-out);
+}
+
+.prep__warn { color: var(--reject); }
+
+.finished b { font-weight: 600; color: var(--ink); }
+.finished .btn { justify-self: start; margin-top: 0.4rem; }
+
+/* ── Nine layers, one desk channel each ── */
+
+.rows {
+  flex: 1 1 0;
+  min-height: 0;
+  display: grid;
+  /* Rows never shrink below one line of text plus its meter; on a short screen the list scrolls instead of overlapping. */
+  grid-template-rows: repeat(9, minmax(1.85rem, 1fr));
+  overflow-y: auto;
+  padding: 0 var(--pad) 0.55rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 8.2rem minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  align-items: baseline;
+  align-content: center;
+  column-gap: 0.6rem;
+  row-gap: 0.22rem;
+  min-height: 0;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-3);
+}
+
+.row__role {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.row.is-active .row__role { color: var(--ink-2); }
+
+.row__inst {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row__art { margin-left: 0.55rem; font-size: 0.82rem; font-weight: 400; color: var(--ink-2); }
+
+.row__entry {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.row.is-entering .row__entry { color: var(--accent); }
+
+.row__dyn {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: right;
+  color: var(--ink);
+}
+
+.row__tacet { grid-column: 2 / -1; font-size: 1rem; color: var(--ink-3); }
+
+.row.is-entering { animation: layer-enter 1400ms var(--ease-out) both; }
+
+@keyframes layer-enter {
+  from { background: var(--accent-soft); }
+  to { background: transparent; }
+}
+
+/* A segmented meter: unlit segments stay faintly visible, lit ones are revealed by a clip. */
+.row__meter {
+  --seg: repeating-linear-gradient(90deg, currentColor 0 calc(100% / 24 - 2px), transparent calc(100% / 24 - 2px) calc(100% / 24));
+  grid-column: 1 / -1;
+  position: relative;
+  display: block;
+  height: 0.32rem;
+  color: rgba(243, 238, 227, 0.1);
+  background: var(--seg);
+}
+
+.row.is-active .row__meter { color: rgba(243, 238, 227, 0.17); }
+
+.row__lit {
+  position: absolute;
+  inset: 0;
+  color: var(--accent);
+  background: var(--seg);
+  clip-path: inset(0 100% 0 0);
+}
+
+.layers.is-holding .row__lit { color: var(--reject); }
+
+.rows__explain { padding-top: 0.2rem; }
+
+/* ── Hierarchy: the section name leads, then instruments, then labels ── */
+.layers .panel__meta b { font-size: inherit; }
+.row__role, .row__entry, .hold__sub { font-size: 0.84rem; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--ink-3); }
+.row.is-active .row__role { color: var(--ink-3); }
+.row__inst { font-size: 0.98rem; font-weight: 500; }
+.row__tacet { font-size: 0.84rem; color: rgba(174, 167, 155, 0.5); }
+.row:not(.is-active) .row__role { color: rgba(174, 167, 155, 0.5); }
+.now__facts { font-size: 0.9rem; color: var(--ink-2); }
+.now__facts > :first-child { font-weight: 400; }
+.hold__word { font-size: 1.4rem; letter-spacing: 0; text-transform: none; }

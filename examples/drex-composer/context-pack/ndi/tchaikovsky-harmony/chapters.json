@@ -1,0 +1,1104 @@
+{
+  "book": "tchaikovsky-harmony",
+  "title": "Guide to the Practical Study of Harmony",
+  "producedBy": "local-fallback",
+  "source": "context-pack/books/tchaikovsky-harmony/text.txt",
+  "pageNumbers": "start_page/end_page are printed page numbers; pdf_* are 1-based pages of the scan PDF (null when the book has no scan)",
+  "chapters": [
+    {
+      "id": "ch-01",
+      "number": "Introduction",
+      "title": "Intervals",
+      "start_page": 7,
+      "end_page": 10,
+      "pdf_start_page": 4,
+      "pdf_end_page": 7,
+      "start_line": 95,
+      "end_line": 227,
+      "chars": 5925,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          10
+        ]
+      ],
+      "first_paragraph": 1,
+      "last_paragraph": 3
+    },
+    {
+      "id": "ch-02",
+      "number": "I",
+      "title": "The Triads of the Major Scale",
+      "start_page": 11,
+      "end_page": 12,
+      "pdf_start_page": 8,
+      "pdf_end_page": 9,
+      "start_line": 231,
+      "end_line": 261,
+      "chars": 2707,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "first_paragraph": 4,
+      "last_paragraph": 6
+    },
+    {
+      "id": "ch-03",
+      "number": "II",
+      "title": "The Connection of the Triads of the Major Scale",
+      "start_page": 12,
+      "end_page": 14,
+      "pdf_start_page": 9,
+      "pdf_end_page": 11,
+      "start_line": 263,
+      "end_line": 295,
+      "chars": 5339,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "first_paragraph": 8,
+      "last_paragraph": 11
+    },
+    {
+      "id": "ch-04",
+      "number": "III",
+      "title": "Connection of Triads showing no External Agreement",
+      "start_page": 15,
+      "end_page": 17,
+      "pdf_start_page": 12,
+      "pdf_end_page": 14,
+      "start_line": 299,
+      "end_line": 371,
+      "chars": 4003,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          12,
+          15
+        ],
+        [
+          13,
+          15
+        ]
+      ],
+      "first_paragraph": 12,
+      "last_paragraph": 13
+    },
+    {
+      "id": "ch-05",
+      "number": "IV",
+      "title": "Deviations from Rules governing the Connection of Related Triads",
+      "start_page": 17,
+      "end_page": 19,
+      "pdf_start_page": 14,
+      "pdf_end_page": 16,
+      "start_line": 373,
+      "end_line": 437,
+      "chars": 2768,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          14,
+          17
+        ]
+      ],
+      "first_paragraph": 14,
+      "last_paragraph": 14
+    },
+    {
+      "id": "ch-06",
+      "number": "V",
+      "title": "Harmonic Sequences",
+      "start_page": 20,
+      "end_page": 20,
+      "pdf_start_page": 17,
+      "pdf_end_page": 17,
+      "start_line": 441,
+      "end_line": 457,
+      "chars": 1342,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          15,
+          20
+        ],
+        [
+          16,
+          20
+        ],
+        [
+          17,
+          20
+        ]
+      ],
+      "first_paragraph": 15,
+      "last_paragraph": 17
+    },
+    {
+      "id": "ch-07",
+      "number": "VI",
+      "title": "The Harmony of the Minor Scale",
+      "start_page": 21,
+      "end_page": 25,
+      "pdf_start_page": 18,
+      "pdf_end_page": 22,
+      "start_line": 461,
+      "end_line": 541,
+      "chars": 5181,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          18,
+          21
+        ],
+        [
+          19,
+          22
+        ],
+        [
+          20,
+          22
+        ],
+        [
+          21,
+          23
+        ]
+      ],
+      "first_paragraph": 18,
+      "last_paragraph": 21
+    },
+    {
+      "id": "ch-08",
+      "number": "VII",
+      "title": "Open Position",
+      "start_page": 25,
+      "end_page": 26,
+      "pdf_start_page": 22,
+      "pdf_end_page": 23,
+      "start_line": 543,
+      "end_line": 559,
+      "chars": 1364,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          22,
+          25
+        ]
+      ],
+      "first_paragraph": 22,
+      "last_paragraph": 22
+    },
+    {
+      "id": "ch-09",
+      "number": "VIII",
+      "title": "The Inversions of the Triad",
+      "start_page": 26,
+      "end_page": 30,
+      "pdf_start_page": 23,
+      "pdf_end_page": 27,
+      "start_line": 561,
+      "end_line": 669,
+      "chars": 5438,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          23,
+          26
+        ],
+        [
+          24,
+          27
+        ],
+        [
+          25,
+          28
+        ]
+      ],
+      "first_paragraph": 23,
+      "last_paragraph": 25
+    },
+    {
+      "id": "ch-10",
+      "number": "IX",
+      "title": "The Inversions of the Diminished and Augmented Triads",
+      "start_page": 30,
+      "end_page": 33,
+      "pdf_start_page": 27,
+      "pdf_end_page": 30,
+      "start_line": 671,
+      "end_line": 741,
+      "chars": 2903,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          26,
+          30
+        ],
+        [
+          27,
+          31
+        ],
+        [
+          28,
+          32
+        ]
+      ],
+      "first_paragraph": 26,
+      "last_paragraph": 28
+    },
+    {
+      "id": "ch-11",
+      "number": "X",
+      "title": "The Dominant Chord",
+      "start_page": 33,
+      "end_page": 37,
+      "pdf_start_page": 30,
+      "pdf_end_page": 34,
+      "start_line": 743,
+      "end_line": 831,
+      "chars": 5271,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          29,
+          33
+        ],
+        [
+          30,
+          34
+        ],
+        [
+          31,
+          37
+        ]
+      ],
+      "first_paragraph": 29,
+      "last_paragraph": 31
+    },
+    {
+      "id": "ch-12",
+      "number": "XI",
+      "title": "Free Voice-Leading",
+      "start_page": 38,
+      "end_page": 39,
+      "pdf_start_page": 35,
+      "pdf_end_page": 36,
+      "start_line": 835,
+      "end_line": 869,
+      "chars": 3064,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          32,
+          38
+        ],
+        [
+          33,
+          38
+        ]
+      ],
+      "first_paragraph": 32,
+      "last_paragraph": 33
+    },
+    {
+      "id": "ch-13",
+      "number": "XII",
+      "title": "The Chord of the Ninth",
+      "start_page": 40,
+      "end_page": 40,
+      "pdf_start_page": 37,
+      "pdf_end_page": 37,
+      "start_line": 873,
+      "end_line": 889,
+      "chars": 1255,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          35,
+          40
+        ]
+      ],
+      "first_paragraph": 35,
+      "last_paragraph": 35
+    },
+    {
+      "id": "ch-14",
+      "number": "XIII",
+      "title": "Chords of the Minor and Diminished Seventh",
+      "start_page": 41,
+      "end_page": 44,
+      "pdf_start_page": 38,
+      "pdf_end_page": 41,
+      "start_line": 893,
+      "end_line": 925,
+      "chars": 2312,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          37,
+          41
+        ],
+        [
+          38,
+          41
+        ],
+        [
+          39,
+          42
+        ]
+      ],
+      "first_paragraph": 37,
+      "last_paragraph": 39
+    },
+    {
+      "id": "ch-15",
+      "number": "XIV",
+      "title": "The Connection of Dissonant Harmonies resolving into the Tonic Triad",
+      "start_page": 44,
+      "end_page": 46,
+      "pdf_start_page": 41,
+      "pdf_end_page": 43,
+      "start_line": 927,
+      "end_line": 971,
+      "chars": 2632,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          40,
+          44
+        ]
+      ],
+      "first_paragraph": 40,
+      "last_paragraph": 40
+    },
+    {
+      "id": "ch-16",
+      "number": "XV",
+      "title": "Chords of Sequence",
+      "start_page": 47,
+      "end_page": 51,
+      "pdf_start_page": 44,
+      "pdf_end_page": 48,
+      "start_line": 975,
+      "end_line": 1063,
+      "chars": 4792,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          41,
+          47
+        ],
+        [
+          42,
+          49
+        ],
+        [
+          43,
+          49
+        ],
+        [
+          44,
+          50
+        ]
+      ],
+      "first_paragraph": 41,
+      "last_paragraph": 44
+    },
+    {
+      "id": "ch-17",
+      "number": "XVI",
+      "title": "Chords of Sequence in Minor",
+      "start_page": 52,
+      "end_page": 54,
+      "pdf_start_page": 49,
+      "pdf_end_page": 51,
+      "start_line": 1065,
+      "end_line": 1097,
+      "chars": 2181,
+      "heading_found": false,
+      "paragraph_pages": [
+        [
+          45,
+          52
+        ]
+      ],
+      "first_paragraph": 45,
+      "last_paragraph": 45
+    },
+    {
+      "id": "ch-18",
+      "number": "XVII",
+      "title": "The Harmonization of a Given Melody",
+      "start_page": 54,
+      "end_page": 63,
+      "pdf_start_page": 51,
+      "pdf_end_page": 60,
+      "start_line": 1099,
+      "end_line": 1299,
+      "chars": 12418,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          46,
+          54
+        ],
+        [
+          47,
+          55
+        ],
+        [
+          48,
+          57
+        ],
+        [
+          49,
+          57
+        ],
+        [
+          50,
+          59
+        ],
+        [
+          51,
+          63
+        ]
+      ],
+      "first_paragraph": 46,
+      "last_paragraph": 51
+    },
+    {
+      "id": "ch-19",
+      "number": "XVIII",
+      "title": "Direct Modulation",
+      "start_page": 63,
+      "end_page": 68,
+      "pdf_start_page": 60,
+      "pdf_end_page": 65,
+      "start_line": 1301,
+      "end_line": 1387,
+      "chars": 4984,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          52,
+          63
+        ],
+        [
+          54,
+          65
+        ],
+        [
+          55,
+          66
+        ],
+        [
+          56,
+          68
+        ]
+      ],
+      "first_paragraph": 52,
+      "last_paragraph": 56
+    },
+    {
+      "id": "ch-20",
+      "number": "XIX",
+      "title": "Transient Modulation",
+      "start_page": 68,
+      "end_page": 72,
+      "pdf_start_page": 65,
+      "pdf_end_page": 69,
+      "start_line": 1389,
+      "end_line": 1431,
+      "chars": 2573,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          57,
+          68
+        ],
+        [
+          58,
+          70
+        ],
+        [
+          59,
+          70
+        ]
+      ],
+      "first_paragraph": 57,
+      "last_paragraph": 59
+    },
+    {
+      "id": "ch-21",
+      "number": "XX",
+      "title": "Harmonization of Given Melodies with Modulations",
+      "start_page": 72,
+      "end_page": 74,
+      "pdf_start_page": 69,
+      "pdf_end_page": 71,
+      "start_line": 1433,
+      "end_line": 1465,
+      "chars": 2595,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          60,
+          72
+        ]
+      ],
+      "first_paragraph": 60,
+      "last_paragraph": 60
+    },
+    {
+      "id": "ch-22",
+      "number": "XXI",
+      "title": "The Enharmonic Properties of the Chord of the Diminished Seventh",
+      "start_page": 75,
+      "end_page": 77,
+      "pdf_start_page": 72,
+      "pdf_end_page": 74,
+      "start_line": 1469,
+      "end_line": 1483,
+      "chars": 850,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          61,
+          75
+        ]
+      ],
+      "first_paragraph": 61,
+      "last_paragraph": 61
+    },
+    {
+      "id": "ch-23",
+      "number": "XXII",
+      "title": "The Organ-point",
+      "start_page": 77,
+      "end_page": 82,
+      "pdf_start_page": 74,
+      "pdf_end_page": 79,
+      "start_line": 1485,
+      "end_line": 1551,
+      "chars": 5344,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          62,
+          77
+        ],
+        [
+          63,
+          77
+        ],
+        [
+          64,
+          78
+        ],
+        [
+          65,
+          80
+        ],
+        [
+          66,
+          80
+        ],
+        [
+          67,
+          81
+        ],
+        [
+          68,
+          82
+        ]
+      ],
+      "first_paragraph": 62,
+      "last_paragraph": 68
+    },
+    {
+      "id": "ch-24",
+      "number": "XXIII",
+      "title": "Suspensions",
+      "start_page": 82,
+      "end_page": 91,
+      "pdf_start_page": 79,
+      "pdf_end_page": 88,
+      "start_line": 1553,
+      "end_line": 1689,
+      "chars": 6774,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          69,
+          82
+        ],
+        [
+          70,
+          82
+        ],
+        [
+          71,
+          83
+        ],
+        [
+          72,
+          83
+        ],
+        [
+          73,
+          84
+        ],
+        [
+          74,
+          85
+        ],
+        [
+          75,
+          87
+        ],
+        [
+          76,
+          88
+        ],
+        [
+          77,
+          90
+        ]
+      ],
+      "first_paragraph": 69,
+      "last_paragraph": 77
+    },
+    {
+      "id": "ch-25",
+      "number": "XXIV",
+      "title": "Anticipation",
+      "start_page": 91,
+      "end_page": 93,
+      "pdf_start_page": 88,
+      "pdf_end_page": 90,
+      "start_line": 1691,
+      "end_line": 1729,
+      "chars": 1920,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          79,
+          92
+        ],
+        [
+          80,
+          93
+        ],
+        [
+          81,
+          93
+        ]
+      ],
+      "first_paragraph": 79,
+      "last_paragraph": 81
+    },
+    {
+      "id": "ch-26",
+      "number": "XXV",
+      "title": "Passing-notes",
+      "start_page": 94,
+      "end_page": 99,
+      "pdf_start_page": 91,
+      "pdf_end_page": 96,
+      "start_line": 1733,
+      "end_line": 1791,
+      "chars": 4512,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          82,
+          94
+        ],
+        [
+          83,
+          94
+        ],
+        [
+          84,
+          95
+        ],
+        [
+          85,
+          95
+        ],
+        [
+          86,
+          95
+        ],
+        [
+          87,
+          97
+        ],
+        [
+          88,
+          98
+        ],
+        [
+          89,
+          98
+        ]
+      ],
+      "first_paragraph": 82,
+      "last_paragraph": 89
+    },
+    {
+      "id": "ch-27",
+      "number": "XXVI",
+      "title": "Chords of the Augmented Fifth",
+      "start_page": 100,
+      "end_page": 106,
+      "pdf_start_page": 97,
+      "pdf_end_page": 103,
+      "start_line": 1795,
+      "end_line": 1899,
+      "chars": 5566,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          90,
+          100
+        ],
+        [
+          91,
+          100
+        ],
+        [
+          92,
+          101
+        ],
+        [
+          93,
+          102
+        ],
+        [
+          94,
+          102
+        ],
+        [
+          95,
+          102
+        ],
+        [
+          96,
+          103
+        ],
+        [
+          97,
+          104
+        ]
+      ],
+      "first_paragraph": 90,
+      "last_paragraph": 97
+    },
+    {
+      "id": "ch-28",
+      "number": "XXVII",
+      "title": "Chords of the Augmented Sixth",
+      "start_page": 106,
+      "end_page": 111,
+      "pdf_start_page": 103,
+      "pdf_end_page": 108,
+      "start_line": 1901,
+      "end_line": 1995,
+      "chars": 5175,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          98,
+          106
+        ],
+        [
+          99,
+          106
+        ],
+        [
+          100,
+          107
+        ],
+        [
+          101,
+          107
+        ],
+        [
+          102,
+          108
+        ],
+        [
+          103,
+          108
+        ],
+        [
+          104,
+          108
+        ],
+        [
+          106,
+          109
+        ]
+      ],
+      "first_paragraph": 98,
+      "last_paragraph": 106
+    },
+    {
+      "id": "ch-29",
+      "number": "XXVIII",
+      "title": "Changing-notes",
+      "start_page": 111,
+      "end_page": 116,
+      "pdf_start_page": 108,
+      "pdf_end_page": 113,
+      "start_line": 1997,
+      "end_line": 2061,
+      "chars": 3290,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          107,
+          111
+        ],
+        [
+          108,
+          112
+        ],
+        [
+          110,
+          114
+        ]
+      ],
+      "first_paragraph": 107,
+      "last_paragraph": 110
+    },
+    {
+      "id": "ch-30",
+      "number": "XXIX",
+      "title": "Strict Part-writing",
+      "start_page": 116,
+      "end_page": 126,
+      "pdf_start_page": 113,
+      "pdf_end_page": 123,
+      "start_line": 2063,
+      "end_line": 2171,
+      "chars": 7936,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          111,
+          116
+        ],
+        [
+          112,
+          116
+        ],
+        [
+          113,
+          116
+        ],
+        [
+          114,
+          117
+        ],
+        [
+          115,
+          117
+        ],
+        [
+          116,
+          117
+        ],
+        [
+          117,
+          117
+        ],
+        [
+          118,
+          117
+        ],
+        [
+          119,
+          118
+        ],
+        [
+          120,
+          118
+        ],
+        [
+          121,
+          119
+        ],
+        [
+          122,
+          120
+        ],
+        [
+          125,
+          124
+        ]
+      ],
+      "first_paragraph": 111,
+      "last_paragraph": 125
+    },
+    {
+      "id": "ch-31",
+      "number": "XXX",
+      "title": "The Further Development of Voice-leading",
+      "start_page": 126,
+      "end_page": 130,
+      "pdf_start_page": 123,
+      "pdf_end_page": 127,
+      "start_line": 2173,
+      "end_line": 2227,
+      "chars": 5764,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          129,
+          126
+        ],
+        [
+          130,
+          126
+        ],
+        [
+          131,
+          127
+        ],
+        [
+          132,
+          128
+        ],
+        [
+          133,
+          130
+        ]
+      ],
+      "first_paragraph": 129,
+      "last_paragraph": 133
+    },
+    {
+      "id": "ch-32",
+      "number": "XXXI",
+      "title": "Harmonic Figuration",
+      "start_page": 130,
+      "end_page": 133,
+      "pdf_start_page": 127,
+      "pdf_end_page": 130,
+      "start_line": 2229,
+      "end_line": 2271,
+      "chars": 2459,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          134,
+          130
+        ],
+        [
+          135,
+          133
+        ]
+      ],
+      "first_paragraph": 134,
+      "last_paragraph": 135
+    },
+    {
+      "id": "ch-33",
+      "number": "XXXII",
+      "title": "The Free Prelude",
+      "start_page": 134,
+      "end_page": 135,
+      "pdf_start_page": 131,
+      "pdf_end_page": 132,
+      "start_line": 2275,
+      "end_line": 2291,
+      "chars": 732,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          137,
+          134
+        ]
+      ],
+      "first_paragraph": 137,
+      "last_paragraph": 137
+    },
+    {
+      "id": "ch-34",
+      "number": "XXXIII",
+      "title": "Deviations from the Laws of Harmony",
+      "start_page": 135,
+      "end_page": 136,
+      "pdf_start_page": 132,
+      "pdf_end_page": 133,
+      "start_line": 2293,
+      "end_line": 2313,
+      "chars": 1536,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          138,
+          135
+        ]
+      ],
+      "first_paragraph": 138,
+      "last_paragraph": 138
+    },
+    {
+      "id": "ch-35",
+      "number": "XXXIV",
+      "title": "Cadences (Closes)",
+      "start_page": 136,
+      "end_page": 137,
+      "pdf_start_page": 133,
+      "pdf_end_page": 134,
+      "start_line": 2315,
+      "end_line": 2347,
+      "chars": 1057,
+      "heading_found": true,
+      "paragraph_pages": [
+        [
+          139,
+          136
+        ]
+      ],
+      "first_paragraph": 139,
+      "last_paragraph": 139
+    }
+  ]
+}

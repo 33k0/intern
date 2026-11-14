@@ -1,0 +1,46 @@
+[
+  {
+    "id": "jack_lyons",
+    "name": "Jack Lyons Concert Hall (University of York)",
+    "file": "jack_lyons_lp2_stereo.wav",
+    "licence": "CC BY 4.0",
+    "attribution": "Jack Lyons Concert Hall impulse response (listening position 2) by Alex Duffell, Aishwarya Sridhar and Zhong Li, Audiolab, University of York - www.openairlib.net (OpenAIR). Licensed under CC BY 4.0. Modified: B-format decoded to stereo, trimmed, resampled to 48 kHz, gain adjusted.",
+    "sourceUrl": "https://www.openair.hosted.york.ac.uk/?page_id=571",
+    "rt60Approx": 1.9,
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "downloadUrl": "https://webfiles.york.ac.uk/OPENAIR/IRs/jack-lyons-concert-hall-university-york/jack-lyons-concert-hall-university-york.zip",
+    "position": "lp2: source centre of orchestra, receiver central seating block (seat D22), 10 m",
+    "format": "wav, 48000 Hz, 24-bit, stereo, 3.96 s",
+    "processing": "B-format (W,X,Y of 4 ch, 96 kHz) decoded to stereo with virtual cardioids at +/-55 deg; 36.4 ms leading silence removed; resampled to 48000 Hz; fixed gain -1.07 dB (peak -1 dBFS); 60 ms fade-out",
+    "rt60MeasuredBroadband": {
+      "t20": 2,
+      "t30": 2.05
+    },
+    "rt60PublishedT30": {
+      "500": 1.89,
+      "1000": 1.86
+    }
+  },
+  {
+    "id": "rymer",
+    "name": "Arthur Sykes Rymer Auditorium (University of York)",
+    "file": "rymer_s1r2_stereo.wav",
+    "licence": "CC BY 4.0",
+    "attribution": "Arthur Sykes Rymer Auditorium impulse response (s1r2) - www.openairlib.net (OpenAIR), University of York; measured by Pierce Hening, Georgios Stamou and David Rivas Mendez. Licensed under CC BY 4.0. Modified: B-format decoded to stereo, trimmed, resampled to 48 kHz, gain adjusted.",
+    "sourceUrl": "https://www.openair.hosted.york.ac.uk/?page_id=425",
+    "rt60Approx": 0.4,
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "downloadUrl": "https://webfiles.york.ac.uk/OPENAIR/IRs/arthur-sykes-rymer-auditorium-university-york/arthur-sykes-rymer-auditorium-university-york.zip",
+    "position": "s1r2: source centre of stage, receiver centre seat of middle row, 7.6 m",
+    "format": "wav, 48000 Hz, 24-bit, stereo, 1.48 s",
+    "processing": "B-format (W,X,Y of 4 ch, 96 kHz) decoded to stereo with virtual cardioids at +/-55 deg; 21.7 ms leading silence removed; resampled to 48000 Hz; fixed gain -1.86 dB (peak -1 dBFS); 60 ms fade-out",
+    "rt60MeasuredBroadband": {
+      "t20": 0.33,
+      "t30": 0.35
+    },
+    "rt60PublishedT30": {
+      "500": 0.39,
+      "1000": 0.38
+    }
+  }
+]

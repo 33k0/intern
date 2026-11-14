@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "producedBy": "tools/ndi/ingest.mjs",
+  "generatedAt": "2026-11-14T21:52:44.055Z",
+  "rules": [
+    {
+      "id": "melody.ensure-each-chain-three",
+      "topic": "melody",
+      "text": "Ensure each chain of three or four successive tones is coherent.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 1, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.design-complete-melodic-sentence",
+      "topic": "melody",
+      "text": "Design the complete melodic sentence to achieve unity in effect.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 1, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.interesting-movements-sufficient-variety",
+      "topic": "melody",
+      "text": "Use interesting movements with sufficient variety to banish monotony.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 1, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.follow-major-scale-line",
+      "topic": "melody",
+      "text": "Follow the major scale line upward or downward with almost unlimited freedom for smooth diatonic progression.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 3, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.step-wise-progressions-they",
+      "topic": "melody",
+      "text": "Use step-wise progressions when they confirm the natural melodic inclination of active scale-steps.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 4, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.treat-first-third-fifth",
+      "topic": "melody",
+      "text": "Treat the first, third, and fifth scale-steps as inactive and inert, moving only under outward impulse.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 5, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.treat-seventh-sixth-fourth",
+      "topic": "melody",
+      "text": "Treat the seventh, sixth, fourth, and second scale-steps as active, urging movement toward rest.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 5, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.resolve-seventh-scale-step",
+      "topic": "melody",
+      "text": "Resolve the seventh scale-step upward with the most urgent tendency.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.resolve-sixth-scale-step",
+      "topic": "melody",
+      "text": "Resolve the sixth scale-step downward with somewhat less urgency than the seventh.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.resolve-fourth-scale-step",
+      "topic": "melody",
+      "text": "Resolve the fourth scale-step downward with less urgency than the sixth.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.ignore-second-scale-step",
+      "topic": "melody",
+      "text": "Ignore the second scale-step's specific direction because it is evenly balanced between the first and third steps.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.approach-active-scale-steps",
+      "topic": "melody",
+      "text": "Approach active scale steps from the opposite direction along the scale to force them to move against their natural resolution tendency.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 10, p. 10"
+      },
+      "calls": [
+        "theme_draft",
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "melody.approach-active-scale-steps-2",
+      "topic": "melody",
+      "text": "Approach active scale steps from the direction of their natural resolution to reinforce their tendency, requiring immediate resolution.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 11, p. 10"
+      },
+      "calls": [
+        "theme_draft",
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "melody.moving-upward-through-scale",
+      "topic": "melody",
+      "text": "When moving upward through the scale, turn back at any point except the seventh scale step.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 11, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.moving-downward-through-scale",
+      "topic": "melody",
+      "text": "When moving downward through the scale, turn back at any point except the sixth or fourth scale steps.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 11, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.third-leapt-against-natural",
+      "topic": "melody",
+      "text": "If a third is leapt against the natural tendency of an active tone, immediately turn back to the preceding tone by leap or step.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 12, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.counteract-rhythmic-monotony-varying",
+      "topic": "melody",
+      "text": "Counteract rhythmic monotony by varying tone succession and avoiding movement within a narrow range of three or four tones.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 12, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.avoid-returning-frequently-same",
+      "topic": "melody",
+      "text": "Avoid returning too frequently to the same tone, especially on corresponding beats of consecutive measures.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 12, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.follow-line-good-chord",
+      "topic": "melody",
+      "text": "Follow the line of any good chord upward or downward to create vigorous disjunct movement that contrasts with stepwise progressions.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 13, p. 12"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.switch-between-scale-line",
+      "topic": "melody",
+      "text": "Switch between the scale-line and the chord-line at any point in a melody, subject to self-evident restrictions.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 14, p. 12"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.identify-chord-quality-name",
+      "topic": "melody",
+      "text": "Identify the chord quality and name represented by melodic skips to control their movements.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 23, p. 15"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.ensure-each-single-melodic",
+      "topic": "melody",
+      "text": "Ensure each single melodic skip represents a good chord.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 24, p. 15"
+      },
+      "calls": [
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "melody.leap-scale-degree-active",
+      "topic": "melody",
+      "text": "Leap from any scale degree, active or inactive, in either direction, provided the leap follows a good chord line.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 25, p. 16"
+      },
+      "calls": [
+        "theme_draft",
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "phrase_structure.begin-regular-four-measure",
+      "topic": "phrase_structure",
+      "text": "Begin a regular four-measure phrase with an inactive tone from the tonic triad on the first accented beat or in the pickup.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 8, p. 7"
+      },
+      "calls": [
+        "setup",
+        "theme_draft"
+      ]
+    },
+    {
+      "id": "harmony.study-construction-relation-succession",
+      "topic": "harmony",
+      "text": "Study the construction, relation, and succession of chords thoroughly to acquire freedom in recognizing and employing principal chord-lines correctly.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 15, p. 12"
+      },
+      "calls": [
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "harmony.study-elementary-conditions-harmony",
+      "topic": "harmony",
+      "text": "Study the elementary conditions of harmony thoroughly to acquire absolute freedom in recognizing and employing principal chord-lines correctly.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 15, p. 12"
+      },
+      "calls": [
+        "setup"
+      ]
+    },
+    {
+      "id": "harmony.construct-chords-adding-higher",
+      "topic": "harmony",
+      "text": "Construct chords by adding one higher third after another to the fundamental tone to determine the chord's name, quality, and relation to other chords.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 16, p. 12"
+      },
+      "calls": [
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "harmony.follow-tonic-class-chords",
+      "topic": "harmony",
+      "text": "Follow tonic class chords with any other chord in the same key.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "harmony.follow-dominant-class-chords",
+      "topic": "harmony",
+      "text": "Follow dominant class chords with tonic class chords, preferring the tonic over the submediant.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "harmony.avoid-following-dominant-class",
+      "topic": "harmony",
+      "text": "Avoid following dominant class chords with second-dominant class chords in melody invention.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "harmony.follow-second-dominant-class",
+      "topic": "harmony",
+      "text": "Follow second-dominant class chords with dominant class chords, or less readily with tonic class chords.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ]
+    },
+    {
+      "id": "harmony.observe-inherent-melodic-tendencies",
+      "topic": "harmony",
+      "text": "Observe inherent melodic tendencies to facilitate correct application of chord succession rules.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 22, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ]
+    }
+  ]
+}

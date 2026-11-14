@@ -1,0 +1,122 @@
+.rules {
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+  min-height: 3.4rem;
+  padding: 0.4rem 0.4rem 0.4rem var(--pad);
+}
+
+.rules > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+  min-width: 0;
+  padding: 0 0.85rem;
+  animation: rise-in 650ms var(--ease-out) both;
+}
+
+/* Fields arrive left to right, the way a score header is read. */
+.rules > :nth-child(1) { padding-left: 0; }
+.rules > :nth-child(2) { animation-delay: 50ms; }
+.rules > :nth-child(3) { animation-delay: 100ms; }
+.rules > :nth-child(4) { animation-delay: 150ms; }
+.rules > :nth-child(5) { animation-delay: 200ms; }
+.rules > :nth-child(6) { animation-delay: 250ms; }
+.rules > :nth-child(7) { animation-delay: 300ms; }
+.rules > :nth-child(8) { animation-delay: 350ms; }
+.rules > :nth-child(9) { animation-delay: 400ms; }
+.rules > :nth-child(10) { animation-delay: 450ms; }
+.rules > :nth-child(11) { animation-delay: 500ms; }
+
+.rules__field + .rules__field { border-left: 1px solid var(--rule); }
+
+.rules__label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.rules__value {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.rules__lead { flex: 0 1 auto; }
+
+.rules__style {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.12;
+  padding-bottom: 0.12rem;
+  white-space: nowrap;
+}
+
+/* Time signature, stacked as it is engraved. */
+.rules__sig { flex: none; padding: 0 0.6rem 0 0.2rem; }
+
+.rules__meter {
+  display: grid;
+  justify-items: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 0.82;
+}
+
+.rules__meter b { font-weight: inherit; }
+
+.rules__big { font-size: 1.2rem; font-weight: 600; line-height: 1; }
+.rules__unit { font-size: 0.92rem; color: var(--ink-2); white-space: nowrap; }
+
+
+.rules__palette { flex: 1 1 12rem; }
+
+.rules__palette .rules__value {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.rules--empty {
+  align-items: center;
+  gap: 1.4rem;
+  padding: 0.6rem var(--pad);
+}
+
+.rules--empty > * { padding: 0; flex-direction: row; }
+.rules__waiting { font-size: 1rem; color: var(--ink-2); }
+
+.rules__ghost {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--rule-strong), transparent);
+  animation: ghost-sweep 1.8s var(--ease-in-out) infinite alternate;
+  transform-origin: left;
+}
+
+@keyframes ghost-sweep {
+  from { transform: scaleX(0.2); opacity: 0.4; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+
+/* ── Hierarchy: one size for every value. Style, tempo and key are bright; the rest step back. ── */
+.rules { min-height: 3.2rem; padding: 0.45rem var(--pad); justify-content: space-between; }
+.rules > * { flex: 0 1 auto; padding: 0 1.1rem; gap: 0.15rem; }
+.rules__field + .rules__field { border-left: 0; }
+.rules__label { font-size: 0.66rem; font-weight: 500; letter-spacing: 0.12em; }
+.rules__value { font-size: 0.95rem; font-weight: 400; color: var(--ink-2); white-space: nowrap; }
+.rules__field--lead .rules__value { font-weight: 600; color: var(--ink); }
+.rules__palette { flex: 0 1 auto; border-left: 1px solid var(--rule); }
+.rules__palette .rules__value { display: block; font-size: 0.95rem; color: var(--ink-2); text-overflow: ellipsis; }
