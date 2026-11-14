@@ -33,19 +33,36 @@ its context fills up.
 uv tool install "intern-agent @ git+https://github.com/nace-ai/intern"
 ```
 
-Give your intern a task, with one OpenRouter key for both its System 2 and its System 1:
+Your intern runs on two models:
+
+- **System 2** does the work. It can be any chat model: OpenRouter, Fireworks, Together, DeepInfra, Groq, OpenAI,
+  Anthropic, or a local model.
+- **System 1** watches every turn. It can be any decision model: Drex, Jev, Kev and 40+ others, from the
+  [Nace console](https://console.nace.ai) or OpenRouter's decisions API. `intern models` lists them all.
+
+**Option 1: one OpenRouter key for both**
 
 ```bash
 export OPENROUTER_API_KEY=...
-# Opens the terminal UI with the task as its first prompt
 intern --system2 openrouter/qwen/qwen3.8-27b \
   --system1 decisions:nace-ai/drex-max \
   "Find why tests/test_parser.py fails and fix it"
 ```
 
-`-p` runs the same task headlessly and prints the reply. Without `--system1`, System 1 is `drex-latest`
-from the Nace console, with its key in `$NACE_API_KEY`. Every flag and setting is in
-[docs/usage.md](docs/usage.md).
+**Option 2: Nace console for System 1, any provider for System 2**
+
+Sign up at [console.nace.ai](https://console.nace.ai) and create an API key. Drex from the console is the default
+System 1, so no `--system1` is needed:
+
+```bash
+export NACE_API_KEY=...        # System 1: Drex from the Nace console
+export FIREWORKS_API_KEY=...   # System 2: any provider, here Fireworks
+intern --system2 fireworks/accounts/fireworks/models/deepseek-v4-flash \
+  "Find why tests/test_parser.py fails and fix it"
+```
+
+Either way the terminal UI opens with the task as its first prompt; `-p` runs it headlessly and prints the reply.
+Every provider, flag and setting is in [docs/usage.md](docs/usage.md).
 
 ## How it works
 
