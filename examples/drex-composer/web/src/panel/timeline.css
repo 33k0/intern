@@ -1,0 +1,280 @@
+.tl { --label-h: 1.8rem; --ticks-h: 1.5rem; }
+
+.tl .panel__head { align-items: center; padding-bottom: 0.35rem; }
+
+.tl__legend {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.1rem 1.3rem;
+  min-width: 0;
+  height: 1.3rem;
+  overflow: hidden;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+}
+
+.tl__legend li { display: inline-flex; align-items: center; gap: 0.45rem; white-space: nowrap; }
+
+.lg { display: inline-block; width: 1.4rem; height: 0; border-top: 2px solid var(--accent); }
+.lg--ghost { border-top: 2px dashed var(--ink-3); }
+.lg--dot { width: 0.5rem; height: 0.5rem; border: 0; border-radius: 50%; background: var(--ink); }
+.lg--now { width: 0; height: 0.95rem; border-top: 0; border-left: 2px solid var(--accent); }
+.lg--ahead { width: 0; height: 0.95rem; border-top: 0; border-left: 2px dashed var(--ink-2); }
+.lg-x { font-size: 0.95rem; font-weight: 700; color: var(--reject); }
+.lg-fermata { width: 1.1rem; height: 0.7rem; color: var(--reject); }
+
+.tl__right { display: flex; align-items: center; gap: 0.8rem; }
+.tl__right .panel__meta b { font-weight: 600; color: var(--ink); }
+
+.tl__revised { animation: revised-flash 2600ms var(--ease-out) both; }
+
+@keyframes revised-flash {
+  0% { background: var(--accent); color: var(--accent-ink); transform: scale(1.08); }
+  30% { background: var(--accent); color: var(--accent-ink); transform: scale(1); }
+  100% { background: var(--accent-soft); color: var(--accent); }
+}
+
+/* ── Plot: label strip, curve, one cell per phrase ── */
+
+.tl__plot {
+  position: relative;
+  display: grid;
+  grid-template-rows: var(--label-h) minmax(0, 1fr) var(--ticks-h);
+  height: 9.3rem;
+  margin: 0 var(--pad) 0.6rem;
+}
+
+.band {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid var(--rule-strong);
+  transition: left 1200ms var(--ease-in-out), width 1200ms var(--ease-in-out), background 600ms var(--ease-out);
+}
+
+.band:first-of-type { border-left-color: transparent; }
+
+/* A departure leaves the home key: hatched, so it reads as different ground. */
+.band.is-departure {
+  background:
+    repeating-linear-gradient(135deg, rgba(243, 238, 227, 0.11) 0 1px, transparent 1px 0.6rem),
+    rgba(243, 238, 227, 0.045);
+}
+
+.band__label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  height: var(--label-h);
+  padding: 0 0.6rem;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--ink-2);
+}
+
+.band__role { font-size: 1.22rem; line-height: 1.4; }
+.band__key { font-size: 0.8rem; color: var(--ink-3); }
+.band.is-now .band__label { color: var(--ink); }
+.band.is-now .band__key { color: var(--ink-2); }
+.band.is-departure .band__key { color: var(--ink); font-weight: 600; }
+
+.band__label.is-changed { animation: band-changed 3200ms var(--ease-out) both; }
+
+@keyframes band-changed {
+  0%, 35% { background: var(--accent-soft); color: var(--accent); }
+  100% { background: transparent; }
+}
+
+.tl__curve { position: relative; grid-row: 2; min-height: 0; }
+.tl__curve svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+.tl__grid { stroke: var(--rule); stroke-width: 1; }
+
+.tl__axis {
+  position: absolute;
+  left: -0.85rem;
+  font-size: 0.76rem;
+  line-height: 1;
+  color: var(--ink-3);
+  transform: translateY(-50%);
+}
+
+.tl__axis--hi { top: 11%; }
+.tl__axis--lo { top: 91%; }
+
+.tl__line {
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  transition: d 1200ms var(--ease-in-out);
+}
+
+.tl__area { transition: d 1200ms var(--ease-in-out); }
+
+.tl__ghost {
+  stroke: var(--ink-2);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+  opacity: 0.55;
+  animation: fade-in 900ms var(--ease-out) both;
+}
+
+.tl__dot {
+  position: absolute;
+  width: 0.56rem;
+  height: 0.56rem;
+  margin: -0.28rem 0 0 -0.28rem;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  background: var(--ground);
+  transition: background 400ms var(--ease-out), border-color 400ms var(--ease-out), top 1200ms var(--ease-in-out), left 1200ms var(--ease-in-out);
+  animation: dot-in 500ms var(--ease-out) both;
+}
+
+.tl__dot.is-played { background: var(--ink); }
+.tl__dot.is-now { background: var(--accent); border-color: var(--accent); }
+
+@keyframes dot-in {
+  from { transform: scale(0); }
+}
+
+.tl__climax {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 1px dashed var(--ink-2);
+  transition: left 1200ms var(--ease-in-out);
+}
+
+.tl__climax-mark {
+  position: absolute;
+  left: -0.5px;
+  width: 0.62rem;
+  height: 0.62rem;
+  margin: -0.31rem 0 0 -0.31rem;
+  background: var(--ink);
+  transform: rotate(45deg);
+  transition: top 1200ms var(--ease-in-out);
+}
+
+.tl__climax-label {
+  position: absolute;
+  left: 0.45rem;
+  bottom: 0.1rem;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.tl__ticks { position: relative; grid-row: 3; }
+
+.tick-cell {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0 1px;
+  color: var(--ink-3);
+  transition: left 1200ms var(--ease-in-out), width 1200ms var(--ease-in-out);
+}
+
+.tick-cell__bar {
+  position: absolute;
+  top: 0.12rem;
+  left: 1px;
+  right: 1px;
+  height: 3px;
+  background: var(--rule);
+  transition: background 400ms var(--ease-out);
+}
+
+.tick-cell.is-composed .tick-cell__bar { background: rgba(243, 238, 227, 0.62); }
+.tick-cell.is-played .tick-cell__bar { background: var(--accent-line); }
+.tick-cell.is-now .tick-cell__bar { background: var(--accent); }
+
+.tick-cell__n { font-size: 0.78rem; line-height: 1.25; }
+.tick-cell.is-composed .tick-cell__n { color: var(--ink-2); }
+.tick-cell.is-now .tick-cell__n { color: var(--accent); font-weight: 700; }
+
+.tick-cell__rej { font-size: 0.82rem; font-weight: 700; line-height: 1.15; color: var(--reject); }
+.tick-cell__hold { position: absolute; right: -0.5rem; bottom: 0.2rem; width: 1rem; height: 0.64rem; color: var(--reject); z-index: 1; }
+
+/* ── Markers ── */
+
+.tl__marker {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.tl__marker-line {
+  position: absolute;
+  left: -1px;
+  top: var(--label-h);
+  bottom: 0;
+  width: 0;
+  border-left: 2px solid var(--accent);
+}
+
+.tl__marker--ahead { transition: transform 700ms var(--ease-out); }
+.tl__marker--ahead .tl__marker-line { border-left: 2px dashed var(--ink-2); opacity: 0.8; }
+
+.tl__marker-head {
+  position: absolute;
+  left: 0;
+  top: 0.22rem;
+  display: grid;
+  place-items: center;
+  min-width: 2.6rem;
+  height: 1.3rem;
+  padding: 0 0.4rem;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+.tl__marker-fermata { width: 1.2rem; height: 0.76rem; }
+
+.tl.is-holding .tl__marker--now .tl__marker-line { border-left-color: var(--reject); }
+.tl.is-holding .tl__marker--now .tl__marker-head { background: var(--reject); color: #2a0d06; }
+
+/* ── Before the plan ── */
+
+.tl--empty { min-height: 12.2rem; }
+
+.tl__waiting {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 1.2rem;
+  margin: 0 var(--pad) 1.4rem;
+  padding-top: 2.4rem;
+  border-bottom: 1px solid var(--rule-strong);
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+
+.tl__waiting .score-text { font-size: 1.5rem; color: var(--ink); }
+
+/* ── Quieter labels: the curve is the subject ── */
+.band__label { align-items: center; }
+.band__role { font-size: 0.86rem; font-weight: 500; line-height: 1.3; text-transform: capitalize; }
+.band__key { font-size: 0.72rem; }
+.band.is-now .band__role { font-weight: 700; }
+.tl__climax-label { font-size: 0.78rem; color: var(--ink-2); }
+.tick-cell__n { font-size: 0.7rem; }
+/* The playhead is just a line, so it never covers a section name. */
+.tl__marker-head:not(.is-holding) { display: none; }

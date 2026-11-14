@@ -1,0 +1,399 @@
+{
+  "call": "theme_shape",
+  "cases": [
+    {
+      "id": "shape-01",
+      "tests": "a falling line relaxes and sighs",
+      "state": "PROMPT  \"a long sigh as the last guest leaves\"\nPIECE   style: Bittersweet orchestral; 12/8, 68 BPM, D minor, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D minor; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "What overall shape should the theme trace?",
+        "criteria": {
+          "arch": "arch: rises to a peak near the middle, then falls. Balanced, singing",
+          "rising": "rising: climbs through the phrase. Hopeful, reaching, opening outward",
+          "falling": "falling: descends through the phrase. Sighing, resigned, settling",
+          "valley": "valley: dips and comes back up. Searching, then recovering",
+          "wave": "wave: turns back on itself more than once. Restless or playful"
+        }
+      },
+      "accept": [
+        "falling"
+      ],
+      "why": "A sigh is a descent: a falling line lets tension go, which is the gesture the prompt names."
+    },
+    {
+      "id": "shape-02",
+      "tests": "a rising line carries hope and reach",
+      "state": "PROMPT  \"a kite climbing into a bright morning\"\nPIECE   style: Playful; 4/4, 126 BPM, D major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     D major; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "What overall shape should the theme trace?",
+        "criteria": {
+          "arch": "arch: rises to a peak near the middle, then falls. Balanced, singing",
+          "rising": "rising: climbs through the phrase. Hopeful, reaching, opening outward",
+          "falling": "falling: descends through the phrase. Sighing, resigned, settling",
+          "valley": "valley: dips and comes back up. Searching, then recovering",
+          "wave": "wave: turns back on itself more than once. Restless or playful"
+        }
+      },
+      "accept": [
+        "rising"
+      ],
+      "why": "The image only goes up, and a rising line raises emphasis and opens outward."
+    },
+    {
+      "id": "shape-03",
+      "tests": "zig-zag play is a line that keeps turning back",
+      "state": "PROMPT  \"a puppy zig-zagging after its own tail\"\nPIECE   style: Playful; 4/4, 138 BPM, A major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     A major; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "What overall shape should the theme trace?",
+        "criteria": {
+          "arch": "arch: rises to a peak near the middle, then falls. Balanced, singing",
+          "rising": "rising: climbs through the phrase. Hopeful, reaching, opening outward",
+          "falling": "falling: descends through the phrase. Sighing, resigned, settling",
+          "valley": "valley: dips and comes back up. Searching, then recovering",
+          "wave": "wave: turns back on itself more than once. Restless or playful"
+        }
+      },
+      "accept": [
+        "wave"
+      ],
+      "why": "Restless, comic back-and-forth motion is a line that changes direction more than once."
+    },
+    {
+      "id": "shape-04",
+      "tests": "lost then found is a dip that recovers",
+      "state": "PROMPT  \"lost in the fog, then the harbour lights appear\"\nPIECE   style: Bittersweet orchestral; 12/8, 64 BPM, G minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     G minor; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "What overall shape should the theme trace?",
+        "criteria": {
+          "arch": "arch: rises to a peak near the middle, then falls. Balanced, singing",
+          "rising": "rising: climbs through the phrase. Hopeful, reaching, opening outward",
+          "falling": "falling: descends through the phrase. Sighing, resigned, settling",
+          "valley": "valley: dips and comes back up. Searching, then recovering",
+          "wave": "wave: turns back on itself more than once. Restless or playful"
+        }
+      },
+      "accept": [
+        "valley"
+      ],
+      "why": "The story sinks into uncertainty and then lifts out of it: down first, then back up."
+    },
+    {
+      "id": "shape-05",
+      "tests": "a balanced singing tune rises to a middle peak and settles",
+      "state": "PROMPT  \"an evening song by the fire: it lifts, then comes gently back to rest\"\nPIECE   style: Bittersweet orchestral; 12/8, 70 BPM, F major, close dry, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     F major; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "What overall shape should the theme trace?",
+        "criteria": {
+          "arch": "arch: rises to a peak near the middle, then falls. Balanced, singing",
+          "rising": "rising: climbs through the phrase. Hopeful, reaching, opening outward",
+          "falling": "falling: descends through the phrase. Sighing, resigned, settling",
+          "valley": "valley: dips and comes back up. Searching, then recovering",
+          "wave": "wave: turns back on itself more than once. Restless or playful"
+        }
+      },
+      "accept": [
+        "arch"
+      ],
+      "why": "Rise to one high point near the middle and fall away after it is the classic shape of a singing melody."
+    },
+    {
+      "id": "shape-06",
+      "tests": "a contrast theme reverses the outline of the main theme",
+      "state": "PROMPT  \"after the launch: the long fall back to earth\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, E♭ major, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     E♭ major; 12/8; one theme fills 8 beats (two bars)\nTHEME A 1(1) 2(1) 3(1) 5(1) 6(1) 7(1) 1'(2)   contour: rising   (the main theme; the new theme must contrast with it)",
+      "question": {
+        "type": "choice",
+        "instructions": "What overall shape should the theme trace?",
+        "criteria": {
+          "arch": "arch: rises to a peak near the middle, then falls. Balanced, singing",
+          "rising": "rising: climbs through the phrase. Hopeful, reaching, opening outward",
+          "falling": "falling: descends through the phrase. Sighing, resigned, settling",
+          "valley": "valley: dips and comes back up. Searching, then recovering",
+          "wave": "wave: turns back on itself more than once. Restless or playful"
+        }
+      },
+      "accept": [
+        "falling"
+      ],
+      "why": "The main theme climbs all the way, so the strongest contrast of outline is a descent, which is also what the image describes."
+    },
+    {
+      "id": "shape-07",
+      "tests": "a rocking image wants the long-short lilt of compound time",
+      "state": "PROMPT  \"rocking a cradle at dusk\"\nPIECE   style: Bittersweet orchestral; 12/8, 66 BPM, A♭ major, close dry, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     A♭ major; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which rhythm cell should the theme be built from?",
+        "criteria": {
+          "even": "one note per beat: broad, calm",
+          "lilt": "long-short lilt inside the beat: rocking, wave-like",
+          "flowing": "running triplet eighths: flowing, restless",
+          "held_then_lilt": "a long held note that tips into a lilt: longing",
+          "broad_then_quick": "a broad note answered by a quick one: sighing"
+        }
+      },
+      "accept": [
+        "lilt"
+      ],
+      "why": "Long-short inside each beat is the rocking rhythm of a cradle song."
+    },
+    {
+      "id": "shape-08",
+      "tests": "dance music pushes off the beat",
+      "state": "PROMPT  \"a packed dance floor, everyone bouncing off the beat\"\nPIECE   style: Beat-driven; 4/4, 124 BPM, F minor, electronic hybrid, 3:00; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nKEY     F minor; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which rhythm cell should the theme be built from?",
+        "criteria": {
+          "even": "even notes: calm, hymn-like, steady",
+          "long_short": "dotted long-short: leaning forward, lyrical",
+          "short_short_long": "two quick notes then a long one: speech-like, catchy",
+          "syncopated": "off-beat pushes: restless, dance-like",
+          "long_then_run": "a held note released into quick notes: a breath then motion"
+        }
+      },
+      "accept": [
+        "syncopated"
+      ],
+      "why": "Off-beat pushes against a steady kick are what make a short motif dance."
+    },
+    {
+      "id": "shape-09",
+      "tests": "a calm hymn moves in even notes",
+      "state": "PROMPT  \"morning prayers in a bare stone chapel\"\nPIECE   style: Bittersweet orchestral; 4/4, 60 BPM, G major, large hall, 2:30; harmony: plain triads; direct and simple\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     G major; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which rhythm cell should the theme be built from?",
+        "criteria": {
+          "even": "even notes: calm, hymn-like, steady",
+          "long_short": "dotted long-short: leaning forward, lyrical",
+          "short_short_long": "two quick notes then a long one: speech-like, catchy",
+          "syncopated": "off-beat pushes: restless, dance-like",
+          "long_then_run": "a held note released into quick notes: a breath then motion"
+        }
+      },
+      "accept": [
+        "even"
+      ],
+      "why": "Even note values are the steadiest rhythm there is, and steadiness is the whole character asked for."
+    },
+    {
+      "id": "shape-10",
+      "tests": "a slogan-like jingle is two quick notes and a long one",
+      "state": "PROMPT  \"a jingle for a lemonade stand, like a slogan called out to passers-by\"\nPIECE   style: Playful; 4/4, 120 BPM, C major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     C major; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which rhythm cell should the theme be built from?",
+        "criteria": {
+          "even": "even notes: calm, hymn-like, steady",
+          "long_short": "dotted long-short: leaning forward, lyrical",
+          "short_short_long": "two quick notes then a long one: speech-like, catchy",
+          "syncopated": "off-beat pushes: restless, dance-like",
+          "long_then_run": "a held note released into quick notes: a breath then motion"
+        }
+      },
+      "accept": [
+        "short_short_long"
+      ],
+      "why": "Short-short-long follows the rhythm of a spoken slogan and is the catchiest of the cells."
+    },
+    {
+      "id": "shape-11",
+      "tests": "unbroken running water is unbroken running notes",
+      "state": "PROMPT  \"a mountain stream that never stops running\"\nPIECE   style: Bittersweet orchestral; 12/8, 76 BPM, E minor, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     E minor; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which rhythm cell should the theme be built from?",
+        "criteria": {
+          "even": "one note per beat: broad, calm",
+          "lilt": "long-short lilt inside the beat: rocking, wave-like",
+          "flowing": "running triplet eighths: flowing, restless",
+          "held_then_lilt": "a long held note that tips into a lilt: longing",
+          "broad_then_quick": "a broad note answered by a quick one: sighing"
+        }
+      },
+      "accept": [
+        "flowing"
+      ],
+      "why": "Continuous motion with no long notes to rest on is what the image describes."
+    },
+    {
+      "id": "shape-12",
+      "tests": "stillness then a scurry is a held note released into quick ones",
+      "state": "PROMPT  \"a mouse freezes, then bolts for the skirting board\"\nPIECE   style: Playful; 4/4, 132 BPM, B♭ major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     B♭ major; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which rhythm cell should the theme be built from?",
+        "criteria": {
+          "even": "even notes: calm, hymn-like, steady",
+          "long_short": "dotted long-short: leaning forward, lyrical",
+          "short_short_long": "two quick notes then a long one: speech-like, catchy",
+          "syncopated": "off-beat pushes: restless, dance-like",
+          "long_then_run": "a held note released into quick notes: a breath then motion"
+        }
+      },
+      "accept": [
+        "long_then_run"
+      ],
+      "why": "The image is in two parts, a wait and a burst, and only one cell holds a long note and then runs."
+    },
+    {
+      "id": "shape-13",
+      "tests": "a tidy tune closes on the keynote",
+      "state": "PROMPT  \"a tidy little tune that lands on its feet\"\nPIECE   style: Playful; 4/4, 126 BPM, F major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     F major; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which scale degree should the theme end on?",
+        "criteria": {
+          "end_1": "ends on the tonic: closed, at rest",
+          "end_2": "ends on the second: unresolved, leaning",
+          "end_3": "ends on the third: gentle, half-settled",
+          "end_5": "ends on the fifth: open, asking for more",
+          "end_7": "ends on the seventh: left hanging, aching"
+        }
+      },
+      "accept": [
+        "end_1"
+      ],
+      "why": "The keynote is the only tone fully at rest, and the playful sheet wants clear cadences, not unresolved endings."
+    },
+    {
+      "id": "shape-14",
+      "tests": "the third on top makes a close less decided",
+      "state": "PROMPT  \"goodnight: settled, but softly; not a full stop\"\nPIECE   style: Bittersweet orchestral; 12/8, 62 BPM, D major, close dry, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D major; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which scale degree should the theme end on?",
+        "criteria": {
+          "end_1": "ends on the tonic: closed, at rest",
+          "end_2": "ends on the second: unresolved, leaning",
+          "end_3": "ends on the third: gentle, half-settled",
+          "end_5": "ends on the fifth: open, asking for more",
+          "end_7": "ends on the seventh: left hanging, aching"
+        }
+      },
+      "accept": [
+        "end_3"
+      ],
+      "why": "Ending on the third of the tonic chord rests without finality: it is a tone of repose, but a gentler one than the keynote."
+    },
+    {
+      "id": "shape-15",
+      "tests": "a call that expects its answer stops on the fifth",
+      "state": "PROMPT  \"a cheerful call across the valley, waiting for its echo\"\nPIECE   style: Playful; 6/8, 112 BPM, G major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nKEY     G major; 6/8; one theme fills 4 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which scale degree should the theme end on?",
+        "criteria": {
+          "end_1": "ends on the tonic: closed, at rest",
+          "end_2": "ends on the second: unresolved, leaning",
+          "end_3": "ends on the third: gentle, half-settled",
+          "end_5": "ends on the fifth: open, asking for more",
+          "end_7": "ends on the seventh: left hanging, aching"
+        }
+      },
+      "accept": [
+        "end_5"
+      ],
+      "why": "The fifth is stable but open, the note of a half close that asks for a reply; it carries no ache and no lean."
+    },
+    {
+      "id": "shape-16",
+      "tests": "the leading note has the strongest unresolved pull",
+      "state": "PROMPT  \"almost home: the tune stops one small step below where it must land\"\nPIECE   style: Bittersweet orchestral; 12/8, 64 BPM, B♭ major, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     B♭ major; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which scale degree should the theme end on?",
+        "criteria": {
+          "end_1": "ends on the tonic: closed, at rest",
+          "end_2": "ends on the second: unresolved, leaning",
+          "end_3": "ends on the third: gentle, half-settled",
+          "end_5": "ends on the fifth: open, asking for more",
+          "end_7": "ends on the seventh: left hanging, aching"
+        }
+      },
+      "accept": [
+        "end_7"
+      ],
+      "why": "The seventh degree lies a semitone under the keynote and pulls upward harder than any other tone, so stopping on it aches."
+    },
+    {
+      "id": "shape-17",
+      "tests": "a looped motif cell is two to four notes",
+      "state": "PROMPT  \"a neon sign buzzing over an empty arcade\"\nPIECE   style: Beat-driven; 4/4, 122 BPM, A minor, electronic hybrid, 2:30; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nKEY     A minor; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "How many notes should the theme have? A theme must be short enough to remember and long enough to develop.",
+        "criteria": {
+          "n4": "4 notes",
+          "n5": "5 notes",
+          "n6": "6 notes",
+          "n7": "7 notes",
+          "n8": "8 notes"
+        }
+      },
+      "accept": [
+        "n4"
+      ],
+      "why": "The beat-driven sheet builds on short cells of two to four notes that loop; longer lines become the through-composed melody it avoids."
+    },
+    {
+      "id": "shape-18",
+      "tests": "a planted, solid character starts on the keynote",
+      "state": "PROMPT  \"an old stone bridge: planted, solid, unmoving\"\nPIECE   style: Bittersweet orchestral; 4/4, 58 BPM, C minor, large hall, 2:30; harmony: plain triads; direct and simple\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     C minor; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "Which scale degree should the theme start on?",
+        "criteria": {
+          "start_1": "starts on the tonic: grounded",
+          "start_3": "starts on the third: warm, already in mid-thought",
+          "start_5": "starts on the fifth: open, poised"
+        }
+      },
+      "accept": [
+        "start_1"
+      ],
+      "why": "All three options are tonic-chord tones, but the root is the powerful, grounded one."
+    },
+    {
+      "id": "shape-19",
+      "tests": "a call figure leaps first and then settles",
+      "state": "PROMPT  \"a herald's call from the castle wall, then the slow procession\"\nPIECE   style: Bittersweet orchestral; 4/4, 84 BPM, D major, large hall, 2:00; harmony: plain triads; direct and simple\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     D major; 4/4; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "A theme gets one leap; everything else moves by step or repeats. Where should the leap sit?",
+        "criteria": {
+          "early": "early: the theme opens with its gesture, then settles by step",
+          "middle": "in the middle: steps lead to the leap and away from it",
+          "late": "late: steps build up to a leap just before the end"
+        }
+      },
+      "accept": [
+        "early"
+      ],
+      "why": "The gesture comes first and the stepwise motion afterwards recovers it, which is how a leap should be answered."
+    },
+    {
+      "id": "shape-20",
+      "tests": "steps to the leap and steps away put the peak past the middle",
+      "state": "PROMPT  \"a slow climb up the hill, one jump to touch the summit cross, then the walk home\"\nPIECE   style: Bittersweet orchestral; 12/8, 70 BPM, G major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nKEY     G major; 12/8; one theme fills 8 beats (two bars)",
+      "question": {
+        "type": "choice",
+        "instructions": "A theme gets one leap; everything else moves by step or repeats. Where should the leap sit?",
+        "criteria": {
+          "early": "early: the theme opens with its gesture, then settles by step",
+          "middle": "in the middle: steps lead to the leap and away from it",
+          "late": "late: steps build up to a leap just before the end"
+        }
+      },
+      "accept": [
+        "middle"
+      ],
+      "why": "A leap in the middle is prepared by steps and has notes left after it to turn back by step; early gives the peak away and late leaves no room to recover."
+    }
+  ]
+}

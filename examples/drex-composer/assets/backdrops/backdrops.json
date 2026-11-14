@@ -1,0 +1,89 @@
+[
+  {
+    "id": "rain-night",
+    "file": "rain-night.svg",
+    "mood": "Rain on glass at night: blurred city lights, deep blue-black, lonely and tender",
+    "tags": {
+      "valence": -0.6,
+      "energy": 0.3,
+      "darkness": 0.6,
+      "water": 0.6
+    }
+  },
+  {
+    "id": "deep-water",
+    "file": "deep-water.svg",
+    "mood": "Underwater light: shafts of pale light through dark teal water, weightless and submerged",
+    "tags": {
+      "valence": -0.2,
+      "energy": 0.2,
+      "darkness": 0.5,
+      "water": 1
+    }
+  },
+  {
+    "id": "frozen-dawn",
+    "file": "frozen-dawn.svg",
+    "mood": "Sunrise over a frozen lake: pale pink and ice blue, still, wide, hopeful",
+    "tags": {
+      "valence": 0.5,
+      "energy": 0.2,
+      "darkness": 0.1,
+      "water": 0.3
+    }
+  },
+  {
+    "id": "neon-arcade",
+    "file": "neon-arcade.svg",
+    "mood": "Neon arcade: magenta and cyan glow on black, electric, fast, synthetic",
+    "tags": {
+      "valence": 0.1,
+      "energy": 0.9,
+      "darkness": 0.5,
+      "electronic": 1
+    }
+  },
+  {
+    "id": "golden-meadow",
+    "file": "golden-meadow.svg",
+    "mood": "Sunlit meadow: warm gold and green, light, open air, carefree",
+    "tags": {
+      "valence": 0.9,
+      "energy": 0.5,
+      "darkness": 0,
+      "playful": 0.6
+    }
+  },
+  {
+    "id": "storm-front",
+    "file": "storm-front.svg",
+    "mood": "Storm front over the sea: charcoal cloud, a slash of light, vast and threatening",
+    "tags": {
+      "valence": -0.5,
+      "energy": 0.8,
+      "darkness": 0.9,
+      "water": 0.4
+    }
+  },
+  {
+    "id": "paper-toys",
+    "file": "paper-toys.svg",
+    "mood": "Paper toys and confetti: bright primary shapes, bouncy, silly, handmade",
+    "tags": {
+      "valence": 0.8,
+      "energy": 0.7,
+      "darkness": 0,
+      "playful": 1
+    }
+  },
+  {
+    "id": "hall-dusk",
+    "file": "hall-dusk.svg",
+    "mood": "Empty concert hall at dusk: warm wood, velvet shadow, a single light, solemn and grand",
+    "tags": {
+      "valence": -0.1,
+      "energy": 0.3,
+      "darkness": 0.5
+    }
+  }
+]

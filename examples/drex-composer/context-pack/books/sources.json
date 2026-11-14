@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "retrieved": "2026-11-14",
+  "note": "Four public-domain treatises. text.txt in each folder is built from the raw files by tools/ndi/build-text.mjs: one paragraph per line, a \"[p. N]\" line before each printed page, OCR'd music notation dropped. Page references in ../digest.json are those printed page numbers.",
+  "books": [
+    {
+      "slug": "rimsky-orchestration",
+      "title": "Principles of Orchestration, with Musical Examples Drawn from His Own Works",
+      "author": "Nikolay Rimsky-Korsakov",
+      "editor": "Maximilian Steinberg",
+      "translator": "Edward Agate",
+      "year": 1922,
+      "originalYear": 1913,
+      "edition": "English translation, Édition Russe de Musique, Paris, 1922 (two volumes), as reprinted by Dover in 1964; Project Gutenberg transcription of the Dover reprint. Volume I (the text) only; Volume II is the engraved examples.",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/33900",
+      "files": {
+        "pg33900-images.html": "https://www.gutenberg.org/cache/epub/33900/pg33900-images.html",
+        "pg33900.txt": "https://www.gutenberg.org/ebooks/33900.txt.utf-8"
+      },
+      "textBuiltFrom": "pg33900-images.html (the plain-text edition has no page numbers; the HTML keeps them)",
+      "publicDomainBasis": "Published 1922, so public domain in the United States (published before 1931). Author died 1908 and editor 1946; the translator's death year (1940) is from memory and was not re-checked, so the status outside the USA rests on that. Project Gutenberg distributes it as public domain in the USA.",
+      "howObtained": "Direct download from Project Gutenberg (ebook 33900).",
+      "isOcr": false,
+      "textQuality": "Clean, proofread transcription (Distributed Proofreaders). Printed page numbers are embedded. Music examples and the instrument-range tables are images and are not in the text; a few page markers fall out of order around tables and footnotes (for example p. 26 before p. 25).",
+      "titlePageCheck": "Header reads \"Title: Principles of Orchestration, with Musical Examples Drawn from His Own Works / Author: Nikolay Rimsky-Korsakov / Editor: Maksimilian Shteinberg / Translator: Edward Agate\"."
+    },
+    {
+      "slug": "goetschius-melody",
+      "title": "Exercises in Melody-Writing: A Systematic Course of Melodic Composition, Designed for the Use of Young Music Students, Chiefly as a Course of Exercise Collateral with the Study of Harmony",
+      "author": "Percy Goetschius",
+      "year": 1900,
+      "edition": "New York: G. Schirmer, copyright 1900; the scanned copy is a 1903 printing (University of Connecticut Libraries).",
+      "sourceUrl": "https://archive.org/details/exercisesinmelod00goet",
+      "files": {
+        "exercisesinmelod00goet.pdf": "https://archive.org/download/exercisesinmelod00goet/exercisesinmelod00goet.pdf",
+        "exercisesinmelod00goet_djvu.txt": "https://archive.org/download/exercisesinmelod00goet/exercisesinmelod00goet_djvu.txt",
+        "exercisesinmelod00goet_djvu.xml": "https://archive.org/download/exercisesinmelod00goet/exercisesinmelod00goet_djvu.xml",
+        "exercisesinmelod00goet_page_numbers.json": "https://archive.org/download/exercisesinmelod00goet/exercisesinmelod00goet_page_numbers.json"
+      },
+      "textBuiltFrom": "exercisesinmelod00goet_djvu.xml (per-page OCR) + exercisesinmelod00goet_page_numbers.json (scan leaf to printed page)",
+      "publicDomainBasis": "Published in the United States in 1900, so public domain there. Author died 1943, so also out of copyright in life+70 countries.",
+      "howObtained": "Direct download from the Internet Archive (scan with OCR full text). IMSLP also hosts the book; the Archive copy was preferred for its text layer.",
+      "isOcr": true,
+      "textQuality": "Fair. Prose is readable throughout, but with frequent letter confusions (K or E for R, as in \"MELODY-WKITING\", \"CHOED-LINE\"; j for p). About 48% of OCR lines (engraved music read as gibberish, plus running heads) are dropped, leaving stray example labels (\"good\", \"better\"). Three paragraph numbers are misread (12 as 13, 27 as 37, 72 as 73). Archive's page-number confidence: 92.",
+      "titlePageCheck": "Title page reads \"EXERCISES IN MELODY-WRITING ... BY PERCY GOETSCHIUS, Mus. Doc. ... New York: G. SCHIRMER 1903\" and \"Copyright, 1900, by G. Schirmer\"."
+    },
+    {
+      "slug": "tchaikovsky-harmony",
+      "title": "Guide to the Practical Study of Harmony",
+      "author": "P. I. Tchaikovsky",
+      "translator": "Emil Krall and James Liebling, from the German version of Paul Juon",
+      "year": 1900,
+      "originalYear": 1872,
+      "edition": "Leipzig: P. Jurgenson, 1900. The file is a modern re-typeset reprint of that edition (its title page says \"Reprinted from the edition published: Leipzig: P. Jurgenson, 1900\"); page references use the numbers printed in this reprint (7-137).",
+      "sourceUrl": "https://archive.org/details/tchaikovsky-harmony-textbook",
+      "files": {
+        "tchaikovsky-harmony-textbook-optimized.pdf": "https://archive.org/download/tchaikovsky-harmony-textbook/Tchaikovsky%20-%20Harmony%20Textbook%2C%20Optimized.pdf",
+        "tchaikovsky-harmony-textbook-optimized_djvu.txt": "https://archive.org/download/tchaikovsky-harmony-textbook/Tchaikovsky%20-%20Harmony%20Textbook%2C%20Optimized_djvu.txt",
+        "tchaikovsky-harmony-textbook-optimized_djvu.xml": "https://archive.org/download/tchaikovsky-harmony-textbook/Tchaikovsky%20-%20Harmony%20Textbook%2C%20Optimized_djvu.xml",
+        "tchaikovsky-harmony-textbook-optimized_page_numbers.json": "https://archive.org/download/tchaikovsky-harmony-textbook/Tchaikovsky%20-%20Harmony%20Textbook%2C%20Optimized_page_numbers.json"
+      },
+      "textBuiltFrom": "the \"Optimized\" upload's _djvu.xml (one book page per scan leaf; the other upload in the same item is two pages per leaf) + its _page_numbers.json",
+      "publicDomainBasis": "Author died 1893. The English translation was published in 1900, so it is public domain in the United States. The Internet Archive item carries the Public Domain Mark 1.0. Not checked: the translators' death dates (which decide the translation's status in life+70 countries) and whether the reprint's publisher claims anything in its typesetting.",
+      "howObtained": "Direct download from the Internet Archive (community upload with OCR). The Archive's other copy (guidetopractical0000tcha, a 1970 reprint) is lending-only and was not used.",
+      "isOcr": true,
+      "textQuality": "Good. The reprint is cleanly typeset, so prose errors are rare (\"lundamental\", \"auch\"). About 40% of OCR lines (music examples) are dropped. The heading of Chapter XVI was not recognised, and a few pages have no marker because nothing but notation was on them. Archive's page-number confidence: 72 (numbers were cross-checked against the book's table of contents).",
+      "titlePageCheck": "Title page reads \"P. I. TCHAIKOVSKY / GUIDE TO THE PRACTICAL STUDY OF HARMONY / Translated from the German version of P. Juon by Emil Krall and James Liebling / Reprinted from the edition published: Leipzig: P. Jurgenson, 1900\"."
+    },
+    {
+      "slug": "prout-form",
+      "title": "Musical Form",
+      "author": "Ebenezer Prout",
+      "year": 1893,
+      "edition": "London: Augener (Augener's Edition No. 9187), first published 1893; the scanned copy is the undated \"Fifteenth Impression\" of the same text (University of Toronto, Faculty of Music Library).",
+      "sourceUrl": "https://archive.org/details/15emusicalform00prouuoft",
+      "files": {
+        "15emusicalform00prouuoft.pdf": "https://archive.org/download/15emusicalform00prouuoft/15emusicalform00prouuoft.pdf",
+        "15emusicalform00prouuoft_djvu.txt": "https://archive.org/download/15emusicalform00prouuoft/15emusicalform00prouuoft_djvu.txt",
+        "15emusicalform00prouuoft_djvu.xml": "https://archive.org/download/15emusicalform00prouuoft/15emusicalform00prouuoft_djvu.xml",
+        "15emusicalform00prouuoft_page_numbers.json": "https://archive.org/download/15emusicalform00prouuoft/15emusicalform00prouuoft_page_numbers.json"
+      },
+      "textBuiltFrom": "15emusicalform00prouuoft_djvu.xml + 15emusicalform00prouuoft_page_numbers.json",
+      "publicDomainBasis": "First published 1893; author died 1909. Public domain in the United States and in life+70 countries. The Internet Archive marks the item NOT_IN_COPYRIGHT.",
+      "howObtained": "Direct download from the Internet Archive. This is the book that was asked for; no substitute was needed. Other scans of the same book exist there (cu31924022495513, musicalform00prouuoft).",
+      "isOcr": true,
+      "textQuality": "Good. Prose is accurate with occasional slips (\"I5Y\" for \"BY\", \"76\" read as \"70\"); about 30% of OCR lines (music examples and running heads) are dropped. Paragraph numbers (the book's own section numbers) survive almost everywhere. Archive's page-number confidence: 91.",
+      "titlePageCheck": "Title page reads \"AUGENER'S EDITION No. 9187. / MUSICAL FORM / BY EBENEZER PROUT, B.A. Lond. ... / FIFTEENTH IMPRESSION / AUGENER Ltd. LONDON\"."
+    }
+  ]
+}

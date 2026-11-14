@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.cache
+*.log
+eval/results
+eval/listening
+.DS_Store
+# reference recordings are copyrighted: never commit them
+/*.mp3

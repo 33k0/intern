@@ -1,0 +1,314 @@
+/*
+  A judge round plays out in two beats: the drafts arrive (staggered), then just under a
+  second later the verdict lands. Accepted: one card locks in, the rest step back.
+  Rejected: every card is struck through in copper.
+*/
+
+.drafts { --verdict-at: 900ms; transition: border-color 500ms var(--ease-out) var(--verdict-at); }
+.drafts.is-rejected { border-color: var(--reject-line); }
+
+.drafts__where {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  min-width: 0;
+}
+
+.drafts__subject { font-size: 1.05rem; font-weight: 600; white-space: nowrap; }
+
+.drafts__earlier {
+  flex: none;
+  display: grid;
+  gap: 0.15rem;
+  padding: 0 var(--pad) 0.45rem;
+}
+
+.drafts__earlier li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.drafts__earlier-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--reject);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.drafts__earlier-reason {
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drafts__grid {
+  flex: 1 1 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 0.55rem;
+  padding: 0.1rem var(--pad) 0.7rem;
+}
+
+/* ── One draft ── */
+
+.draft {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0.5rem 0.65rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--panel-raised);
+  animation: rise-in 460ms var(--ease-out) calc(var(--i, 0) * 70ms) both;
+}
+
+.draft__head {
+  flex: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.draft__id { font-size: 1rem; font-weight: 600; line-height: 1.2; white-space: nowrap; }
+
+.draft__p { margin-left: auto; font-size: 1rem; font-weight: 500; color: var(--ink); }
+
+.draft__roll {
+  position: relative;
+  flex: 1 1 2.6rem;
+  min-height: 2rem;
+  color: var(--ink);
+}
+
+.spark { display: block; width: 100%; height: 100%; overflow: visible; }
+.spark__note { fill: currentColor; }
+.spark__contour { stroke: currentColor; stroke-width: 1; opacity: 0.32; }
+
+.draft__strike {
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  top: 50%;
+  height: 2px;
+  background: var(--reject);
+  transform: rotate(-6deg) scaleX(0);
+  transform-origin: left center;
+}
+
+.draft__lineage {
+  flex: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 1.12rem;
+  line-height: 1.18;
+  color: var(--ink);
+}
+
+.draft__notation {
+  flex: none;
+  font-size: 0.76rem;
+  line-height: 1.3;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: line-through transparent;
+}
+
+.draft__facts {
+  flex: none;
+  display: flex;
+  gap: 0 0.8rem;
+  max-height: 2.2rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  line-height: 1.1rem;
+}
+
+.draft__facts div { display: flex; gap: 0.3rem; white-space: nowrap; }
+.draft__facts dt { color: var(--ink-3); }
+.draft__facts dd { color: var(--ink-2); }
+
+.draft__stamp {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink-3);
+  animation: stamp-in 400ms var(--ease-out) var(--verdict-at) both;
+}
+
+@keyframes stamp-in {
+  from { opacity: 0; transform: translateY(0.2rem); }
+}
+
+/* Accepted: locks in. */
+.draft.is-picked {
+  animation:
+    rise-in 460ms var(--ease-out) calc(var(--i, 0) * 70ms) both,
+    lock-in 760ms var(--ease-out) var(--verdict-at) forwards;
+}
+
+.draft.is-picked .draft__roll { animation: to-accent 500ms var(--ease-out) var(--verdict-at) forwards; }
+.draft.is-picked .draft__stamp { color: var(--accent); }
+
+@keyframes lock-in {
+  0% { transform: scale(1); border-color: var(--rule); background: var(--panel-raised); }
+  40% { transform: scale(1.03); border-color: var(--accent); }
+  100% { transform: scale(1); border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+}
+
+@keyframes to-accent {
+  to { color: var(--accent); }
+}
+
+/* Not chosen this round: steps back, still readable. */
+.draft.is-passed {
+  animation:
+    rise-in 460ms var(--ease-out) calc(var(--i, 0) * 70ms) both,
+    step-back 600ms var(--ease-out) var(--verdict-at) forwards;
+}
+
+@keyframes step-back {
+  to { opacity: 0.56; }
+}
+
+/* Rejected: struck through. */
+.draft.is-rejected {
+  animation:
+    rise-in 460ms var(--ease-out) calc(var(--i, 0) * 70ms) both,
+    turn-down 500ms var(--ease-out) calc(var(--verdict-at) + var(--i, 0) * 90ms) forwards;
+}
+
+.draft.is-rejected .draft__roll { animation: to-reject 400ms var(--ease-out) calc(var(--verdict-at) + var(--i, 0) * 90ms) forwards; }
+.draft.is-rejected .draft__strike { animation: strike 420ms var(--ease-out) calc(var(--verdict-at) + var(--i, 0) * 90ms) forwards; }
+.draft.is-rejected .draft__notation { animation: strike-text 400ms var(--ease-out) calc(var(--verdict-at) + var(--i, 0) * 90ms) forwards; }
+.draft.is-rejected .draft__lineage { animation: dim-text 400ms var(--ease-out) calc(var(--verdict-at) + var(--i, 0) * 90ms) forwards; }
+.draft.is-rejected .draft__stamp { color: var(--reject); animation-delay: calc(var(--verdict-at) + var(--i, 0) * 90ms); }
+
+@keyframes turn-down {
+  to { border-color: var(--reject-line); background: var(--reject-soft); }
+}
+
+@keyframes to-reject {
+  to { color: var(--reject); }
+}
+
+@keyframes strike {
+  to { transform: rotate(-6deg) scaleX(1); }
+}
+
+@keyframes strike-text {
+  to { text-decoration-color: var(--reject); color: var(--ink-3); }
+}
+
+@keyframes dim-text {
+  to { color: var(--ink-2); }
+}
+
+/* Six-up: keep the shape, the letter and the lineage; drop the fine print. */
+.drafts__grid.is-dense .draft__facts { display: none; }
+.drafts__grid.is-dense .draft__lineage { font-size: 1rem; }
+
+/* ── Verdict ── */
+
+.verdict {
+  flex: none;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 0.55rem var(--pad) 0.6rem;
+  border-top: 1px solid var(--rule);
+  animation: verdict-in 500ms var(--ease-out) var(--verdict-at) both;
+}
+
+.verdict--reject { background: var(--reject-soft); border-top-color: var(--reject-line); }
+
+.verdict__who {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.verdict--reject .verdict__who { color: var(--reject); }
+
+.verdict__reason {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 1.22rem;
+  line-height: 1.2;
+  padding-bottom: 0.08rem;
+}
+
+.verdict__none { font-size: 0.82rem; color: var(--ink-2); white-space: nowrap; }
+.verdict__none b { font-weight: 500; color: var(--ink); }
+
+@keyframes verdict-in {
+  from { opacity: 0; transform: translateY(0.3rem); }
+}
+
+.drafts__where .tag { animation: fade-in 400ms var(--ease-out) var(--verdict-at) both; }
+
+.drafts__foot {
+  flex: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem var(--pad) 0.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.86rem;
+  color: var(--ink-2);
+}
+
+.drafts__review {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--reject);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  white-space: nowrap;
+}
+
+/* ── Hierarchy: the picked version and the reason lead; the rest is quiet ── */
+.drafts__subject { font-size: 0.86rem; font-weight: 400; color: var(--ink-2); }
+.draft__id { font-size: 0.9rem; font-weight: 500; color: var(--ink-2); }
+.draft.is-picked .draft__id { color: var(--ink); font-weight: 600; }
+.draft__stamp, .drafts__earlier-tag, .verdict__who { font-size: 0.8rem; font-weight: 600; letter-spacing: 0; text-transform: none; }
+.draft__p { font-size: 0.9rem; color: var(--ink-3); }
+.draft.is-picked .draft__p { color: var(--ink); }
+.verdict__reason { font-size: 1.05rem; font-weight: 500; }
+.drafts__grid { grid-auto-rows: minmax(0, 11rem); align-content: start; }
+.draft__stamp { flex: none; margin-left: auto; }
+.draft__p { margin-left: 0; min-width: 2.6rem; text-align: right; }

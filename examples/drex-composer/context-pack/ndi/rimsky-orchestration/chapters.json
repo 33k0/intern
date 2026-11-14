@@ -1,0 +1,801 @@
+{
+  "book": "rimsky-orchestration",
+  "title": "Principles of Orchestration",
+  "producedBy": "local-fallback",
+  "source": "context-pack/books/rimsky-orchestration/text.txt",
+  "pageNumbers": "start_page/end_page are printed page numbers; pdf_* are 1-based pages of the scan PDF (null when the book has no scan)",
+  "chapters": [
+    {
+      "id": "ch-01",
+      "number": "I",
+      "title": "General review of orchestral groups",
+      "start_page": 6,
+      "end_page": 35,
+      "pdf_start_page": null,
+      "pdf_end_page": null,
+      "start_line": 393,
+      "end_line": 871,
+      "chars": 52614,
+      "heading_found": true,
+      "sections": [
+        {
+          "level": 2,
+          "title": "A. Stringed Instruments",
+          "page": 6,
+          "line": 397
+        },
+        {
+          "level": 3,
+          "title": "Table A. String group",
+          "page": 10,
+          "line": 481
+        },
+        {
+          "level": 2,
+          "title": "B. Wind instruments",
+          "page": 12,
+          "line": 495
+        },
+        {
+          "level": 3,
+          "title": "Wood-wind",
+          "page": 12,
+          "line": 497
+        },
+        {
+          "level": 3,
+          "title": "Note to Table B",
+          "page": 14,
+          "line": 547
+        },
+        {
+          "level": 3,
+          "title": "Table B. Wind group",
+          "page": 14,
+          "line": 551
+        },
+        {
+          "level": 3,
+          "title": "Brass",
+          "page": 21,
+          "line": 625
+        },
+        {
+          "level": 3,
+          "title": "Table C. Brass group",
+          "page": 24,
+          "line": 689
+        },
+        {
+          "level": 2,
+          "title": "C. Instruments of little sustaining power",
+          "page": 25,
+          "line": 707
+        },
+        {
+          "level": 3,
+          "title": "Plucked strings",
+          "page": 25,
+          "line": 709
+        },
+        {
+          "level": 3,
+          "title": "Pizzicato",
+          "page": 27,
+          "line": 719
+        },
+        {
+          "level": 3,
+          "title": "Harp",
+          "page": 27,
+          "line": 729
+        },
+        {
+          "level": 2,
+          "title": "Percussion instruments producing determinate sounds, keyed instruments",
+          "page": 29,
+          "line": 759
+        },
+        {
+          "level": 3,
+          "title": "Kettle-drums",
+          "page": 29,
+          "line": 761
+        },
+        {
+          "level": 3,
+          "title": "Table D",
+          "page": 30,
+          "line": 783
+        },
+        {
+          "level": 3,
+          "title": "Pizzicato",
+          "page": 30,
+          "line": 785
+        },
+        {
+          "level": 3,
+          "title": "* Table E",
+          "page": 30,
+          "line": 789
+        },
+        {
+          "level": 3,
+          "title": "Glockenspiel, celesta, xylophone",
+          "page": 30,
+          "line": 791
+        },
+        {
+          "level": 3,
+          "title": "Piano and Celesta",
+          "page": 30,
+          "line": 793
+        },
+        {
+          "level": 3,
+          "title": "Glockenspiel, Bells, Xylophone",
+          "page": 32,
+          "line": 801
+        },
+        {
+          "level": 2,
+          "title": "Percussion instruments producing indefinite sounds",
+          "page": 32,
+          "line": 811
+        },
+        {
+          "level": 2,
+          "title": "Comparison of resonance in orchestral groups and combination of different tone qualities",
+          "page": 33,
+          "line": 819
+        }
+      ]
+    },
+    {
+      "id": "ch-02",
+      "number": "II",
+      "title": "Melody",
+      "start_page": 36,
+      "end_page": 62,
+      "pdf_start_page": null,
+      "pdf_end_page": null,
+      "start_line": 875,
+      "end_line": 2011,
+      "chars": 44503,
+      "heading_found": true,
+      "sections": [
+        {
+          "level": 2,
+          "title": "Melody in stringed instruments",
+          "page": 36,
+          "line": 883
+        },
+        {
+          "level": 3,
+          "title": "a) Violins",
+          "page": 36,
+          "line": 887
+        },
+        {
+          "level": 3,
+          "title": "b) Violas",
+          "page": 37,
+          "line": 909
+        },
+        {
+          "level": 3,
+          "title": "c) Violoncellos",
+          "page": 38,
+          "line": 925
+        },
+        {
+          "level": 3,
+          "title": "d) Double basses",
+          "page": 38,
+          "line": 941
+        },
+        {
+          "level": 2,
+          "title": "Grouping in unison",
+          "page": 39,
+          "line": 953
+        },
+        {
+          "level": 2,
+          "title": "Stringed instruments doubling in octaves",
+          "page": 40,
+          "line": 1015
+        },
+        {
+          "level": 3,
+          "title": "Melody in double octaves",
+          "page": 44,
+          "line": 1195
+        },
+        {
+          "level": 3,
+          "title": "Doubling in three and four octaves",
+          "page": 45,
+          "line": 1233
+        },
+        {
+          "level": 3,
+          "title": "Melody in thirds and sixths",
+          "page": 45,
+          "line": 1249
+        },
+        {
+          "level": 2,
+          "title": "Melody in the wood-wind",
+          "page": 46,
+          "line": 1281
+        },
+        {
+          "level": 3,
+          "title": "Combination in unison",
+          "page": 47,
+          "line": 1313
+        },
+        {
+          "level": 3,
+          "title": "Combination in octaves",
+          "page": 49,
+          "line": 1347
+        },
+        {
+          "level": 3,
+          "title": "Doubling in two, three and four octaves",
+          "page": 51,
+          "line": 1481
+        },
+        {
+          "level": 3,
+          "title": "Melody in thirds and sixths",
+          "page": 52,
+          "line": 1521
+        },
+        {
+          "level": 3,
+          "title": "Thirds and sixths together",
+          "page": 53,
+          "line": 1579
+        },
+        {
+          "level": 2,
+          "title": "Melody in the brass",
+          "page": 53,
+          "line": 1601
+        },
+        {
+          "level": 3,
+          "title": "Brass in unison, in octaves, thirds and sixths",
+          "page": 55,
+          "line": 1681
+        },
+        {
+          "level": 2,
+          "title": "Melody in different groups of instruments combined together",
+          "page": 56,
+          "line": 1739
+        },
+        {
+          "level": 3,
+          "title": "A. Combination of wind and brass in unison",
+          "page": 56,
+          "line": 1741
+        },
+        {
+          "level": 3,
+          "title": "B. Combination of wind and brass in octaves",
+          "page": 57,
+          "line": 1757
+        },
+        {
+          "level": 3,
+          "title": "Examples of doubling in octaves:",
+          "page": 57,
+          "line": 1775
+        },
+        {
+          "level": 3,
+          "title": "C. Combination of strings and wind",
+          "page": 58,
+          "line": 1815
+        },
+        {
+          "level": 3,
+          "title": "D. Combination of strings and brass",
+          "page": 61,
+          "line": 1959
+        },
+        {
+          "level": 3,
+          "title": "E. Combination of the three groups",
+          "page": 61,
+          "line": 1975
+        }
+      ]
+    },
+    {
+      "id": "ch-03",
+      "number": "III",
+      "title": "Harmony",
+      "start_page": 63,
+      "end_page": 96,
+      "pdf_start_page": null,
+      "pdf_end_page": null,
+      "start_line": 2015,
+      "end_line": 3053,
+      "chars": 44695,
+      "heading_found": true,
+      "sections": [
+        {
+          "level": 2,
+          "title": "General observations",
+          "page": 63,
+          "line": 2019
+        },
+        {
+          "level": 3,
+          "title": "Number of harmonic parts—Duplication",
+          "page": 64,
+          "line": 2031
+        },
+        {
+          "level": 3,
+          "title": "Distribution of notes in chords",
+          "page": 67,
+          "line": 2117
+        },
+        {
+          "level": 2,
+          "title": "String harmony",
+          "page": 69,
+          "line": 2167
+        },
+        {
+          "level": 2,
+          "title": "Wood-wind harmony",
+          "page": 71,
+          "line": 2239
+        },
+        {
+          "level": 3,
+          "title": "Four-part and three-part harmony",
+          "page": 72,
+          "line": 2271
+        },
+        {
+          "level": 3,
+          "title": "Harmony in several parts",
+          "page": 76,
+          "line": 2373
+        },
+        {
+          "level": 3,
+          "title": "Duplication of timbres",
+          "page": 77,
+          "line": 2401
+        },
+        {
+          "level": 3,
+          "title": "Remarks",
+          "page": 78,
+          "line": 2429
+        },
+        {
+          "level": 2,
+          "title": "Harmony in the brass",
+          "page": 82,
+          "line": 2581
+        },
+        {
+          "level": 3,
+          "title": "Four-part writing",
+          "page": 82,
+          "line": 2585
+        },
+        {
+          "level": 3,
+          "title": "Three-part writing",
+          "page": 84,
+          "line": 2623
+        },
+        {
+          "level": 3,
+          "title": "Writing in several parts",
+          "page": 84,
+          "line": 2629
+        },
+        {
+          "level": 3,
+          "title": "Duplication in the brass",
+          "page": 85,
+          "line": 2655
+        },
+        {
+          "level": 2,
+          "title": "Harmony in combined groups",
+          "page": 88,
+          "line": 2749
+        },
+        {
+          "level": 3,
+          "title": "A. Combination of wind and brass",
+          "page": 88,
+          "line": 2751
+        },
+        {
+          "level": 4,
+          "title": "1. In unison (juxtaposition or contrast of tone qualities)",
+          "page": 88,
+          "line": 2755
+        },
+        {
+          "level": 4,
+          "title": "2. Overlaying (superposition), crossing, enclosure of parts",
+          "page": 90,
+          "line": 2835
+        },
+        {
+          "level": 3,
+          "title": "B. Combination of strings and wind",
+          "page": 94,
+          "line": 2999
+        },
+        {
+          "level": 3,
+          "title": "C. Combination of the three groups",
+          "page": 95,
+          "line": 3031
+        }
+      ]
+    },
+    {
+      "id": "ch-04",
+      "number": "IV",
+      "title": "Composition of the orchestra",
+      "start_page": 97,
+      "end_page": 118,
+      "pdf_start_page": null,
+      "pdf_end_page": null,
+      "start_line": 3057,
+      "end_line": 3691,
+      "chars": 39350,
+      "heading_found": true,
+      "sections": [
+        {
+          "level": 2,
+          "title": "Different ways of orchestrating the same music",
+          "page": 97,
+          "line": 3061
+        },
+        {
+          "level": 2,
+          "title": "Full Tutti",
+          "page": 101,
+          "line": 3137
+        },
+        {
+          "level": 2,
+          "title": "Tutti in the wind",
+          "page": 103,
+          "line": 3195
+        },
+        {
+          "level": 2,
+          "title": "Tutti pizzicato",
+          "page": 103,
+          "line": 3215
+        },
+        {
+          "level": 2,
+          "title": "Tutti in one, two and three parts",
+          "page": 104,
+          "line": 3237
+        },
+        {
+          "level": 2,
+          "title": "Soli in the strings",
+          "page": 104,
+          "line": 3253
+        },
+        {
+          "level": 2,
+          "title": "Limits of orchestral range",
+          "page": 106,
+          "line": 3337
+        },
+        {
+          "level": 2,
+          "title": "Transference of passages and phrases",
+          "page": 107,
+          "line": 3375
+        },
+        {
+          "level": 2,
+          "title": "Chords of different tone quality used alternately",
+          "page": 108,
+          "line": 3415
+        },
+        {
+          "level": 2,
+          "title": "Amplification and elimination of tone qualities",
+          "page": 109,
+          "line": 3447
+        },
+        {
+          "level": 2,
+          "title": "Repetition of phrases, imitation, echo",
+          "page": 110,
+          "line": 3475
+        },
+        {
+          "level": 2,
+          "title": "Sforzando-piano and piano-sforzando chords",
+          "page": 111,
+          "line": 3503
+        },
+        {
+          "level": 2,
+          "title": "Method of emphasising certain notes and chords",
+          "page": 111,
+          "line": 3519
+        },
+        {
+          "level": 2,
+          "title": "Crescendo and diminuendo",
+          "page": 112,
+          "line": 3535
+        },
+        {
+          "level": 2,
+          "title": "Diverging and converging progressions",
+          "page": 113,
+          "line": 3553
+        },
+        {
+          "level": 2,
+          "title": "Tone quality as a harmonic force",
+          "page": 114,
+          "line": 3581
+        },
+        {
+          "level": 3,
+          "title": "Harmonic basis",
+          "page": 114,
+          "line": 3583
+        },
+        {
+          "level": 2,
+          "title": "Artificial effects",
+          "page": 116,
+          "line": 3639
+        },
+        {
+          "level": 2,
+          "title": "Use of percussion instruments for rhythm and colour",
+          "page": 117,
+          "line": 3659
+        },
+        {
+          "level": 2,
+          "title": "Economy in orchestral colour",
+          "page": 118,
+          "line": 3685
+        }
+      ]
+    },
+    {
+      "id": "ch-05",
+      "number": "V",
+      "title": "Combination of the human voice with orchestra. The stage band",
+      "start_page": 119,
+      "end_page": 131,
+      "pdf_start_page": null,
+      "pdf_end_page": null,
+      "start_line": 3695,
+      "end_line": 4073,
+      "chars": 21740,
+      "heading_found": true,
+      "sections": [
+        {
+          "level": 2,
+          "title": "Orchestral accompaniment of solo voices",
+          "page": 119,
+          "line": 3699
+        },
+        {
+          "level": 3,
+          "title": "General remarks",
+          "page": 119,
+          "line": 3701
+        },
+        {
+          "level": 3,
+          "title": "Transparence of accompaniment. Harmony",
+          "page": 120,
+          "line": 3715
+        },
+        {
+          "level": 3,
+          "title": "Doubling voices in the orchestra",
+          "page": 122,
+          "line": 3765
+        },
+        {
+          "level": 3,
+          "title": "Recitative and declamation",
+          "page": 125,
+          "line": 3859
+        },
+        {
+          "level": 2,
+          "title": "Orchestral accompaniment of the chorus",
+          "page": 126,
+          "line": 3891
+        },
+        {
+          "level": 3,
+          "title": "Solo voice with chorus",
+          "page": 128,
+          "line": 3971
+        },
+        {
+          "level": 2,
+          "title": "Instruments on the stage and in the wings",
+          "page": 129,
+          "line": 3995
+        }
+      ]
+    },
+    {
+      "id": "ch-06",
+      "number": "VI",
+      "title": "(Supplementary) Voices",
+      "start_page": 132,
+      "end_page": 152,
+      "pdf_start_page": null,
+      "pdf_end_page": null,
+      "start_line": 4077,
+      "end_line": 4689,
+      "chars": 41282,
+      "heading_found": true,
+      "sections": [
+        {
+          "level": 2,
+          "title": "Technical Terms",
+          "page": 132,
+          "line": 4081
+        },
+        {
+          "level": 2,
+          "title": "Soloists",
+          "page": 133,
+          "line": 4099
+        },
+        {
+          "level": 3,
+          "title": "Range and register",
+          "page": 133,
+          "line": 4101
+        },
+        {
+          "level": 3,
+          "title": "Vocalisation",
+          "page": 134,
+          "line": 4123
+        },
+        {
+          "level": 3,
+          "title": "Table F. Voices",
+          "page": 135,
+          "line": 4129
+        },
+        {
+          "level": 4,
+          "title": "Chorus:",
+          "page": 135,
+          "line": 4131
+        },
+        {
+          "level": 4,
+          "title": "Soloists:",
+          "page": 135,
+          "line": 4135
+        },
+        {
+          "level": 3,
+          "title": "Vowels",
+          "page": 136,
+          "line": 4155
+        },
+        {
+          "level": 3,
+          "title": "Flexibility",
+          "page": 137,
+          "line": 4169
+        },
+        {
+          "level": 3,
+          "title": "Colour and character of voices",
+          "page": 137,
+          "line": 4185
+        },
+        {
+          "level": 2,
+          "title": "Voices in combination",
+          "page": 139,
+          "line": 4197
+        },
+        {
+          "level": 3,
+          "title": "Duet",
+          "page": 139,
+          "line": 4203
+        },
+        {
+          "level": 3,
+          "title": "Trios, quartets etc",
+          "page": 141,
+          "line": 4305
+        },
+        {
+          "level": 2,
+          "title": "Chorus",
+          "page": 142,
+          "line": 4341
+        },
+        {
+          "level": 3,
+          "title": "Range and register",
+          "page": 142,
+          "line": 4343
+        },
+        {
+          "level": 3,
+          "title": "Melody",
+          "page": 144,
+          "line": 4365
+        },
+        {
+          "level": 2,
+          "title": "A. Mixed chorus",
+          "page": 145,
+          "line": 4377
+        },
+        {
+          "level": 3,
+          "title": "Chorus in unison",
+          "page": 145,
+          "line": 4379
+        },
+        {
+          "level": 3,
+          "title": "Progression in octaves",
+          "page": 145,
+          "line": 4389
+        },
+        {
+          "level": 3,
+          "title": "Voices (divisi); harmonic use of the mixed chorus",
+          "page": 146,
+          "line": 4475
+        },
+        {
+          "level": 2,
+          "title": "B. Men’s chorus and women’s chorus",
+          "page": 148,
+          "line": 4543
+        },
+        {
+          "level": 2,
+          "title": "FOOTNOTES",
+          "page": 152,
+          "line": 4641
+        }
+      ]
+    }
+  ]
+}

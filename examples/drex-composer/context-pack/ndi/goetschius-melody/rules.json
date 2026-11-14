@@ -1,0 +1,455 @@
+{
+  "book": "goetschius-melody",
+  "producedBy": "ndi-extract",
+  "complete": false,
+  "pendingUnits": [],
+  "rules": [
+    {
+      "topic": "melody",
+      "text": "Ensure each chain of three or four successive tones is coherent.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 1, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "Coherency, throughout each chain of three or four successive tones;",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Design the complete melodic sentence to achieve unity in effect.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 1, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "Unity, in the design and effect of the complete melodic sentence;",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Use interesting movements with sufficient variety to banish monotony.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 1, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "Interesting movements, exhibiting sufficient variety to banish every trace of monotony.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Follow the major scale line upward or downward with almost unlimited freedom for smooth diatonic progression.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 3, p. 5"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "A melody may follow the line of the\n\n# MAJOR SCALE,\n\nupward or downward, with almost unlimited freedom.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Use step-wise progressions when they confirm the natural melodic inclination of active scale-steps.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 4, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "4. Step-wise progressions are regular, and consequently invariably permissible, when they confirm the natural or inherent melodic inclination of the so-called Active scale-steps (par. 6).",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Treat the first, third, and fifth scale-steps as inactive and inert, moving only under outward impulse.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 5, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "The 1st, 3rd and 5th scale-steps (those which constitute the Tonic Triad, or harmonic core of the key, see par. 18) are Inactive. They occupy the centre of harmonic repose, and are therefore inert, not moving except in obedience to some out",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Treat the seventh, sixth, fourth, and second scale-steps as active, urging movement toward rest.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 5, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "The others,—the 7th, 6th, 4th and 2nd scale-steps, are Active, because they lie outside of this circle of harmonic repose, and are urged by their inherent impulse to regain the condition of rest.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Resolve the seventh scale-step upward with the most urgent tendency.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "(a) The tendency is most urgent in the 7th scale-step, and its direction is upward.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Resolve the sixth scale-step downward with somewhat less urgency than the seventh.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "(b) The tendency is somewhat less urgent in the 6th step, and its direction is downward.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Resolve the fourth scale-step downward with less urgency than the sixth.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "(c) Still less urgent in the 4th step,—tendency also downward.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Ignore the second scale-step's specific direction because it is evenly balanced between the first and third steps.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 6, p. 6"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "(d) The inclination of the 2nd scale-step is evenly balanced between the 1st and 3rd steps, from which it is (practically) equally distant. For that reason it need not be considered in this connection.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "phrase_structure",
+      "text": "Begin a regular four-measure phrase with an inactive tone from the tonic triad on the first accented beat or in the pickup.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 8, p. 7"
+      },
+      "calls": [
+        "setup",
+        "theme_draft"
+      ],
+      "evidence": "(a) When regular, it begins with one of the (inactive) tones which constitute the Tonic Triad. These may be placed upon the first (accented) beat of the first measure; or one, perhaps more, beats before the first full measure.",
+      "unit": "ch-01.p9"
+    },
+    {
+      "topic": "melody",
+      "text": "Approach active scale steps from the opposite direction along the scale to force them to move against their natural resolution tendency.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 10, p. 10"
+      },
+      "calls": [
+        "theme_draft",
+        "voice_leading"
+      ],
+      "evidence": "10. It is always possible to evade the Resolution, i.e., to counteract the natural tendency, of the three Active scale-steps, and force them to progress in the opposite direction, by approaching them, along the line of the scale, in the cor",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "Approach active scale steps from the direction of their natural resolution to reinforce their tendency, requiring immediate resolution.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 11, p. 10"
+      },
+      "calls": [
+        "theme_draft",
+        "voice_leading"
+      ],
+      "evidence": "11. If approached in the direction of their Resolution, along the scale, however, the natural inclination is reinforced, and must be fulfilled,—at present.",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "When moving upward through the scale, turn back at any point except the seventh scale step.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 11, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "In other words, the melody, in pursuing the line of the scale upward, may turn back (if desired) at any point excepting the 7th scale-step; in pursuing the line of the scale downward, it can turn at any point excepting the 6th or 4th step.",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "When moving downward through the scale, turn back at any point except the sixth or fourth scale steps.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 11, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "In other words, the melody, in pursuing the line of the scale upward, may turn back (if desired) at any point excepting the 7th scale-step; in pursuing the line of the scale downward, it can turn at any point excepting the 6th or 4th step.",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "If a third is leapt against the natural tendency of an active tone, immediately turn back to the preceding tone by leap or step.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 12, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "An obligation is involved only when the leap of a third is made contrary to the natural tendency of the Active tone; in which case the melody must immediately turn back,—either by a leap, to the preceding tone, or by step-wise progression.",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "Counteract rhythmic monotony by varying tone succession and avoiding movement within a narrow range of three or four tones.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 12, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "The danger of monotony, arising from the uniformity of rhythm, must be counteracted by variety of tone-succession; avoid moving about in the narrow compass of the same 3 or 4 tones, and, as a rule, avoid returning too frequently to the same",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "Avoid returning too frequently to the same tone, especially on corresponding beats of consecutive measures.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 12, p. 11"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "The danger of monotony, arising from the uniformity of rhythm, must be counteracted by variety of tone-succession; avoid moving about in the narrow compass of the same 3 or 4 tones, and, as a rule, avoid returning too frequently to the same",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "Follow the line of any good chord upward or downward to create vigorous disjunct movement that contrasts with stepwise progressions.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 13, p. 12"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "13. A melody may follow the line of any good CHORD\n\nupward or downward, with almost unlimited freedom.\n\nThis yields the more vigorous species of movement called disjunct, or by skip (or leap); and affords the necessary contrast with the ste",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "Switch between the scale-line and the chord-line at any point in a melody, subject to self-evident restrictions.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 14, p. 12"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "14. The “Scale-line” may be abandoned for the “Chord-line,” or the chord-line for the scale-line, at any point in a melody,—subject to a few self-evident restrictions.",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "harmony",
+      "text": "Study the construction, relation, and succession of chords thoroughly to acquire freedom in recognizing and employing principal chord-lines correctly.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 15, p. 12"
+      },
+      "calls": [
+        "voice_leading"
+      ],
+      "evidence": "15. The influence of HARMONY (i.e., the construction, relation and succession of chords) upon melody-formation is so great and constant, that this is probably the most vital of the two Primary Rules. Unless already familiar with the element",
+      "unit": "ch-02.p14"
+    },
+    {
+      "topic": "melody",
+      "text": "Follow the line of any good chord upward or downward to create vigorous disjunct movement that contrasts with stepwise progressions.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 13, p. 12"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "13. A melody may follow the line of any good CHORD\n\nupward or downward, with almost unlimited freedom.\n\nThis yields the more vigorous species of movement called disjunct, or by skip (or leap); and affords the necessary contrast with the ste",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "melody",
+      "text": "Switch between the scale-line and the chord-line at any point in a melody, subject to self-evident restrictions.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 14, p. 12"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "14. The “Scale-line” may be abandoned for the “Chord-line,” or the chord-line for the scale-line, at any point in a melody,—subject to a few self-evident restrictions.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "harmony",
+      "text": "Study the elementary conditions of harmony thoroughly to acquire absolute freedom in recognizing and employing principal chord-lines correctly.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 15, p. 12"
+      },
+      "calls": [
+        "setup"
+      ],
+      "evidence": "15. The influence of HARMONY (i.e., the construction, relation and succession of chords) upon melody-formation is so great and constant, that this is probably the most vital of the two Primary Rules. Unless already familiar with the element",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "harmony",
+      "text": "Construct chords by adding one higher third after another to the fundamental tone to determine the chord's name, quality, and relation to other chords.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 16, p. 12"
+      },
+      "calls": [
+        "voice_leading"
+      ],
+      "evidence": "16. The tones which constitute a chord are found by adding one higher 3rd after another, to the fundamental tone which is to be the root, and the index of the chord (of its name, quality, and relation to other chords).",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "harmony",
+      "text": "Follow tonic class chords with any other chord in the same key.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ],
+      "evidence": "(a) The chords of the Tonic class may progress into (i. e., may be followed by) any other chord of the same key.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "harmony",
+      "text": "Follow dominant class chords with tonic class chords, preferring the tonic over the submediant.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ],
+      "evidence": "(b) The chords of the Dominant class can only progress easily into those of the Tonic class, preferably into the I, more rarely into the VI.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "harmony",
+      "text": "Avoid following dominant class chords with second-dominant class chords in melody invention.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ],
+      "evidence": "The progression of a Dominant chord into one of the Second-Dominant class is uncommon, and need not be considered in melody-invention.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "harmony",
+      "text": "Follow second-dominant class chords with dominant class chords, or less readily with tonic class chords.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 21, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ],
+      "evidence": "(c) The chords of the Second-Dominant class pass most readily into those of the Dominant class; but they may also be followed by those of the Tonic.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "harmony",
+      "text": "Observe inherent melodic tendencies to facilitate correct application of chord succession rules.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 22, p. 15"
+      },
+      "calls": [
+        "voice_leading"
+      ],
+      "evidence": "22. N.B.—These rules of chord-succession are so fully confirmed by the rules of inherent melodic tendency (explained in paragraphs 4–6), that careful observance of the latter facilitates, largely, the correct application of the former.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "melody",
+      "text": "Identify the chord quality and name represented by melodic skips to control their movements.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 23, p. 15"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "23. Nevertheless, it is necessary to be fully conscious of the quality and name of the chord-lines represented by skips in the melody, and to control their movements accordingly.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "melody",
+      "text": "Ensure each single melodic skip represents a good chord.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 24, p. 15"
+      },
+      "calls": [
+        "theme_draft"
+      ],
+      "evidence": "24. Each single skip must obviously represent, at present, some good chord.",
+      "unit": "ch-03.p16"
+    },
+    {
+      "topic": "melody",
+      "text": "Leap from any scale degree, active or inactive, in either direction, provided the leap follows a good chord line.",
+      "source": {
+        "book": "goetschius-melody",
+        "ref": "par. 25, p. 16"
+      },
+      "calls": [
+        "theme_draft",
+        "voice_leading"
+      ],
+      "evidence": "25. With this single limitation, a leap may be made from any tone, Active or: Inactive, upward or downward.",
+      "unit": "ch-03.p16"
+    }
+  ],
+  "dropped": []
+}

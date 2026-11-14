@@ -1,0 +1,756 @@
+{
+  "version": 1,
+  "note": "Verbatim snippet from books/<book>/text.txt (OCR errors included) that each sourced rule rests on; tools/ndi/check-digest.mjs verifies each one is on the cited page.",
+  "evidence": {
+    "melody.active-steps-resolve": {
+      "book": "goetschius-melody",
+      "ref": "par. 5-6, p. 6",
+      "quote": "The tendency is most urgent in the 7th scale-step, and its direction"
+    },
+    "melody.step-repeat-third-free": {
+      "book": "goetschius-melody",
+      "ref": "par. 9, p. 8",
+      "quote": "Besides the step-wise progressions, up or down the line of the major scale according to the first Primary Rule, it is everywhere permissible"
+    },
+    "melody.chord-leaps-for-vigour": {
+      "book": "goetschius-melody",
+      "ref": "par. 13-14, p. 12",
+      "quote": "This yields the more vigorous species of movement called disjunct, or by skip (or leap) ; and affords the necessary contrast"
+    },
+    "melody.leap-recovery": {
+      "book": "goetschius-melody",
+      "ref": "par. 26, p. 17",
+      "quote": "After a wide skip (i. e., any distance beyond a third) the melody is very likely to turn, and progress, by scale or chord-line, in the opposite direction."
+    },
+    "melody.leap-to-active-tone": {
+      "book": "goetschius-melody",
+      "ref": "par. 28, p. 18",
+      "quote": "because their natural Kesolutiou provides for the change of direction after the leap"
+    },
+    "melody.successive-leaps-one-chord": {
+      "book": "goetschius-melody",
+      "ref": "par. 31, p. 19",
+      "quote": "it may pass into any tone which harmonizes with the tones of the preceding skip"
+    },
+    "melody.avoid-tritone-leap": {
+      "book": "goetschius-melody",
+      "ref": "par. 35, p. 20",
+      "quote": "The most objectionable progression is, probably, that of the augmented fourth"
+    },
+    "melody.minor-sixth-seventh-apart": {
+      "book": "goetschius-melody",
+      "ref": "par. 42, p. 29",
+      "quote": "Tliese should not appear in immediate succession, as a very general rule."
+    },
+    "melody.long-notes-on-accents": {
+      "book": "goetschius-melody",
+      "ref": "par. 46, p. 31",
+      "quote": "When the comparatively longer (i. e., heavier) tones occupy the accented beats, or accented beat-fractions"
+    },
+    "melody.essential-vs-embellishing": {
+      "book": "goetschius-melody",
+      "ref": "par. 100, p. 75",
+      "quote": "a melody must be designed with strict regard to some harmonic basis, or subconscious chordconcept"
+    },
+    "melody.passing-note-fills-third": {
+      "book": "goetschius-melody",
+      "ref": "par. 104-105, p. 82",
+      "quote": "so that it encroaches upon the beat of the second tone, thus assuming the accented location, and dividing the value, of the latter"
+    },
+    "melody.mode-metre-character": {
+      "book": "goetschius-melody",
+      "ref": "par. 126a-b, p. 121",
+      "quote": "the latter of which is more passionate and sombre, the former brighter and more vigorous in effect, as a common rule"
+    },
+    "melody.tempo-and-motion": {
+      "book": "goetschius-melody",
+      "ref": "par. 126c, p. 121",
+      "quote": "less ornamentation is likely to appear, and diversity of time-values is more limited, i. e., the rhythm is more nearly uniform"
+    },
+    "melody.accent-or-lengthen": {
+      "book": "goetschius-melody",
+      "ref": "par. 129f, p. 122",
+      "quote": "If it be placed upon tlie accented beat, or if its time-value be increased"
+    },
+    "melody.save-extremes-for-climax": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. VI, \"Range and register\", p. 134",
+      "quote": "should be used for the culminating points of a passage or for climaxes, the notes below, for the fall or decline of a melody"
+    },
+    "melody.vary-note-values": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. VI, \"Vocalisation\", p. 134",
+      "quote": "A good vocal melody should contain notes of at least three different values"
+    },
+    "melody.contrast-motives": {
+      "book": "prout-form",
+      "ref": "§ 183, p. 83",
+      "quote": "it is desirable that these motives should be contrasted, either in melodic outline, or in rhythmic figure, or in both"
+    },
+    "phrase_structure.four-bar-phrase": {
+      "book": "goetschius-melody",
+      "ref": "par. 8a, p. 7",
+      "quote": "When regular, it begins with one of the (inactive) tones which constitute the Tonic Triad"
+    },
+    "phrase_structure.even-lengths": {
+      "book": "prout-form",
+      "ref": "§ 25, p. 8",
+      "quote": "In an enormous majority of musical periods the number of accents, and therefore of bars, consists of some multiple of 2"
+    },
+    "phrase_structure.statement-needs-reply": {
+      "book": "prout-form",
+      "ref": "§ 26, p. 8",
+      "quote": "because the want of a response creates a feeling of incompleteness"
+    },
+    "phrase_structure.parallel-period": {
+      "book": "goetschius-melody",
+      "ref": "par. 52, p. 35",
+      "quote": "excepting the last 3 or 4 tones; these always differ, because of the diversity of cadence"
+    },
+    "phrase_structure.rest-marks-group": {
+      "book": "goetschius-melody",
+      "ref": "par. 65, p. 44",
+      "quote": "of brief rests, at the end of the symmetrical ejroiips, to emphasize the effect of their recurrence"
+    },
+    "phrase_structure.grade-rests-like-punctuation": {
+      "book": "prout-form",
+      "ref": "§ 66, p. 30",
+      "quote": "The end of a sentence corresponds to a full stop, that of a phrase to a semicolon, and of a section to a comma."
+    },
+    "phrase_structure.vary-lengths-in-long-pieces": {
+      "book": "prout-form",
+      "ref": "§ 221, p. 102",
+      "quote": "in order to prevent the monotony which would inevitably result were a cadence introduced at every fourth bar"
+    },
+    "phrase_structure.extend-by-repeating-section": {
+      "book": "prout-form",
+      "ref": "§ 233, p. 107",
+      "quote": "it is possible, and by no means uncommon, to interpolate one or more bars in the middle of a sentence"
+    },
+    "phrase_structure.overlap": {
+      "book": "prout-form",
+      "ref": "§ 258, p. 118",
+      "quote": "We cannot, however, contract a sentence or phrase by the elision of an accented bar in the same manner as of an unaccented."
+    },
+    "cadences.perfect-cadence-melody": {
+      "book": "goetschius-melody",
+      "ref": "par. 8b, p. 7",
+      "quote": "The Phrase closes with the Tonic (i. e. , the key-note) ; upon an accented beat of the fourth measure"
+    },
+    "cadences.half-cadence-melody": {
+      "book": "goetschius-melody",
+      "ref": "par. 51, p. 34",
+      "quote": "upon an accented beat of the 4th measure, with either one of the three tones which co7npose the Dominant Triad"
+    },
+    "cadences.midpoint-and-end": {
+      "book": "prout-form",
+      "ref": "§ 8, p. 3",
+      "quote": "with a point of repose at the eighth bar, and the addition of the tonic at the end"
+    },
+    "cadences.eight-bar-plan": {
+      "book": "prout-form",
+      "ref": "§ 27, p. 9",
+      "quote": "It has a half cadence at the fourth bar, and a full cadence at the eighth."
+    },
+    "cadences.middle-cadence-options": {
+      "book": "prout-form",
+      "ref": "§ 29, p. 9",
+      "quote": "It is by no means necessary that the first phrase of a sentence should end with a half cadence"
+    },
+    "cadences.section-cadence-weaker": {
+      "book": "prout-form",
+      "ref": "§ 55, p. 25",
+      "quote": "the continuity of the music would frequently be destroyed, and we should have the effect of continual halting"
+    },
+    "cadences.dominant-weak-tonic-strong": {
+      "book": "prout-form",
+      "ref": "§ 59, p. 27",
+      "quote": "To obtain a satisfactory effect we have to connect an unaccented (or less accented) dominant chord with an accented tonic chord."
+    },
+    "cadences.no-same-cadence-twice": {
+      "book": "prout-form",
+      "ref": "§ 339, p. 179",
+      "quote": "it would be very weak to use this cadence for the fore-phrase of the second sentence, because we should then have the same cadence twice in succession"
+    },
+    "cadences.full-close-formula": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XVII, § 49, p. 57",
+      "quote": "Then follows on an accented beat the chord of the six-four of the tonic triad, which in turn is succeeded by the cadence proper"
+    },
+    "cadences.root-dominant-seventh-closes": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XVII, § 48, p. 57",
+      "quote": "The inversions of the Dominant chord, however, have not this cadencing character and are therefore better suited to the intermediate portions of a piece"
+    },
+    "cadences.perfect-needs-tonic-on-top": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXXIV, § 139, p. 136",
+      "quote": "If both these chords appear in fundamental form, and the tonic triad moreover in octave position, the cadence is called perfect-, otherwise it is termed imperfect."
+    },
+    "cadences.deceptive-to-prolong": {
+      "book": "prout-form",
+      "ref": "§ 224, p. 104",
+      "quote": "At bar 8 the sentence is prolonged by the substitution of an interrupted for a full cadence."
+    },
+    "cadences.plagal-after-tonic-pedal": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXII, § 64, p. 79",
+      "quote": "The organ-point on the tonic often ends in the so-called Plagal or Church-Close, which consists of the sub-dominant triad followed by the tonic triad."
+    },
+    "cadences.extend-final-cadence": {
+      "book": "prout-form",
+      "ref": "§ 222, p. 102",
+      "quote": "One of the simplest, and perhaps the most common method of extending a sentence is by the prolongation or repetition of its final cadence."
+    },
+    "tension_release.rising-falling-line": {
+      "book": "goetschius-melody",
+      "ref": "par. 129a, p. 122",
+      "quote": "indicates, ordinarily, an increase of emotional tension, or emphasis; a descending succession, relaxation"
+    },
+    "tension_release.step-vs-leap": {
+      "book": "goetschius-melody",
+      "ref": "par. 129b, p. 122",
+      "quote": "these changes of feeling are more abrupt and positive, about in proportion to the size of the skijDs"
+    },
+    "tension_release.chromatic-motion": {
+      "book": "goetschius-melody",
+      "ref": "par. 129c, p. 122",
+      "quote": "The progression in chromatic tones is more seductive or passionate, as a rule, than diatonic (i. e., scale) successions"
+    },
+    "tension_release.chord-member-colour": {
+      "book": "goetschius-melody",
+      "ref": "par. 129g, p. 122",
+      "quote": "The chord-7th and 9th, and the suspensions, are keen, conspicuous, and even obtrusive (in proportion to the degree of their dissonance)"
+    },
+    "tension_release.melodic-suspension": {
+      "book": "goetschius-melody",
+      "ref": "par. 101, p. 76",
+      "quote": "may be tied to the following, next lower or higher, tone, and thus be held over during a fraction of the value of the latter"
+    },
+    "tension_release.suspension-preparation": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXIII, § 70, p. 82",
+      "quote": "Consequently the suspension invariably falls on the accented beat, while its resolution occupies the beat relatively unaccented"
+    },
+    "tension_release.dissonance-resolves-down": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XVI, § 45, p. 52",
+      "quote": "it is only by a melodic progression of the dissonance downward into a consonance, that our musical susceptibilities, disturbed by that dissonance, are quitted"
+    },
+    "tension_release.pedal-clash": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXII, §§ 62 and 65, p. 77",
+      "quote": "its effect is greatly intensified by these chords not in harmony with the Bass note"
+    },
+    "tension_release.less-decided-close": {
+      "book": "prout-form",
+      "ref": "§ 33, p. 11",
+      "quote": "because it ends with the third of the tonic in the upper voice, but still more because the tonic chord is deferred by the feminine ending"
+    },
+    "tension_release.defer-cadence": {
+      "book": "prout-form",
+      "ref": "§ 223, p. 103",
+      "quote": "the cadence is fully expected, and when it is reached it gives, perhaps, all the more satisfaction from having been deferred"
+    },
+    "tension_release.suspensions-slow-tempo": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXX, p. 126",
+      "quote": "They are employed to best advantage in slow movements (Andante, Adagio, Largo), since a proper appreciation of their beauty demands that the ear be clearly aware of preparation and resolution"
+    },
+    "developing_variation.repeat-or-sequence": {
+      "book": "goetschius-melody",
+      "ref": "par. 59-61, p. 41",
+      "quote": "by the princiiDle of symmetrical recurrence, applied to an entire group of consecutive tones"
+    },
+    "developing_variation.vary-slightly": {
+      "book": "goetschius-melody",
+      "ref": "par. 66a, p. 44",
+      "quote": "may be modified, or varied, slightly (not to such an extent as to render their recognition difficult or uncertain)"
+    },
+    "developing_variation.widen-narrow-intervals": {
+      "book": "goetschius-melody",
+      "ref": "par. 66b, p. 44",
+      "quote": "the lines of the initial group are somewhat expanded or contracted, but, as a rule, without changing the original direction at any jDoint"
+    },
+    "developing_variation.partial-recurrence": {
+      "book": "goetschius-melody",
+      "ref": "par. 67, p. 45",
+      "quote": "the repetition or sequence may be partial; that is, consisting in the recurrence of only a jDortion of the original group"
+    },
+    "developing_variation.rhythm-halve-double": {
+      "book": "goetschius-melody",
+      "ref": "par. 68, p. 46",
+      "quote": "If the sum is exactly divided, or doubled, so that the prosodic arrangement (of accented and unaccented tones) is not altered"
+    },
+    "developing_variation.inversion": {
+      "book": "goetschius-melody",
+      "ref": "par. 70, p. 47",
+      "quote": "the recurrence may be modified by being turned bodily in the contrary direction (i. e., upside down)"
+    },
+    "developing_variation.germ": {
+      "book": "goetschius-melody",
+      "ref": "par. 121-122, p. 109",
+      "quote": "out of two or three fundamental tones, li>y miscellaneous methods of embellishment and repetition"
+    },
+    "developing_variation.plain-skeleton-sound": {
+      "book": "goetschius-melody",
+      "ref": "par. 121, p. 109",
+      "quote": "that the fundamental tones (the germ) shall form a perfectly faultless and natural melodic figure"
+    },
+    "developing_variation.develop-for-unity": {
+      "book": "prout-form",
+      "ref": "§ 12, p. 4",
+      "quote": "that there shall be logical connexion between the various parts of the work"
+    },
+    "developing_variation.rhythm-keeps-identity": {
+      "book": "prout-form",
+      "ref": "§ 182, p. 82",
+      "quote": "If this figure be strongly marked, as in the passage last quoted, it will be sufficient to establish the identity of the motive."
+    },
+    "developing_variation.vary-repeated-section": {
+      "book": "prout-form",
+      "ref": "§ 207, p. 93",
+      "quote": "the repetition will frequently be varied, either in melodic outline, in harmony, in key, or in any combination of these"
+    },
+    "developing_variation.motive-saturation": {
+      "book": "prout-form",
+      "ref": "§ 325, p. 164",
+      "quote": "one or other of these two motives IS to be found in nearly every bar except in the final cadences"
+    },
+    "departure_return.near-keys": {
+      "book": "prout-form",
+      "ref": "§ 80, p. 38",
+      "quote": "though less closely connected with the key of C, are also included among the nearly related keys"
+    },
+    "departure_return.parallel-keys": {
+      "book": "prout-form",
+      "ref": "§ 91, p. 42",
+      "quote": "the minors which are related to any tonic major are the tonic minor and the subdominant minor"
+    },
+    "departure_return.minor-first-goal": {
+      "book": "prout-form",
+      "ref": "§ 82, p. 39",
+      "quote": "the most frequent modulations, especially as first modulations, from any minor key are to its relative major, or to its submediant major"
+    },
+    "departure_return.no-key-twice": {
+      "book": "prout-form",
+      "ref": "§ 324, p. 164",
+      "quote": "in no case is more than one cadence made in any other key than the tonic"
+    },
+    "departure_return.return-must-recall": {
+      "book": "prout-form",
+      "ref": "§ 353, p. 185",
+      "quote": "It is essential to the unity of the composition as a whole, that the third part of a ternary movement should contain the principal idea of the first part."
+    },
+    "departure_return.middle-ends-on-home-dominant": {
+      "book": "prout-form",
+      "ref": "§ 376, p. 211",
+      "quote": "The middle part of the movement ends, as is often the case, on the dominant of the original key."
+    },
+    "departure_return.link-back": {
+      "book": "prout-form",
+      "ref": "§ 368, p. 203",
+      "quote": "a passage which, without forming a part of a sentence itself, connects the preceding with the following sentence"
+    },
+    "departure_return.vary-the-return": {
+      "book": "prout-form",
+      "ref": "§ 373, p. 204",
+      "quote": "the melodic and harmonic outlines of the two are precisely similar"
+    },
+    "departure_return.return-new-continuation": {
+      "book": "prout-form",
+      "ref": "§ 326, p. 166",
+      "quote": "as this has not now to lead into the dominant key, it is furnished with a new continuation, its after-phrase being repeated for a final close"
+    },
+    "departure_return.final-cadence-home": {
+      "book": "goetschius-melody",
+      "ref": "par. 90, p. 64",
+      "quote": "but the final cadence must fall upon the Tonic of the original key"
+    },
+    "departure_return.hold-dominant-link": {
+      "book": "prout-form",
+      "ref": "§ 382, p. 229",
+      "quote": "it has no cadence, and consists simply of the chord of the dominant minor ninth of E flat"
+    },
+    "voice_leading.keep-common-tones": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. II, § 11, p. 13",
+      "quote": "it is nessary to retain the common tone of the triads in the same voice"
+    },
+    "voice_leading.no-parallel-fifths-octaves": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. III, § 13, p. 16",
+      "quote": "they counteract the independent movement of the voices Such forbidden progressions are Parallel Fifths and Octaves."
+    },
+    "voice_leading.contrary-to-bass": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. III, § 13, p. 16",
+      "quote": "allow the Bass to retain its melodious step of a second, and, employing contrary motion, lead each of the other voices into the nearest interval of the following chord"
+    },
+    "voice_leading.never-double-leading-note": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. VIII, § 24, p. 28",
+      "quote": "the third of the former must never be doubled, as it is the leading tone"
+    },
+    "voice_leading.dominant-seventh-resolution": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. X, § 29, p. 33",
+      "quote": "the seventh moves (like all dissonances) one degree downward; that is, into the third of the triad."
+    },
+    "voice_leading.outer-voices-mobile": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XI, § 33, p. 38",
+      "quote": "Fifths and fourths are characteristic jumps in the Bass; though this voice is also very partial to scale — like progressions by steps, mostly in contrary motion to the Soprano"
+    },
+    "voice_leading.inner-voices-quiet": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XI, § 33, p. 38",
+      "quote": "The inner voices are distinctly averse to much motion; they are fitted by nature to retain the common tones of chords"
+    },
+    "voice_leading.overtone-spacing": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. III, \"Remarks\", p. 78",
+      "quote": "with wide intervals (octaves and sixths), in the bass part, lesser intervals (fifths and fourths) in the middle, and close intervals (3rds or 2nds) in the upper register"
+    },
+    "harmony.principal-triads": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. I, § 5, p. 11",
+      "quote": "they indicate clearly and unmistakeably the key and further suffice for the harmonic accompaniment of any melody that does not surpass the limits of the key in question"
+    },
+    "harmony.secondary-triads-softer": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. I, § 6, p. 11",
+      "quote": "The minor Third imparts to these triads a soft, weakened character, hence they cannot command the importance possessed by the major triads."
+    },
+    "harmony.minor-leading-note": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. VI, § 18, p. 21",
+      "quote": "This is done in order to establish a leading-tone, which, as the pupil will perceive later, is indispensable to the cadence"
+    },
+    "harmony.root-vs-inversion": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. VIII, § 23, p. 26",
+      "quote": "the inversions of the triads are— as a rule— to be found in the middle of a composition, rarely at the commencement, and never at the end"
+    },
+    "harmony.core-vocabulary": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXX, p. 126",
+      "quote": "All other chords are superfluous; at any rate their occurrence should not he too frequent, being in each case justified by a distinct purpose"
+    },
+    "harmony.establish-new-key": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Third Section (before Ch. XVIII), §§ 51-52, p. 63",
+      "quote": "we must insert a chord, that can belong only to the key we wish to reach"
+    },
+    "harmony.pivot-chord": {
+      "book": "prout-form",
+      "ref": "§ 96, p. 44",
+      "quote": "In a very large majority of cases a modulation is effected by means of a chord common to the key quitted and to that entered."
+    },
+    "harmony.modulating-sequence": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XIX, § 59, p. 70",
+      "quote": "sequences, in which every chord constitutes a modulation. They are such, in which Dominant seventh chords or other chords resolving into the tonic succeed one another"
+    },
+    "harmony.diminished-seventh-pivot": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXI, § 61, p. 75",
+      "quote": "So that every diminished seventh chord is the equivalent of three other diminished seventh chords."
+    },
+    "harmony.pedal-restores-key": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXII, § 62, p. 77",
+      "quote": "When in course of a piece of music we have modulated so far from the main key that a mere prolonged cadence no longer suffices"
+    },
+    "harmony.dominant-pedal": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXII, § 63, p. 77",
+      "quote": "must be introduced by the chord of the six-four of the tonic triad and closed with the triad of the 5-th degree or the Dominant seventh chord"
+    },
+    "harmony.pedal-placement": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXII, § 65, p. 80",
+      "quote": "In most auch cases, the organ-point is erected on the tonic, and is of short duration."
+    },
+    "harmony.augmented-triad": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXVI, § 91, p. 101",
+      "quote": "accordingly the augmented triad on the tonic is usually found before the sub-dominant, that of the dominant before the tonic"
+    },
+    "harmony.augmented-sixth": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXVII, §§ 98 and 103, p. 108",
+      "quote": "These three chords nearly always resolve into major triads, since their resolution into minor (which occurs at rare intervals) does not fully satisfy the musical ear."
+    },
+    "harmony.altered-steps": {
+      "book": "goetschius-melody",
+      "ref": "par. 73-74, p. 52",
+      "quote": "Only the 6th Scale-step, however, may be lowered, i. e., inflected downward."
+    },
+    "harmony.altered-steps-resolve": {
+      "book": "goetschius-melody",
+      "ref": "par. 80 (and par. 76-77), p. 56",
+      "quote": "the raised Steps are resolved upward, the lowered Steps downward"
+    },
+    "harmony.near-keys-only": {
+      "book": "prout-form",
+      "ref": "§ 170, p. 78",
+      "quote": "it will hardly ever be advisable to modulate beyond the most nearly related keys"
+    },
+    "harmony.reharmonise-held-note": {
+      "book": "prout-form",
+      "ref": "§ 156, p. 70",
+      "quote": "after the four bars of unison, any chord might have followed of which the note A formed a part"
+    },
+    "harmony.chromatic-as-flavouring": {
+      "book": "prout-form",
+      "ref": "§ 168, p. 77",
+      "quote": "Extreme chromatic harmony should, with very rare exceptions, be regarded as the flavouring, not as the principal ingredient"
+    },
+    "harmony.first-modulation-not-subdominant": {
+      "book": "prout-form",
+      "ref": "§ 346, p. 182",
+      "quote": "it is almost always bad to make the first modulation to the key of the subdominant"
+    },
+    "harmony.balance-dominant-subdominant": {
+      "book": "prout-form",
+      "ref": "§ 346, p. 182",
+      "quote": "one modulation counterbalances the other, and the impression of the original key remains unimpaired"
+    },
+    "harmony.middle-key-choice": {
+      "book": "prout-form",
+      "ref": "§ 375, p. 211",
+      "quote": "will be either the subdominant, the tonic minor, or (more rarely) the relative minor"
+    },
+    "harmony.change-on-accents": {
+      "book": "prout-form",
+      "ref": "§ 208, p. 94",
+      "quote": "it is not at all uncommon to find the harmony of an accented bar continued through the following unaccented bar"
+    },
+    "harmony.long-note-many-chords": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XX, § 60 (footnote to the exercises), p. 74",
+      "quote": "the prolonged note in the Soprano is to be regarded merely as a tone common to several chords"
+    },
+    "harmony.upper-pedal": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. III, \"Number of harmonic parts—Duplication\", p. 66",
+      "quote": "Upper and inner pedal notes are more effective on the orchestra than in pianoforte or chamber music, owing to the greater variety of tone colour:"
+    },
+    "harmony.dominant-ninth": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XII, § 35, p. 40",
+      "quote": "being a strongly dissonant chord, must be prepared, that is, the ninth must be part of the preceding chord, and must be kept in the same voice"
+    },
+    "orchestration.strings-carry-expression": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"A. Stringed Instruments\", p. 9",
+      "quote": "renders this group of instruments far and away the best orchestral medium of melodic expression"
+    },
+    "orchestration.basses-double-cellos": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"A. Stringed Instruments\", p. 9",
+      "quote": "the double bass rarely plays an independent part, usually moving in octaves or in unison with the"
+    },
+    "orchestration.flute": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Wood-wind\", p. 19",
+      "quote": "Cold in quality, specially suitable, in the major key, to melodies of light and graceful character; in the minor key, to slight touches of transient sorrow."
+    },
+    "orchestration.oboe": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Wood-wind\", p. 19",
+      "quote": "Artless and gay in the major, pathetic and sad in the minor."
+    },
+    "orchestration.clarinet": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Wood-wind\", p. 19",
+      "quote": "Pliable and expressive, suitable, in the major, to melodies of a joyful or contemplative character, or to outbursts of mirth"
+    },
+    "orchestration.horn": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Brass\", p. 24",
+      "quote": "The middle notes resemble those of the bassoon and the two instruments blend well together."
+    },
+    "orchestration.pizzicato": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Pizzicato\", p. 27",
+      "quote": "pizzicato playing has but small range of expression, and is used chiefly as a colour effect"
+    },
+    "orchestration.harp": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Harp\", p. 28",
+      "quote": "The special function of the harp lies in the execution of chords, and the florid figures springing from them."
+    },
+    "orchestration.timpani": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Kettle-drums\", p. 30",
+      "quote": "In tremolando they can execute the most gradual crescendo, diminuendo, the sfp and morendo."
+    },
+    "orchestration.celesta-glockenspiel": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Glockenspiel, Bells, Xylophone\", p. 32",
+      "quote": "The use of the glockenspiel is similar to the celesta, but its tone is more brilliant and penetrating."
+    },
+    "orchestration.dont-double-everything": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. I, \"Comparison of resonance in orchestral groups and combination of different tone qualities\", p. 35",
+      "quote": "produces a dull, neutral texture, whereas the employment of simple, elementary combinations gives infinitely greater scope for variety in colour"
+    },
+    "orchestration.melody-stands-out": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. II, opening remarks on melody, p. 36",
+      "quote": "melody should always stand out in relief from the accompaniment"
+    },
+    "orchestration.violins-melody": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. II, \"a) Violins\", p. 36",
+      "quote": "a process which produces fuller resonance without impairing quality of tone"
+    },
+    "orchestration.violas": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. II, \"b) Violas\", p. 37",
+      "quote": "Melodies confided to the violas are generally doubled by other strings or by the wood-wind."
+    },
+    "orchestration.cellos-melody": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. II, \"c) Violoncellos\", p. 38",
+      "quote": "are more often entrusted with tense passionate cantabile melody than with distinctive figures or rapid phrases"
+    },
+    "orchestration.octave-doubling-extremes": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. II, \"Stringed instruments doubling in octaves\", p. 44",
+      "quote": "are generally doubled an octave below, whilst those situated in the extreme low register (below the middle of the 1st octave) are doubled an octave higher"
+    },
+    "orchestration.solo-vs-unison": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. II, \"Combination in unison\", p. 48",
+      "quote": "Phrases or melodies demanding diversity of expression alone should be entrusted to solo instruments of simple timbres."
+    },
+    "orchestration.rescoring-returns": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Different ways of orchestrating the same music\", p. 100",
+      "quote": "e) variation of the general dynamic scheme, e.g. repeating a phrase piano, which has already been played forte"
+    },
+    "orchestration.tutti-loud": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Full Tutti\", p. 102",
+      "quote": "the tutti is used essentially in forte and fortissimo, rarely in pianissimo and piano passages"
+    },
+    "orchestration.solo-string": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Soli in the strings\", p. 105",
+      "quote": "The comparatively weak tone of the solo instrument necessitates light, transparent accompaniment."
+    },
+    "orchestration.percussion": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Use of percussion instruments for rhythm and colour\", p. 117",
+      "quote": "The triangle, side drum, and tambourine go best with harmony in the upper register; cymbals, bass drum and gong with harmony in the lower."
+    },
+    "orchestration.economy": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Economy in orchestral colour\", p. 118",
+      "quote": "Neither musical feeling nor the ear itself can stand, for long, the full resources of the orchestra combined together."
+    },
+    "orchestration.let-groups-rest": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Economy in orchestral colour\", p. 118",
+      "quote": "A group of instruments which has been silent for some time gains fresh interest upon its reappearance."
+    },
+    "orchestration.three-groups-chord": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. III, \"C. Combination of the three groups\", p. 95",
+      "quote": "The combination of strings, wood-wind and brass instruments, set side by side, produces a full, round and firm tone."
+    },
+    "orchestration.calm-accompaniment": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XXX, § 132, p. 128",
+      "quote": "The harmonic accompaniment of a voice so complex in structure must be characterized by rythmic tranquillity, in order, by means of contrast, better to display the melody."
+    },
+    "dynamics_pacing.crescendo-order": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Crescendo and diminuendo\", p. 112",
+      "quote": "Prolonged orchestral crescendi are obtained by the gradual addition of other instruments in the following order: strings, wood-wind, brass."
+    },
+    "dynamics_pacing.crown-and-fade": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Crescendo and diminuendo\", p. 112",
+      "quote": "glorifying crescendo chords into the most brilliant sforzando climaxes. Clarinets specialise in diminuendo effects and are capable of decreasing their tone to a breath (morendo)."
+    },
+    "dynamics_pacing.score-by-role": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Different ways of orchestrating the same music\", p. 98",
+      "quote": "whether a given passage is a complement to or a contrast with what goes before and comes after, whether it forms a climax or merely a step"
+    },
+    "dynamics_pacing.no-medium-start-end": {
+      "book": "rimsky-orchestration",
+      "ref": "Ch. IV, \"Economy in orchestral colour\", p. 118",
+      "quote": "For the same reasons it is not good to commence or finish any piece of music either mf or mp."
+    },
+    "dynamics_pacing.dynamic-change-meaning": {
+      "book": "goetschius-melody",
+      "ref": "par. 129d-e, p. 122",
+      "quote": "these may be emphasized by simultaneous sudden changes of register or j^itch"
+    },
+    "dynamics_pacing.final-pause": {
+      "book": "prout-form",
+      "ref": "§ 222, p. 102",
+      "quote": "The effect of a perfect cadence is that of repose, and the feeling is only strengthened if a pause be made upon the last chord"
+    },
+    "dynamics_pacing.rest-as-pause": {
+      "book": "prout-form",
+      "ref": "§ 263, p. 122",
+      "quote": "for the mind always carries on the preceding harmony through a rest"
+    },
+    "dynamics_pacing.coda-shrinking-cadences": {
+      "book": "prout-form",
+      "ref": "§ 373, p. 204",
+      "quote": "It will be noticed that, as they are repeated, the cadences are introduced at shorter distances"
+    },
+    "dynamics_pacing.tonic-pedal-ending": {
+      "book": "prout-form",
+      "ref": "§ 377, p. 212",
+      "quote": "which ends with five bars of cadential repetitions over a tonic pedal"
+    },
+    "form.double-period": {
+      "book": "goetschius-melody",
+      "ref": "par. 97-98, p. 72",
+      "quote": "The second one is apt to be a perfect cadence, falling upon the Tonic note of some next-related key"
+    },
+    "form.begin-consonant-close-cadence": {
+      "book": "tchaikovsky-harmony",
+      "ref": "Ch. XVII, § 49, p. 57",
+      "quote": "We must always commence with a consonant chord in fundamental form At the close should appear the so-called prolonged cadence-"
+    },
+    "form.intro-bars": {
+      "book": "prout-form",
+      "ref": "§ 265, p. 123",
+      "quote": "to find one or two bars merely establishing a rhythmical figure, or a form of accompaniment to a principal melody"
+    },
+    "form.episode-must-contrast": {
+      "book": "prout-form",
+      "ref": "§ 350, p. 184",
+      "quote": "a subject altogether distinct from the principal subject of the piece, and more or less strongly contrasted with it"
+    },
+    "form.coda-optional": {
+      "book": "prout-form",
+      "ref": "§ 352, p. 185",
+      "quote": "which may be, but is not necessarily, constructed from subjects previously heard, may be added at the discretion of the composer"
+    },
+    "form.middle-change-mode": {
+      "book": "prout-form",
+      "ref": "§ 358, p. 192",
+      "quote": "the episode in a ternary form will have the same tonic as the principal subject, but be in a major instead of a minor key, or vice versa"
+    },
+    "form.middle-tempo-metre": {
+      "book": "prout-form",
+      "ref": "§ 398, p. 242",
+      "quote": "Sometimes the middle portion of a ternary movement will be in a different tempo from the first and third parts."
+    },
+    "form.ternary-plan": {
+      "book": "prout-form",
+      "ref": "§ 400, p. 243",
+      "quote": "repetition of the first part, entirely or partially, with or without variation or embellishment. A coda may be added if desired."
+    }
+  }
+}

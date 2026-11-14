@@ -1,0 +1,45 @@
+{
+  "name": "drex-composer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Prompt to music. Drex makes every musical decision; code plays the notes.",
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c cyan,magenta \"npm:server\" \"npm:web\"",
+    "server": "tsx watch --env-file-if-exists=.env server/index.ts",
+    "web": "vite",
+    "build": "vite build",
+    "build:api": "esbuild server/vercel.ts --bundle --platform=node --format=esm --target=node20 --outfile=api/compose.js && esbuild server/vercel-health.ts --bundle --platform=node --format=esm --target=node20 --outfile=api/health.js",
+    "build:vercel": "VITE_HOSTED=1 vite build && cp -R assets dist/assets && cp -R replays dist/replays && tsx tools/vercel-static.ts",
+    "start": "tsx --env-file-if-exists=.env server/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test --test-force-exit server/test/*.test.ts web/src/audio/__tests__/*.test.ts web/src/state.test.ts",
+    "eval": "tsx --env-file-if-exists=.env eval/run.ts",
+    "compose": "tsx --env-file-if-exists=.env tools/compose-cli.ts",
+    "ping": "tsx --env-file-if-exists=.env tools/drex-ping.ts",
+    "audit": "tsx tools/audit.ts",
+    "intern": "tsx --env-file-if-exists=.env tools/intern.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/eb-garamond": "^5.3.0",
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "express": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tone": "^15.1.22",
+    "ws": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.3.0",
+    "concurrently": "^10.0.7",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}

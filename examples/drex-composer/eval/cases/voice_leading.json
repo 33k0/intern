@@ -1,0 +1,385 @@
+{
+  "call": "voice_leading",
+  "cases": [
+    {
+      "id": "voice-01",
+      "tests": "a tone common to both chords is held",
+      "state": "PROMPT  \"a kitten chasing a butterfly, silly and bright\"\nPIECE   style: Playful; 4/4, 132 BPM, G major, close dry, 2:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    6 sections, roles statement / development / departure / return / climax / coda; tension 3 4 4 3 6 2 (1 calm … 7 overwhelming); departure = 3; climax = phrase 13 (section 5); ending: resolved\nNOW     section 1, phrase 2 of 17, role: development, target tension 3.3, key G major\nTHEME A 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4)   contour: valley\nTHEME B 5,(.5) 6,(.5) 7,(1) 5,(.5) 4,(.5) 3,(1) 2,(4)   contour: arch   (counter: theme A inverted, an octave lower)\nTHEME C 1'(1.5) 7(.5) 6(1.5) 5(.5) 3(4)   contour: falling   (contrast)\nLAST 4  phrase 1 [statement] 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4) 4(.5) 3(.5) 2(1) 4(.5) 5(.5) 6(1) 7(4) | chords G G D D | = A intact + A sequenced down a step\nLINEAGE phrase 1 = A intact + A sequenced down a step\nSINCE   theme intact: 1 phrases ago\nMIX     melody: Flute mp staccato, bass: Celli p pizzicato, figuration: Violas p pizzicato; registers 2-5 occupied; overall mp\nDRAFT   5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4) 5(.5) 4(.5) 3(.5) 4(.5) 5(.5) 6(.5) 7(1) 1'(4)\nCHANGE  G → Em (vi); bass plays the root; inner voices now G3 B3 D4",
+      "question": {
+        "type": "choice",
+        "instructions": "The low inner voice is on G3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on G3, the chord's 3rd. A common tone binds the two chords.",
+          "step_up": "Step up to A3, not a chord tone (a 4th above the root: an added colour or suspension).",
+          "step_down": "Step down to F♯3, not a chord tone (a major 2nd above the root: an added colour or suspension).",
+          "leap": "Leap down a minor 3rd to E3, the chord's root."
+        }
+      },
+      "accept": [
+        "hold"
+      ],
+      "why": "G belongs to both chords (root of G, third of E minor); holding it in the same voice binds the two chords, and every other move leaves the chord or leaps for nothing."
+    },
+    {
+      "id": "voice-02",
+      "tests": "hold a common tone even when a chord tone lies a step away",
+      "state": "PROMPT  \"boss fight in a neon arcade\"\nPIECE   style: Beat-driven; 4/4, 125 BPM, A minor, electronic hybrid, 2:00; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Beat-driven: Loop-based electronic writing on a steady 4/4 pulse: kick and sub bass lock the groove, syncopated hats push it forward, short motif cells repeat and mutate, and energy is shaped by filter builds, drops and sidechain pump.\n        traits: steady 4/4 kick pulse, no tempo change; sine sub bass on chord roots, locked to the kick; syncopated, off-beat hi-hats; short motif cells of two to four notes, looped; variation by adding, muting and filtering layers, not by new melody; filter-sweep builds over four or eight bars; drop: kick and bass return together after a break; sidechain pump: pad and bass duck on every kick; eight-bar blocks grouped into sixteen-bar sections; breakdown that strips back to pad and motif; noise risers and falls at section joins; looped two- to four-chord harmony\n        avoid: rubato, pauses or tempo changes inside a section; long through-composed melodies; dense orchestral doubling; anything sounding below the sub bass; frequent key changes; bass notes that do not land with the kick pattern\nPLAN    5 sections, roles statement / development / departure / climax / coda; tension 3 5 3 7 4 (1 calm … 7 overwhelming); departure = 3; climax = phrase 11 (section 4); ending: sudden stop\nNOW     section 1, phrase 1 of 16, role: statement, target tension 3, key A minor\nTHEME A 1(1.5) 5(1.5) 4(1) 3(4)   contour: arch\nTHEME B 1,(1.5) 4,,(1.5) 5,,(1) 6,,(4)   contour: valley   (counter: theme A inverted, an octave lower)\nTHEME C 5(.5) 5(.5) 6(1) 5(.5) 4(.5) 3(1) 1(4)   contour: arch   (contrast)\nLAST 4  (none yet: this is the first phrase)\nSINCE   theme intact: not yet stated\nMIX     (silence: nothing has played yet)\nDRAFT   1(1.5) 5(1.5) 4(1) 3(4) 1(1.5) 5(1.5) 4(1) 3(4)\nCHANGE  Am7 → Fmaj7 (VImaj7); bass plays the root; inner voices now A3 C4 E4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on E4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on E4, the chord's 7th. A common tone binds the two chords.",
+          "step_up": "Step up to F4, the chord's root.",
+          "step_down": "Step down to D4, not a chord tone (a major 6th above the root: an added colour or suspension).",
+          "leap": "Leap down a major 3rd to C4, the chord's 5th."
+        }
+      },
+      "accept": [
+        "hold"
+      ],
+      "why": "E is in both chords (fifth of A minor, seventh of F major seventh); the inner voices stay quiet on common tones, so it holds although F is only a semitone above."
+    },
+    {
+      "id": "voice-03",
+      "tests": "the seventh of the dominant seventh falls a step",
+      "state": "PROMPT  \"two penguins attempting a waltz\"\nPIECE   style: Playful; 3/4, 138 BPM, B♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    6 sections, roles statement / development / departure / return / climax / coda; tension 3 4 4 3 5 2 (1 calm … 7 overwhelming); departure = 3; climax = phrase 13 (section 5); ending: resolved\nNOW     section 1, phrase 2 of 17, role: development, target tension 3.3, key B♭ major\nTHEME A 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2)   contour: valley\nTHEME C 1(1) 1(1) 2(1) 3(1) 5(2)   contour: rising   (contrast)\nLAST 4  phrase 1 [statement] 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) | chords B♭ F B♭ F | = A intact + A intact\nLINEAGE phrase 1 = A intact + A intact\nSINCE   theme intact: 1 phrases ago\nMIX     melody: Clarinet mp staccato, bass: Celli p pizzicato, figuration: Violas p pizzicato; registers 2-5 occupied; overall mp\nDRAFT   5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) 5(1.5) 4(.5) 3(1.5) 1(.5) 2(.5) 3(.5) 4(1)\nCHANGE  F7 → B♭ (I); bass plays the root; inner voices now A3 C4 E♭4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on E♭4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on E♭4, not a chord tone (a 4th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to F4, the chord's 5th.",
+          "step_down": "Step down to D4, the chord's 3rd.",
+          "leap": "Leap down a 4th to B♭3, the chord's root."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "E-flat is the seventh of F7; a chord seventh is a dissonance that resolves down by step, here to D, the third of the tonic."
+    },
+    {
+      "id": "voice-04",
+      "tests": "the leading note rises to the keynote",
+      "state": "PROMPT  \"something ancient waking under the ice\"\nPIECE   style: Bittersweet orchestral; 12/8, 60 BPM, E minor, submerged, 3:00; harmony: chromatic late-Romantic harmony; dark turns and rich colour\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 7 3 (1 calm … 7 overwhelming); departure = none; climax = phrase 8 (section 3); ending: suspended\nNOW     section 2, phrase 4 of 11, role: development, target tension 4, key E minor\nTHEME A 1(2) 2(.67) 3(.33) 5(2) 4(.67) 3(2.33)   contour: arch\nTHEME B 5,(4) 6,(1.33) 7,(4.67)   contour: rising   (counter: theme A closing notes inverted, augmented)\nLAST 4  phrase 1 [statement] 1(2) 2(.67) 3(.33) 5(2) 4(.67) 3(2.33) 6,(2) 7,(.67) 1(.33) 3(2) 2(.67) 1(2.33) | chords Em(add9) Cmaj7 Em(add9) Am7 | = A intact + A sequenced down a third; over a pedal note\n        phrase 2 [development] 1(2) 2(.67) 3(.33) 5(2) 4(.67) 3(.67) 2(.67) 1(3) 1(2) 7,(.67) 6,(.33) 4,(2) 5,(.67) 6,(.33) | chords Em(add9) Am7 Cmaj7 F♯m7♭5 | = A tail extended + A inverted\n        phrase 3 [development] 1(2) 2(.67) 3(2.33) r(3) 2(2) 3(.67) 4(2.33) r(3) | chords Em7 Em7 Cmaj7 B | = A fragmented to its opening + the same again sequenced up a step\nLINEAGE phrase 3 = A fragmented to its opening + the same again sequenced up a step\nSINCE   theme intact: 3 phrases ago\nMIX     melody: Celli mp, inner: Violas p, bass: Double basses p, texture: Water and wave texture p; registers 1-4 occupied; overall p\nDRAFT   3(2) 4(.67) 5(.33) 7(2) 6(.67) 5(2.33) 3(2) 4(.67) 5(.33) 6(2) 5(.67) 4(2.33)\nCHANGE  B7 → Em (i); bass plays the root; inner voices now F♯3 A3 D♯4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on D♯4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on D♯4, not a chord tone (a major 7th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to E4, the chord's root.",
+          "step_down": "Step down to D4, not a chord tone (a minor 7th above the root: an added colour or suspension).",
+          "leap": "Leap down a major 3rd to B3, the chord's 5th."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "D-sharp is the leading note of E minor inside B7; it resolves up a semitone to the keynote when the dominant goes to the tonic."
+    },
+    {
+      "id": "voice-05",
+      "tests": "a lowered sixth degree resolves down to the fifth",
+      "state": "PROMPT  \"a wedding dance remembered; then, late, the shadow of what came after\"\nPIECE   style: Bittersweet orchestral; 12/8, 68 BPM, F major, large hall, 3:30; harmony: chromatic late-Romantic harmony; dark turns and rich colour\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    5 sections, roles statement / development / climax / development / coda; tension 2 4 6 5 2 (1 calm … 7 overwhelming); departure = none; climax = phrase 10 (section 3); ending: suspended\nNOW     section 4, phrase 11 of 14, role: development, target tension 5, key F major\nTHEME A 1(2) 2(1) 3(1) 5(2) 3(2)   contour: arch\nLAST 4  phrase 7 [development] 1(1) 2(.5) 3(2.5) r(4) 2(1) 3(.5) 4(2.5) r(4) | chords Gm9 Gm9 B♭maj9 C7sus4 | = A fragmented to its opening, diminished (twice as fast) + the same again sequenced up a step\n        phrase 8 [development] 2(2) 3(1) 4(1) 6(2) 4(2) 3(2) 4(1) 5(1) 7(2) 5(2) | chords Gm9 C9 Am7 Dm9 | = A sequenced up a step + the same again sequenced up a step\n        phrase 9 [development] 3(2) 4(1) 5(1) 7(2) 5(2) 3(2) 4(1) 5(1) 1'(2) 5(2) | chords Dm9 B♭maj9 Gm9 C9 | = A sequenced up a third + the same again leaps widened\n        phrase 10 [climax] 1'(2) 2'(1) 3'(1) 5'(2) 3'(2) 1'(1.33) 2'(.33) 1'(.33) 2'(1) 3'(.67) 4'(.33) 5'(1.67) 4'(.33) 3'(2) | chords B♭maj9 C9 Dm9 B♭maj9 | = A moved up an octave + A moved up an octave, ornamented; doubled at the octave\nLINEAGE phrase 10 = A moved up an octave + A moved up an octave, ornamented; doubled at the octave\nSINCE   theme intact: 10 phrases ago\nMIX     melody: First violins ff, counter: French horn f, inner: Second violins f tremolo, bass: Double basses ff, figuration: Grand piano f, pulse: Timpani f hit, accents: Cymbals ff hit; registers 1-6 occupied; overall ff\nDRAFT   1,(2) 2,(1) 3,(1) 5,(2) 3,(2) 1(4) 2(2) 3(2)\nCHANGE  B♭m(maj7) → F (I); bass plays the root; inner voices now F3 A3 D♭4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on D♭4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on D♭4, not a chord tone (a minor 6th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to D4, not a chord tone (a major 6th above the root: an added colour or suspension).",
+          "step_down": "Step down to C4, the chord's 5th.",
+          "leap": "Leap up a major 3rd to F4, the chord's root."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "D-flat is the lowered sixth degree borrowed from the minor; lowered tones resolve downward by step, and C, a semitone below, is the fifth of the tonic chord."
+    },
+    {
+      "id": "voice-06",
+      "tests": "with no common tone, move against the bass to the nearest chord tone",
+      "state": "PROMPT  \"ducklings learning to swim, splashing and tumbling\"\nPIECE   style: Playful; 4/4, 120 BPM, C major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    4 sections, roles statement / development / return / coda; tension 3 4 3 2 (1 calm … 7 overwhelming); departure = none; climax = phrase 6 (section 3); ending: resolved\nNOW     section 1, phrase 2 of 8, role: development, target tension 3.3, key C major\nTHEME A 1(2) 5(2) 4(1) 3(1) 2(2)   contour: arch\nLAST 4  phrase 1 [statement] 1(2) 5(2) 4(1) 3(1) 2(2) 7,(2) 4(2) 3(1) 2(1) 1(2) | chords C G G G7 | = A intact + A sequenced down a step\nLINEAGE phrase 1 = A intact + A sequenced down a step\nSINCE   theme intact: 1 phrases ago\nMIX     melody: Flute mp staccato, bass: Celli p pizzicato, figuration: Violas p pizzicato; registers 2-5 occupied; overall mp\nDRAFT   1(4) 5(4) 4(2) 3(2) 2(4)\nCHANGE  F → G (V); bass plays the root; inner voices now A3 C4 F4",
+      "question": {
+        "type": "choice",
+        "instructions": "The middle inner voice is on C4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on C4, not a chord tone (a 4th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to D4, the chord's 5th.",
+          "step_down": "Step down to B3, the chord's 3rd.",
+          "leap": "Leap down a 4th to G3, the chord's root."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "F and G major share no tone and the bass rises a step, so the upper voices fall: C to B is the nearest chord tone, while C up to D would run in parallel fifths with the bass (F-C to G-D)."
+    },
+    {
+      "id": "voice-07",
+      "tests": "do not follow the bass in octaves; step against it to a chord tone",
+      "state": "PROMPT  \"a kitten chasing a butterfly, silly and bright\"\nPIECE   style: Playful; 4/4, 132 BPM, G major, close dry, 2:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    6 sections, roles statement / development / departure / return / climax / coda; tension 3 4 4 3 6 2 (1 calm … 7 overwhelming); departure = 3; climax = phrase 13 (section 5); ending: resolved\nNOW     section 2, phrase 5 of 17, role: development, target tension 4, key G major\nTHEME A 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4)   contour: valley\nTHEME B 5,(.5) 6,(.5) 7,(1) 5,(.5) 4,(.5) 3,(1) 2,(4)   contour: arch   (counter: theme A inverted, an octave lower)\nTHEME C 1'(1.5) 7(.5) 6(1.5) 5(.5) 3(4)   contour: falling   (contrast)\nLAST 4  phrase 1 [statement] 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4) 4(.5) 3(.5) 2(1) 4(.5) 5(.5) 6(1) 7(4) | chords G G D D | = A intact + A sequenced down a step\n        phrase 2 [development] 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4) 5(.5) 4(.5) 3(.5) 4(.5) 5(.5) 6(.5) 7(1) 1'(4) | chords G C D G | = A intact + A ornamented; split as call and response\n        phrase 3 [development] 5(.5) 4(.5) 3(3) r(4) 6(.5) 5(.5) 4(3) r(4) | chords G G Am D | = A fragmented to its opening + the same again sequenced up a step; handed to a new instrument\n        phrase 4 [development] 5(.5) 6(.5) 7(1) 5(.5) 4(.5) 3(1) 2(4) 6(.5) 5(.5) 4(1) 6(.5) 7(.5) 1'(1) 2'(4) | chords C G Am D | = A inverted + A sequenced up a step; split as call and response\nLINEAGE phrase 4 = A inverted + A sequenced up a step; split as call and response\nSINCE   theme intact: 3 phrases ago\nMIX     melody: Clarinet mf staccato, inner: Second violins mp staccato, bass: Double basses mp pizzicato, figuration: Violas mp pizzicato; registers 2-5 occupied; overall mf\nDRAFT   r(.5) 6(.5) 5(.5) 4(1) 6(.5) 7(.5) 1'(1) 2'(4.5) r(.5) 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(2.5)\nCHANGE  Em → D (V); bass plays the root; inner voices now G3 B3 E4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on E4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on E4, not a chord tone (a major 2nd above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to F♯4, the chord's 3rd.",
+          "step_down": "Step down to D4, the chord's root.",
+          "leap": "Leap up a 4th to A4, the chord's 5th."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "This voice doubles the bass note E and the bass now falls to D: following it down makes parallel octaves, so the voice moves against the bass, up a step to F-sharp, the nearest chord tone."
+    },
+    {
+      "id": "voice-08",
+      "tests": "never double the leading note when it is in the bass",
+      "state": "PROMPT  \"two penguins attempting a waltz\"\nPIECE   style: Playful; 3/4, 138 BPM, B♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    6 sections, roles statement / development / departure / return / climax / coda; tension 3 4 4 3 5 2 (1 calm … 7 overwhelming); departure = 3; climax = phrase 13 (section 5); ending: resolved\nNOW     section 2, phrase 4 of 17, role: development, target tension 4, key B♭ major\nTHEME A 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2)   contour: valley\nTHEME C 1(1) 1(1) 2(1) 3(1) 5(2)   contour: rising   (contrast)\nLAST 4  phrase 1 [statement] 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) | chords B♭ F B♭ F | = A intact + A intact\n        phrase 2 [development] 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) 5(1.5) 4(.5) 3(1.5) 1(.5) 2(.5) 3(.5) 4(1) | chords B♭ F E♭ B♭ | = A intact + A tail extended\n        phrase 3 [development] 5(1.5) 4(.5) 3(3.5) r(.5) 6(1.5) 5(.5) 4(3.5) r(.5) | chords B♭ B♭ Cm F | = A fragmented to its opening + the same again sequenced up a step; handed to a new instrument\nLINEAGE phrase 3 = A fragmented to its opening + the same again sequenced up a step; handed to a new instrument\nSINCE   theme intact: 2 phrases ago\nMIX     melody: Flute mp staccato, inner: Second violins p staccato, bass: Celli p pizzicato, figuration: Violas p pizzicato; registers 2-5 occupied; overall mp\nDRAFT   5(1.5) 6(.5) 7(1.5) 2'(.5) 1'(2) 4(1.5) 3(.5) 2(1.5) 7,(.5) 1(2)\nCHANGE  B♭ → F (V); bass plays the inversion; inner voices now F3 B♭3 D4",
+      "question": {
+        "type": "choice",
+        "instructions": "The middle inner voice is on B♭3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on B♭3, not a chord tone (a 4th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to C4, the chord's 5th.",
+          "step_down": "Step down to A3, the chord's 3rd.",
+          "leap": "Leap down a 4th to F3, the chord's root."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "The dominant is in first inversion, so the bass has A, the leading note; B-flat must not step down onto a second A, and it cannot stay, so it rises to C, the fifth of the chord."
+    },
+    {
+      "id": "voice-09",
+      "tests": "a suspended fourth resolves down to the third",
+      "state": "PROMPT  \"puddle-jumping in new yellow boots\"\nPIECE   style: Playful; 4/4, 126 BPM, A major, close dry, 1:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    3 sections, roles statement / development / climax; tension 3 4 5 (1 calm … 7 overwhelming); departure = none; climax = phrase 7 (section 3); ending: resolved\nNOW     section 1, phrase 1 of 8, role: statement, target tension 3, key A major\nTHEME A 1(1) 2(1) 3(2) 2(1) 7,(1) 2(2)   contour: arch\nLAST 4  (none yet: this is the first phrase)\nSINCE   theme intact: not yet stated\nMIX     (silence: nothing has played yet)\nDRAFT   1(1) 2(1) 3(2) 2(1) 7,(1) 2(2) 1(1) 2(1) 3(2) 2(1) 7,(1) 2(2)\nCHANGE  Esus4 → E (V); bass plays the root; inner voices now E3 A3 B3",
+      "question": {
+        "type": "choice",
+        "instructions": "The middle inner voice is on A3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on A3, not a chord tone (a 4th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to B3, the chord's 5th.",
+          "step_down": "Step down to G♯3, the chord's 3rd.",
+          "leap": "Leap down a 4th to E3, the chord's root."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "A is the suspended fourth over E; a suspension resolves down by step on the weaker beat, to G-sharp, the third it was delaying."
+    },
+    {
+      "id": "voice-10",
+      "tests": "the raised fifth of an augmented triad rises a semitone",
+      "state": "PROMPT  \"first snow seen from a train window\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, D major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 6 2 (1 calm … 7 overwhelming); departure = none; climax = phrase 8 (section 3); ending: resolved\nNOW     section 2, phrase 5 of 11, role: development, target tension 4.5, key D major\nTHEME A 3(1) 2(1) 1(1) 5(1) 4(1) 3(1) 2(2)   contour: arch\nTHEME B 3,(2) 2,(2) 1,(2)   contour: falling   (counter: theme A opening, augmented)\nLAST 4  phrase 1 [statement] 3(1) 2(1) 1(1) 5(1) 4(1) 3(1) 2(2) 2(1) 1(1) 7,(1) 4(1) 3(1) 2(1) 1(2) | chords Dmaj9 Gmaj9 Dmaj9 Em9 | = A intact + A sequenced down a step\n        phrase 2 [development] 3(1) 2(1) 1(1) 5(1) 4(1) 3(1) 2(1) 1(1) 7,(2) 4(1) 3(1) 2(1) 6(1) 5(1) 4(1) | chords Dmaj9 Bm9 Em9 A7sus4 | = A tail extended + A sequenced up a step\n        phrase 3 [development] 3(1) 2(1) 1(3) r(3) 4(1) 3(1) 2(3) r(3) | chords Dmaj9 Dmaj9 Em9 A7sus4 | = A fragmented to its opening + the same again sequenced up a step\n        phrase 4 [development] 3(1) 4(1) 5(1) 1(1) 2(1) 3(1) 4(2) 5(1) 4(1) 3(1) 7(1) 6(1) 5(1) 4(2) | chords Bm9 Gmaj9 F♯m7 Gmaj9 | = A inverted + A sequenced up a third; handed to a new instrument\nLINEAGE phrase 4 = A inverted + A sequenced up a third; handed to a new instrument\nSINCE   theme intact: 4 phrases ago\nMIX     melody: First violins mp, inner: Violas p, bass: Celli mp, figuration: Harp p; registers 2-5 occupied; overall mp\nDRAFT   5(1) 4(1) 3(1) 6(1) 5(1) 4(1) 3(2) 6(1) 5(1) 4(1) 7(1) 6(1) 5(1) 4(2)\nCHANGE  Daug → G (IV); bass plays the root; inner voices now F♯3 A♯3 D4",
+      "question": {
+        "type": "choice",
+        "instructions": "The middle inner voice is on A♯3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on A♯3, not a chord tone (an augmented 2nd above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to B3, the chord's 3rd.",
+          "step_down": "Step down to A3, not a chord tone (a major 2nd above the root: an added colour or suspension).",
+          "leap": "Leap down an augmented 2nd to G3, the chord's root."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "The augmented tonic triad acts as dominant of the subdominant; its raised fifth, A-sharp, is a chromatically raised tone and resolves upward to B, the third of G."
+    },
+    {
+      "id": "voice-11",
+      "tests": "the ninth of the dominant ninth steps down like the seventh",
+      "state": "PROMPT  \"one candle, then a hundred, then a whole city of lights coming on\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, C major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 7 3 (1 calm … 7 overwhelming); departure = none; climax = phrase 8 (section 3); ending: resolved\nNOW     section 2, phrase 5 of 11, role: development, target tension 4.5, key C major\nTHEME A 3(2) 5(1) 4(1) 5(2) 3(2)   contour: wave\nLAST 4  phrase 1 [statement] 3(2) 5(1) 4(1) 5(2) 3(2) 2(2) 4(1) 3(1) 4(2) 2(2) | chords Cmaj9 Fmaj9 Cmaj9 Dm9 | = A intact + A sequenced down a step\n        phrase 2 [development] 3(2) 5(1) 4(1) 5(2) 3(2) 2(2) 1(2) 4(2) 6(1) 5(1) | chords Cmaj9 Am9 Dm9 G7sus4 | = A tail extended + A sequenced up a step\n        phrase 3 [development] 3(2) 5(1) 4(3) r(2) 4(2) 6(1) 5(3) r(2) | chords Cmaj9 Cmaj9 Dm9 G7sus4 | = A fragmented to its opening + the same again sequenced up a step\n        phrase 4 [development] 3(2) 1(1) 2(1) 1(2) 3(2) 5(2) 7(1) 6(1) 7(2) 5(2) | chords Am9 Fmaj9 Em7 Fmaj9 | = A inverted + A sequenced up a third\nLINEAGE phrase 4 = A inverted + A sequenced up a third\nSINCE   theme intact: 4 phrases ago\nMIX     melody: First violins mf, counter: Celli mp, inner: Violas mp, bass: Double basses mp, figuration: Harp mp; registers 2-5 occupied; overall mf\nDRAFT   5(1.67) 6(.33) 7(1) 6(1) 7(1.67) 6(.33) 5(2) 6(1.67) 7(.33) 1'(1) 7(1) 1'(1.67) 7(.33) 6(2)\nCHANGE  G9 → Cadd9 (Iadd9); bass plays the root; inner voices now F3 A3 B3",
+      "question": {
+        "type": "choice",
+        "instructions": "The middle inner voice is on A3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on A3, not a chord tone (a major 6th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to B3, not a chord tone (a major 7th above the root: an added colour or suspension).",
+          "step_down": "Step down to G3, the chord's 5th.",
+          "leap": "Leap up a minor 3rd to C4, the chord's root."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "A is the ninth of G9; like the seventh it is a dissonance that resolves down by step, to G, the fifth of the tonic chord."
+    },
+    {
+      "id": "voice-12",
+      "tests": "the diminished seventh resolves down by step",
+      "state": "PROMPT  \"something ancient waking under the ice\"\nPIECE   style: Bittersweet orchestral; 12/8, 60 BPM, E minor, submerged, 3:00; harmony: chromatic late-Romantic harmony; dark turns and rich colour\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 7 3 (1 calm … 7 overwhelming); departure = none; climax = phrase 8 (section 3); ending: suspended\nNOW     section 2, phrase 6 of 11, role: development, target tension 5.5, key E minor\nTHEME A 1(2) 2(.67) 3(.33) 5(2) 4(.67) 3(2.33)   contour: arch\nTHEME B 5,(4) 6,(1.33) 7,(4.67)   contour: rising   (counter: theme A closing notes inverted, augmented)\nLAST 4  phrase 2 [development] 1(2) 2(.67) 3(.33) 5(2) 4(.67) 3(.67) 2(.67) 1(3) 1(2) 7,(.67) 6,(.33) 4,(2) 5,(.67) 6,(.33) | chords Em(add9) Am7 Cmaj7 F♯m7♭5 | = A tail extended + A inverted\n        phrase 3 [development] 1(2) 2(.67) 3(2.33) r(3) 2(2) 3(.67) 4(2.33) r(3) | chords Em7 Em7 Cmaj7 B | = A fragmented to its opening + the same again sequenced up a step\n        phrase 4 [development] 3(2) 4(.67) 5(.33) 7(2) 6(.67) 5(2.33) 3(2) 4(.67) 5(.33) 6(2) 5(.67) 4(2.33) | chords Gmaj7 Cmaj7 Am7 B7 | = A sequenced up a third + the same again leaps narrowed; handed to a new instrument\n        phrase 5 [development] 4(2) 5(.67) 6(.33) 7(2) 6(.67) 5(2.33) 1(1) 2(.33) 3(2.17) r(4.5) | chords Am7 F B B7 | = phrase 4 tail sequenced up a step + A fragmented to its opening, diminished (twice as fast); second entry overlapping\nLINEAGE phrase 5 = phrase 4 tail sequenced up a step + A fragmented to its opening, diminished (twice as fast); second entry overlapping\nSINCE   theme intact: 5 phrases ago\nMIX     melody: First violins mf, counter: French horn mp, inner: Violas mp tremolo, bass: Double basses mf, pulse: Timpani mp roll; registers 1-5 occupied; overall mf\nDRAFT   1(2) 2(.67) 3(.33) 6(2) 5(.67) 4(2.33) 2(2) 3(.67) 4(.33) 7(2) 6(.67) 5(2.33)\nCHANGE  D♯dim7 → Em (i); bass plays the root; inner voices now F♯3 A3 C4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on C4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on C4, not a chord tone (a minor 6th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to D4, not a chord tone (a minor 7th above the root: an added colour or suspension).",
+          "step_down": "Step down to B3, the chord's 5th.",
+          "leap": "Leap up a major 3rd to E4, the chord's root."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "C is the seventh of the diminished seventh chord on the leading note; the dissonance falls a semitone to B, the fifth of the tonic."
+    },
+    {
+      "id": "voice-13",
+      "tests": "the lowered second of the Neapolitan falls to the leading note",
+      "state": "PROMPT  \"rain on a tin roof at 3am, missing someone\"\nPIECE   style: Bittersweet orchestral; 12/8, 70 BPM, D minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 6 2 (1 calm … 7 overwhelming); departure = none; climax = phrase 9 (section 3); ending: suspended\nNOW     section 2, phrase 7 of 13, role: development, target tension 5, key D minor\nTHEME A 5(2) 6(.67) 5(.33) 3(2) 2(.67) 3(2.33)   contour: arch\nTHEME B 5,(4) 6,(1.33) 5,(.67)   contour: arch   (counter: theme A opening, augmented)\nLAST 4  phrase 3 [development] 5(2) 6(.67) 5(2.33) r(3) 7(2) 1'(.67) 7(2.33) r(3) | chords Dm(add9) Dm(add9) Fmaj9 A7sus4 | = A fragmented to its opening + the same again sequenced up a third\n        phrase 4 [development] 5(2) 4(.67) 5(.33) 7(2) 1'(.67) 7(2.33) 6(2) 7(.67) 6(.33) 4(2) 3(.67) 4(2.33) | chords Gm9 Dm9 C9 Fmaj9 | = A inverted + A sequenced up a step; handed to a new instrument\n        phrase 5 [development] 6(1.33) 7(.33) 6(.33) 7(.67) 6(.33) 4(1.33) 5(.33) 4(.33) 3(.67) 4(2.33) 7(1.33) 1'(.33) 7(.33) 1'(.67) 7(.33) 5(1.33) 6(.33) 5(.33) 4(.67) 5(2.33) | chords B♭maj9 B♭maj9 Gm9 A7sus4 | = phrase 4 tail ornamented + the same again sequenced up a step\n        phrase 6 [development] 5(2) 6(.67) 5(.33) 2(2) 1(.67) 2(2.33) 7(2) 1'(.67) 7(2.33) r(3) | chords B♭maj9 C9 Dm9 Gm9 | = A leaps widened + A sequenced up a third, fragmented to its opening; reharmonised\nLINEAGE phrase 6 = A leaps widened + A sequenced up a third, fragmented to its opening; reharmonised\nSINCE   theme intact: 6 phrases ago\nMIX     melody: First violins mf, counter: Celli mf, inner: Violas mp, bass: Double basses mf, figuration: Harp mp; registers 2-5 occupied; overall mf\nDRAFT   5(1) 6(.33) 5(2.17) r(4.5) 6(1) 7(.33) 6(2.17) r(4.5)\nCHANGE  E♭ → A (V); bass plays the root; inner voices now E♭3 G3 B♭3",
+      "question": {
+        "type": "choice",
+        "instructions": "The low inner voice is on E♭3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on E♭3, not a chord tone (a tritone above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to E3, the chord's 5th.",
+          "step_down": "Step down to C♯3, the chord's 3rd.",
+          "leap": "Leap up a tritone to A3, the chord's root."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "E-flat is a lowered degree and resolves downward, to C-sharp, the leading note in the dominant; pushing it up to E natural contradicts the alteration."
+    },
+    {
+      "id": "voice-14",
+      "tests": "hold the one shared tone through a move to a borrowed chord a third away",
+      "state": "PROMPT  \"first snow seen from a train window\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, D major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 6 2 (1 calm … 7 overwhelming); departure = none; climax = phrase 8 (section 3); ending: resolved\nNOW     section 2, phrase 6 of 11, role: development, target tension 4.5, key D major\nTHEME A 3(1) 2(1) 1(1) 5(1) 4(1) 3(1) 2(2)   contour: arch\nTHEME B 3,(2) 2,(2) 1,(2)   contour: falling   (counter: theme A opening, augmented)\nLAST 4  phrase 2 [development] 3(1) 2(1) 1(1) 5(1) 4(1) 3(1) 2(1) 1(1) 7,(2) 4(1) 3(1) 2(1) 6(1) 5(1) 4(1) | chords Dmaj9 Bm9 Em9 A7sus4 | = A tail extended + A sequenced up a step\n        phrase 3 [development] 3(1) 2(1) 1(3) r(3) 4(1) 3(1) 2(3) r(3) | chords Dmaj9 Dmaj9 Em9 A7sus4 | = A fragmented to its opening + the same again sequenced up a step\n        phrase 4 [development] 3(1) 4(1) 5(1) 1(1) 2(1) 3(1) 4(2) 5(1) 4(1) 3(1) 7(1) 6(1) 5(1) 4(2) | chords Bm9 Gmaj9 F♯m7 Gmaj9 | = A inverted + A sequenced up a third; handed to a new instrument\n        phrase 5 [development] 5(1) 4(1) 3(1) 6(1) 5(1) 4(1) 3(2) 6(1) 5(1) 4(1) 7(1) 6(1) 5(1) 4(2) | chords F♯m7 Bm9 Gmaj9 A9 | = phrase 4 tail leaps narrowed + the same again sequenced up a step; reharmonised\nLINEAGE phrase 5 = phrase 4 tail leaps narrowed + the same again sequenced up a step; reharmonised\nSINCE   theme intact: 5 phrases ago\nMIX     melody: First violins mf, counter: Celli mp, inner: Violas mp, bass: Double basses mp, figuration: Harp mp; registers 2-5 occupied; overall mf\nDRAFT   3(.5) 2(.5) 1(2.5) r(4.5) 4(.5) 3(.5) 2(2.5) r(4.5)\nCHANGE  Dmaj9 → B♭ (♭VI); bass plays the root; inner voices now F♯3 A3 D4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on D4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on D4, the chord's 3rd. A common tone binds the two chords.",
+          "step_up": "Step up to E4, not a chord tone (a tritone above the root: an added colour or suspension).",
+          "step_down": "Step down to C♯4, not a chord tone (an augmented 2nd above the root: an added colour or suspension).",
+          "leap": "Leap up a minor 3rd to F4, the chord's 5th."
+        }
+      },
+      "accept": [
+        "hold"
+      ],
+      "why": "D is the only tone the two chords share (root of D, third of B-flat); held in the same voice it is what makes the sudden change of colour coherent."
+    },
+    {
+      "id": "voice-15",
+      "tests": "major to minor subdominant: the third slides down a semitone in the same voice",
+      "state": "PROMPT  \"a letter read by candlelight, years too late\"\nPIECE   style: Bittersweet orchestral; 12/8, 66 BPM, F major, large hall, 3:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    5 sections, roles statement / development / departure / climax / return; tension 2 4 3 6 3 (1 calm … 7 overwhelming); departure = 3; climax = phrase 10 (section 4); ending: fade\nNOW     section 4, phrase 11 of 14, role: development, target tension 5, key F major\nTHEME A 1(1.33) 2(.67) 3(1.33) 5(.67) 4(1.33) 3(.67) 2(2)   contour: arch\nTHEME B 1,(1.33) 7,,(.67) 6,,(1.33) 4,,(.67) 5,,(1.33) 6,,(.67) 7,,(2)   contour: valley   (counter: theme A inverted, an octave lower)\nTHEME C 5(1) 5(1) 5(2) 1'(2) 5(2)   contour: arch   (contrast)\nLAST 4  phrase 7 [departure] 5(1) 5(1) 5(2) 1'(2) 5(2) 4(1) 4(1) 4(2) 7(2) 4(2) | chords Dm9 B♭maj9 Gm9 A7sus4 | = C intact + C sequenced down a step; handed to a new instrument\n        phrase 8 [departure] 5(1) 5(1) 5(2) 2(2) 5(2) 5(1) 5(1) 5(1.33) 6(.33) 5(.33) 1'(1.33) 2'(.33) 1'(.33) 5(2) | chords B♭maj9 Fmaj9 Gm9 A7 | = C inverted + C ornamented\n        phrase 9 [development] 2(1.33) 3(.67) 4(1.33) 6(.67) 5(1.33) 4(.67) 3(2) 3(1.33) 4(.67) 5(1.33) 7(.67) 6(1.33) 5(.67) 4(2) | chords Gm9 C9 Am7 Dm9 | = A sequenced up a step + the same again sequenced up a step; doubled at the octave\n        phrase 10 [climax] 1'(1.33) 2'(.67) 3'(1.33) 5'(.67) 4'(1.33) 3'(.67) 2'(2) 1'(1.33) 2'(.67) 3'(1.33) 5'(.67) 4'(1.33) 3'(.67) 2'(.67) 1'(.67) 7(.67) | chords B♭maj9 C9 Dm9 B♭maj9 | = A moved up an octave + A moved up an octave, tail extended; reharmonised, doubled at the octave\nLINEAGE phrase 10 = A moved up an octave + A moved up an octave, tail extended; reharmonised, doubled at the octave\nSINCE   theme intact: 10 phrases ago\nMIX     melody: First violins ff, counter: French horn f, inner: Second violins f tremolo, bass: Double basses ff, figuration: Grand piano f, pulse: Timpani f hit, accents: Cymbals ff hit; registers 1-6 occupied; overall ff\nDRAFT   6(1.33) 7(.67) 1'(1.33) 3'(.67) 2'(1.33) 1'(.67) 7(.67) 6(.67) 5(.67) 4(2.67) 3(1.33) 2(4)\nCHANGE  B♭maj9 → B♭m (iv); bass plays the root; inner voices now F3 A3 D4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on D4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on D4, not a chord tone (a major 3rd above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to E4, not a chord tone (a tritone above the root: an added colour or suspension).",
+          "step_down": "Step down to D♭4, the chord's 3rd.",
+          "leap": "Leap up a minor 3rd to F4, the chord's 5th."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "Between the major and the minor subdominant it is the third that changes: D moves a semitone down to D-flat in the same voice, which is the whole effect of the borrowed chord."
+    },
+    {
+      "id": "voice-16",
+      "tests": "moving to the new dominant seventh, raise the tone that becomes its third",
+      "state": "PROMPT  \"one candle, then a hundred, then a whole city of lights coming on\"\nPIECE   style: Bittersweet orchestral; 12/8, 72 BPM, C major, large hall, 2:30; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 7 3 (1 calm … 7 overwhelming); departure = none; climax = phrase 8 (section 3); ending: resolved\nNOW     section 2, phrase 6 of 11, role: development, target tension 5, key C major\nTHEME A 3(2) 5(1) 4(1) 5(2) 3(2)   contour: wave\nLAST 4  phrase 2 [development] 3(2) 5(1) 4(1) 5(2) 3(2) 2(2) 1(2) 4(2) 6(1) 5(1) | chords Cmaj9 Am9 Dm9 G7sus4 | = A tail extended + A sequenced up a step\n        phrase 3 [development] 3(2) 5(1) 4(3) r(2) 4(2) 6(1) 5(3) r(2) | chords Cmaj9 Cmaj9 Dm9 G7sus4 | = A fragmented to its opening + the same again sequenced up a step\n        phrase 4 [development] 3(2) 1(1) 2(1) 1(2) 3(2) 5(2) 7(1) 6(1) 7(2) 5(2) | chords Am9 Fmaj9 Em7 Fmaj9 | = A inverted + A sequenced up a third\n        phrase 5 [development] 5(1.67) 6(.33) 7(1) 6(1) 7(1.67) 6(.33) 5(2) 6(1.67) 7(.33) 1'(1) 7(1) 1'(1.67) 7(.33) 6(2) | chords Em7 Am9 Fmaj9 G9 | = phrase 4 tail ornamented + the same again sequenced up a step\nLINEAGE phrase 5 = phrase 4 tail ornamented + the same again sequenced up a step\nSINCE   theme intact: 5 phrases ago\nMIX     melody: First violins mf, counter: Celli mp, inner: Violas mp, bass: Double basses mp, figuration: Harp mp; registers 2-5 occupied; overall mf\nDRAFT   3(1.67) 4(.33) 5(1) 4(1) 5(1.67) 4(.33) 3(2) 3(2) 5(1) 4(1) 5(2) 3(2)\nCHANGE  Cmaj9 → A7 (V7 of new key); bass plays the root; inner voices now C4 E4 G4",
+      "question": {
+        "type": "choice",
+        "instructions": "The low inner voice is on C4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on C4, not a chord tone (a minor 3rd above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to C♯4, the chord's 3rd.",
+          "step_down": "Step down to B3, not a chord tone (a major 2nd above the root: an added colour or suspension).",
+          "leap": "Leap down a minor 3rd to A3, the chord's root."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "A7 needs C-sharp, the leading note of the new key; C reaches it by a semitone in the same voice, while holding C clashes with the chord and the other moves miss its third."
+    },
+    {
+      "id": "voice-17",
+      "tests": "in a deceptive resolution the leading note still rises",
+      "state": "PROMPT  \"a kitten chasing a butterfly, silly and bright\"\nPIECE   style: Playful; 4/4, 132 BPM, G major, close dry, 2:00; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    6 sections, roles statement / development / departure / return / climax / coda; tension 3 4 4 3 6 2 (1 calm … 7 overwhelming); departure = 3; climax = phrase 13 (section 5); ending: resolved\nNOW     section 2, phrase 4 of 17, role: development, target tension 4, key G major\nTHEME A 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4)   contour: valley\nTHEME B 5,(.5) 6,(.5) 7,(1) 5,(.5) 4,(.5) 3,(1) 2,(4)   contour: arch   (counter: theme A inverted, an octave lower)\nTHEME C 1'(1.5) 7(.5) 6(1.5) 5(.5) 3(4)   contour: falling   (contrast)\nLAST 4  phrase 1 [statement] 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4) 4(.5) 3(.5) 2(1) 4(.5) 5(.5) 6(1) 7(4) | chords G G D D | = A intact + A sequenced down a step\n        phrase 2 [development] 5(.5) 4(.5) 3(1) 5(.5) 6(.5) 7(1) 1'(4) 5(.5) 4(.5) 3(.5) 4(.5) 5(.5) 6(.5) 7(1) 1'(4) | chords G C D G | = A intact + A ornamented; split as call and response\n        phrase 3 [development] 5(.5) 4(.5) 3(3) r(4) 6(.5) 5(.5) 4(3) r(4) | chords G G Am D | = A fragmented to its opening + the same again sequenced up a step; handed to a new instrument\nLINEAGE phrase 3 = A fragmented to its opening + the same again sequenced up a step; handed to a new instrument\nSINCE   theme intact: 2 phrases ago\nMIX     melody: Clarinet mp staccato, inner: Second violins p staccato, bass: Celli p pizzicato, figuration: Violas p pizzicato; registers 2-5 occupied; overall mp\nDRAFT   5(.5) 6(.5) 7(1) 5(.5) 4(.5) 3(1) 2(4) 6(.5) 5(.5) 4(1) 6(.5) 7(.5) 1'(1) 2'(4)\nCHANGE  D7 → Em (vi); bass plays the root; inner voices now F♯3 A3 C4",
+      "question": {
+        "type": "choice",
+        "instructions": "The low inner voice is on F♯3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on F♯3, not a chord tone (a major 2nd above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to G3, the chord's 3rd.",
+          "step_down": "Step down to E3, the chord's root.",
+          "leap": "Leap up a 4th to B3, the chord's 5th."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "F-sharp is the leading note in D7; even when the dominant seventh goes to vi instead of I it rises to the keynote G, the third of E minor, not down to E."
+    },
+    {
+      "id": "voice-18",
+      "tests": "the root of the tonic is held as the fifth of the subdominant",
+      "state": "PROMPT  \"rain on a tin roof at 3am, missing someone\"\nPIECE   style: Bittersweet orchestral; 12/8, 70 BPM, D minor, large hall, 3:00; harmony: ninths and extended chords; warm, open, tender\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 4 6 2 (1 calm … 7 overwhelming); departure = none; climax = phrase 9 (section 3); ending: suspended\nNOW     section 1, phrase 2 of 13, role: development, target tension 2.7, key D minor\nTHEME A 5(2) 6(.67) 5(.33) 3(2) 2(.67) 3(2.33)   contour: arch\nTHEME B 5,(4) 6,(1.33) 5,(.67)   contour: arch   (counter: theme A opening, augmented)\nLAST 4  phrase 1 [statement] 5(2) 6(.67) 5(.33) 3(2) 2(.67) 3(2.33) 5(2) 6(.67) 5(.33) 3(2) 2(.67) 3(.67) 4(.67) 5(1) | chords Dm9 B♭maj9 Dm9 Gm9 | = A intact + A tail extended; over a pedal note\nLINEAGE phrase 1 = A intact + A tail extended; over a pedal note\nSINCE   theme intact: 1 phrases ago\nMIX     melody: Grand piano p, bass: Double basses pp, pedal: Double basses pp, figuration: Grand piano pp; registers 2-4 occupied; overall p\nDRAFT   4(2) 5(.67) 4(.33) 2(2) 1(.67) 2(2.33) 4(1.33) 5(.33) 4(.33) 5(.67) 4(.33) 2(1.33) 3(.33) 2(.33) 1(.67) 2(2.33)\nCHANGE  Dm9 → Gm9 (iv9); bass plays the root; inner voices now F3 A3 D4",
+      "question": {
+        "type": "choice",
+        "instructions": "The high inner voice is on D4. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on D4, the chord's 5th. A common tone binds the two chords.",
+          "step_up": "Step up to E4, not a chord tone (a major 6th above the root: an added colour or suspension).",
+          "step_down": "Step down to C4, not a chord tone (a 4th above the root: an added colour or suspension).",
+          "leap": "Leap up a minor 3rd to F4, the chord's 7th."
+        }
+      },
+      "accept": [
+        "hold"
+      ],
+      "why": "D is common to D minor and G minor; the inner voice keeps it, becoming the fifth of the new chord."
+    },
+    {
+      "id": "voice-19",
+      "tests": "a tone that is not in the new chord steps to the nearest chord tone",
+      "state": "PROMPT  \"two penguins attempting a waltz\"\nPIECE   style: Playful; 3/4, 138 BPM, B♭ major, close dry, 1:30; harmony: plain triads; direct and simple\nSTYLE   Playful: Light, bright and quick on its feet: pizzicato strings and staccato woodwinds trade bouncing figures in major and Lydian colours, with sudden stops, quick register jumps and short, tidy phrases.\n        traits: bright modes: major, Lydian, Mixolydian; pizzicato strings as the rhythmic bed; staccato articulation, short notes with air between them; woodwinds carry the tune: flute, oboe and clarinet in dialogue; bouncing rhythms: dotted figures, off-beat accents, upbeat starts; sudden stops and one-beat silences; quick register jumps and octave displacement; short question-and-answer phrases of two or four bars; call and response between instruments; bell-like touches from glockenspiel, celesta and harp; grace notes and quick scale runs; surprise dynamics: sudden soft, sudden accent; clear cadences, tossed off lightly\n        avoid: long sustained pads or pedal points; heavy low-register doubling; slow chord changes; brooding minor passages or unresolved endings; full tutti for more than a bar or two; legato lines longer than one phrase; sub bass and heavy kick\nPLAN    6 sections, roles statement / development / departure / return / climax / coda; tension 3 4 4 3 5 2 (1 calm … 7 overwhelming); departure = 3; climax = phrase 13 (section 5); ending: resolved\nNOW     section 2, phrase 6 of 17, role: development, target tension 4, key B♭ major\nTHEME A 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2)   contour: valley\nTHEME C 1(1) 1(1) 2(1) 3(1) 5(2)   contour: rising   (contrast)\nLAST 4  phrase 2 [development] 5(1.5) 4(.5) 3(1.5) 1(.5) 2(2) 5(1.5) 4(.5) 3(1.5) 1(.5) 2(.5) 3(.5) 4(1) | chords B♭ F E♭ B♭ | = A intact + A tail extended\n        phrase 3 [development] 5(1.5) 4(.5) 3(3.5) r(.5) 6(1.5) 5(.5) 4(3.5) r(.5) | chords B♭ B♭ Cm F | = A fragmented to its opening + the same again sequenced up a step; handed to a new instrument\n        phrase 4 [development] 5(1.5) 6(.5) 7(1.5) 2'(.5) 1'(2) 4(1.5) 3(.5) 2(1.5) 7,(.5) 1(2) | chords E♭ B♭ F F | = A inverted + A sequenced down a step; split as call and response\n        phrase 5 [development] 4(1.5) 3(.5) 2(1) 1(.5) 7,(.5) 1(2) 5(1.5) 4(.5) 3(1) 2(.5) 1(.5) 2(2) | chords Cm F B♭ E♭ | = phrase 4 tail ornamented + the same again sequenced up a step\nLINEAGE phrase 5 = phrase 4 tail ornamented + the same again sequenced up a step\nSINCE   theme intact: 4 phrases ago\nMIX     melody: Oboe mf staccato, inner: Second violins mp staccato, bass: Double basses mp pizzicato, figuration: Violas mp pizzicato; registers 2-5 occupied; overall mf\nDRAFT   7(1.5) 6(.5) 5(1.5) 3(.5) 4(2) 7(1.5) 6(.5) 5(3.5) r(.5)\nCHANGE  Gm → Cm (ii); bass plays the root; inner voices now G3 B♭3 D4",
+      "question": {
+        "type": "choice",
+        "instructions": "The middle inner voice is on B♭3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on B♭3, not a chord tone (a minor 7th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to C4, the chord's root.",
+          "step_down": "Step down to A3, not a chord tone (a major 6th above the root: an added colour or suspension).",
+          "leap": "Leap down a minor 3rd to G3, the chord's 5th."
+        }
+      },
+      "accept": [
+        "step_up"
+      ],
+      "why": "B-flat is not in C minor; of the moves offered only the step up to C reaches a chord tone without a leap."
+    },
+    {
+      "id": "voice-20",
+      "tests": "the seventh of ii7 resolves down although a chord tone also lies above",
+      "state": "PROMPT  \"rocking a cradle at dusk\"\nPIECE   style: Bittersweet orchestral; 12/8, 66 BPM, A♭ major, close dry, 2:30; harmony: seventh chords; fuller, a little jazzy or wistful\nSTYLE   Bittersweet orchestral: Slow, bittersweet film-cue writing: piano and massed strings over a rocking compound pulse, opening quietly on warm colour chords and developing without literal repeats, through planned peaks and lulls, to an overwhelming climax and a late dark turn.\n        traits: slow compound pulse: 12/8 at 68-75 BPM, felt as four rocking beats; minor tonal centre (for example C-sharp minor) with planned key changes; opens on a warm two-chord oscillation of major-seventh and ninth chords; piano states the idea alone; strings take it over and widen it; strings at scale: the weight of a 40+ player orchestra, in octaves and divided parts; quiet, thin start; one layer added at a time; peaks and lulls planned in advance, each peak higher than the last; constant development: every restatement varied, almost no exact repetition; pedal tones held under shifting harmony; phrase endings left unresolved or half-resolved to pull the line onward; a pause or sudden thinning just before the biggest entry; overwhelming full-orchestra climax late in the piece; late dark turn with late-Romantic, Russian-style chromatic chords; short afterglow that dissolves instead of closing firmly\n        avoid: copying or paraphrasing the notes of any existing piece; repeating a phrase exactly more than twice; a full tonic close before the final section; loud dynamics or full scoring in the first third; a steady drum-kit or electronic beat; fast chord changes in quiet passages; a bright ending that resolves everything; every instrument doubling all the time\nPLAN    4 sections, roles statement / development / climax / coda; tension 2 3 5 1 (1 calm … 7 overwhelming); departure = none; climax = phrase 8 (section 3); ending: fade\nNOW     section 1, phrase 3 of 10, role: development, target tension 2.7, key A♭ major\nTHEME A 5(1.33) 6(.67) 5(1.33) 3(.67) 4(1.33) 3(.67) 2(2)   contour: wave\nLAST 4  phrase 1 [statement] 5(1.33) 6(.67) 5(1.33) 3(.67) 4(1.33) 3(.67) 2(2) 4(1.33) 5(.67) 4(1.33) 2(.67) 3(1.33) 2(.67) 1(2) | chords A♭maj7 D♭maj7 B♭m7 E♭7 | = A intact + A sequenced down a step\n        phrase 2 [development] 5(1.33) 6(.67) 5(1) 4(.33) 3(.67) 4(1.33) 3(.67) 2(2) 6(1.33) 7(.67) 6(1) 5(.33) 4(.67) 5(1.33) 4(.67) 3(2) | chords A♭maj7 Fm7 B♭m7 E♭7 | = A ornamented + the same again sequenced up a step\nLINEAGE phrase 2 = A ornamented + the same again sequenced up a step\nSINCE   theme intact: 2 phrases ago\nMIX     melody: Grand piano p, inner: Violas pp, bass: Celli p, figuration: Harp pp; registers 2-4 occupied; overall p\nDRAFT   5(1.33) 6(.67) 5(3.33) r(2.67) 6(1.33) 7(.67) 6(3.33) r(2.67)\nCHANGE  B♭m7 → E♭7 (V7); bass plays the root; inner voices now F3 A♭3 D♭4",
+      "question": {
+        "type": "choice",
+        "instructions": "The middle inner voice is on A♭3. How should it move into the new chord?",
+        "criteria": {
+          "hold": "Hold: stays on A♭3, not a chord tone (a 4th above the root: an added colour or suspension). A common tone binds the two chords.",
+          "step_up": "Step up to B♭3, the chord's 5th.",
+          "step_down": "Step down to G3, the chord's 3rd.",
+          "leap": "Leap up a 4th to D♭4, the chord's 7th."
+        }
+      },
+      "accept": [
+        "step_down"
+      ],
+      "why": "A-flat is the seventh of B-flat minor seventh; a chord seventh resolves down by step, to G, the third of E-flat seventh, not up to the fifth."
+    }
+  ]
+}
